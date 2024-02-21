@@ -20220,7 +20220,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 4895260483090715795, guid: 53688a7945070224eaa63d69378a3fe8, type: 3}
-  bulletTransform: {fileID: 0}
+  bulletTransform: {fileID: 4107792253160071687, guid: 53688a7945070224eaa63d69378a3fe8,
+    type: 3}
   barrel: {fileID: 193033339}
   bulletRb: {fileID: 7345272075428728030, guid: 53688a7945070224eaa63d69378a3fe8,
     type: 3}
