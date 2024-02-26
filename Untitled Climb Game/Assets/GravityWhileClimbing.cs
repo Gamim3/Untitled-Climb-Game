@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.XR.Interaction.Toolkit;
 public class GravityWhileClimbing : MonoBehaviour
 {
@@ -10,6 +11,10 @@ public class GravityWhileClimbing : MonoBehaviour
     public GameObject rightHand;
     public GameObject leftHand;
     public GameObject moveProvider;
+    //public XRDirectInteractor leftDirectGrab;
+    //public XRDirectInteractor rightDirectGrab;
+    public InputActionProperty leftSelectvalue;
+    public InputActionProperty rightSelectvalue;
 
     // Update is called once per frame
     void Update()
@@ -17,26 +22,30 @@ public class GravityWhileClimbing : MonoBehaviour
         EnableGravity();
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
-        if(other.CompareTag("Rock"))
+        if(other.CompareTag("Rock") && leftSelectvalue.action.ReadValue<float>() > 0.1f || rightSelectvalue.action.ReadValue<float>() > 0.1f)
+            
         {
             isAttached = true;
+            
         }
+        
     }
     private void OnTriggerExit(Collider other)
-    { 
-        isAttached = false;
+    {
+        isAttached = false; 
     }
+
     private void EnableGravity()
     {
         if (isAttached)
         {
-            moveProvider.GetComponent<CharacterController>().enabled = false;
+           //moveProvider.GetComponent<CharacterController>().enabled = false;
         }
         else
         {
-            moveProvider.GetComponent<CharacterController>().enabled = true;
+            //moveProvider.GetComponent<CharacterController>().enabled = true;
         }
     }
 }
