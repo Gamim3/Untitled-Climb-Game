@@ -33,8 +33,8 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: HandRight|HandTriggerClosed
-      takeName: HandRight|HandTriggerClosed
+      name: HandR_Pinch
+      takeName: HandR_Pinch
       internalID: 7981851532016789223
       firstFrame: 0
       lastFrame: 1
@@ -62,8 +62,8 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: HandRight|HandTriggerOpen
-      takeName: HandRight|HandTriggerOpen
+      name: HandR_Relaxed
+      takeName: HandR_Relaxed
       internalID: 951505414833729806
       firstFrame: 0
       lastFrame: 1
@@ -91,8 +91,8 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: HandRight|HandTriggerRelaxed
-      takeName: HandRight|HandTriggerRelaxed
+      name: HandR_Fist
+      takeName: HandR_Fist
       internalID: 8835579475481004782
       firstFrame: 0
       lastFrame: 1
