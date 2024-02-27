@@ -6,6 +6,7 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class GravityWhileClimbing : MonoBehaviour
 {
     public bool isAttached;
+    public DynoJump dynojump;
     public bool rHand;
     public bool lHand;
     public GameObject rightHand;
@@ -28,13 +29,24 @@ public class GravityWhileClimbing : MonoBehaviour
             
         {
             isAttached = true;
-            
+           
         }
         
     }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Rock") && leftSelectvalue.action.ReadValue<float>() > 0.1f || rightSelectvalue.action.ReadValue<float>() > 0.1f)
+
+        {
+           
+            dynojump.onWall = true;
+        }
+      
+    }
     private void OnTriggerExit(Collider other)
     {
-        isAttached = false; 
+        isAttached = false;
+        dynojump.onWall = false;
     }
 
     private void EnableGravity()

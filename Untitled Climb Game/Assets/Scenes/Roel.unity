@@ -1165,6 +1165,7 @@ GameObject:
   - component: {fileID: 238401085}
   - component: {fileID: 238401086}
   - component: {fileID: 238401087}
+  - component: {fileID: 238401088}
   m_Layer: 6
   m_Name: XR Origin (XR Rig)
   m_TagString: Untagged
@@ -1216,6 +1217,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1938581599}
   - {fileID: 794336440}
   - {fileID: 1886604191}
   m_Father: {fileID: 0}
@@ -1332,8 +1334,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_LocomotionProvider: {fileID: 238401075}
-  m_MinHeight: 10
-  m_MaxHeight: Infinity
+  m_MinHeight: 1
+  m_MaxHeight: 1.5
 --- !u!114 &238401079
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1519,8 +1521,8 @@ CharacterController:
   m_ProvidesContacts: 0
   m_Enabled: 0
   serializedVersion: 3
-  m_Height: 2
-  m_Radius: 0.5
+  m_Height: 1
+  m_Radius: 0.21
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
@@ -1562,6 +1564,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isAttached: 0
+  dynojump: {fileID: 238401088}
   rHand: 0
   lHand: 0
   rightHand: {fileID: 1516222169}
@@ -1592,6 +1595,69 @@ MonoBehaviour:
       m_SingletonActionBindings: []
       m_Flags: 0
     m_Reference: {fileID: -1758520528963094988, guid: c348712bda248c246b8c49b3db54643f,
+      type: 3}
+--- !u!114 &238401088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 238401070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11993878a332d364696730d6c5f2a3d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerHandR: {fileID: 1516222170}
+  playerHandL: {fileID: 1340406695}
+  playerBody: {fileID: 1938581599}
+  handPosition: {x: 0, y: 0, z: 0}
+  bodyPosition: {x: 0, y: 0, z: 0}
+  jumpIsReady: 0
+  onWall: 0
+  jumped: 0
+  player: {fileID: 238401070}
+  rb: {fileID: 238401083}
+  speed: 50
+  rigidbodyVelocity: {x: 0, y: 0, z: 0}
+  leftSelectValue:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Left Select Value
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 8ebe1496-dded-4280-a936-ddc8abbddb63
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 6558622148059887818, guid: c348712bda248c246b8c49b3db54643f,
+      type: 3}
+  rightSelectValue:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Right Select Value
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 49aaf9ff-4330-445e-8de6-f4d8474ebd8a
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: -1758520528963094988, guid: c348712bda248c246b8c49b3db54643f,
+      type: 3}
+  rightPressUiValue:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Right Press Ui Value
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: e955321a-973f-44f3-997b-0549f765f8c9
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: -5908353012961274365, guid: c348712bda248c246b8c49b3db54643f,
       type: 3}
 --- !u!1001 &246201946
 PrefabInstance:
@@ -5042,19 +5108,27 @@ MonoBehaviour:
   m_RepeatRate: 0.1
   m_TrackedDeviceDragThresholdMultiplier: 1.4
   m_TrackedScrollDeltaMultiplier: 5
-  m_ActiveInputMode: 0
+  m_ActiveInputMode: 1
   m_MaxTrackedDeviceRaycastDistance: 1000
   m_EnableXRInput: 1
   m_EnableMouseInput: 1
   m_EnableTouchInput: 1
-  m_PointAction: {fileID: 0}
-  m_LeftClickAction: {fileID: 0}
-  m_MiddleClickAction: {fileID: 0}
-  m_RightClickAction: {fileID: 0}
-  m_ScrollWheelAction: {fileID: 0}
-  m_NavigateAction: {fileID: 0}
-  m_SubmitAction: {fileID: 0}
-  m_CancelAction: {fileID: 0}
+  m_PointAction: {fileID: 2869410428622933342, guid: c348712bda248c246b8c49b3db54643f,
+    type: 3}
+  m_LeftClickAction: {fileID: 1855836014308820768, guid: c348712bda248c246b8c49b3db54643f,
+    type: 3}
+  m_MiddleClickAction: {fileID: -6289560987278519447, guid: c348712bda248c246b8c49b3db54643f,
+    type: 3}
+  m_RightClickAction: {fileID: -2562941478296515153, guid: c348712bda248c246b8c49b3db54643f,
+    type: 3}
+  m_ScrollWheelAction: {fileID: 5825226938762934180, guid: c348712bda248c246b8c49b3db54643f,
+    type: 3}
+  m_NavigateAction: {fileID: -7967456002180160679, guid: c348712bda248c246b8c49b3db54643f,
+    type: 3}
+  m_SubmitAction: {fileID: 3994978066732806534, guid: c348712bda248c246b8c49b3db54643f,
+    type: 3}
+  m_CancelAction: {fileID: 2387711382375263438, guid: c348712bda248c246b8c49b3db54643f,
+    type: 3}
   m_EnableBuiltinActionsAsFallback: 1
   m_EnableGamepadInput: 1
   m_EnableJoystickInput: 1
@@ -9817,6 +9891,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1340406695}
     m_Modifications:
+    - target: {fileID: 330016622652038723, guid: df15693795190b84fb0d42e208723a53,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 708293002776223158, guid: df15693795190b84fb0d42e208723a53,
         type: 3}
       propertyPath: m_Value
@@ -10007,11 +10086,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8216593669265921992, guid: df15693795190b84fb0d42e208723a53,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8216593669265921992, guid: df15693795190b84fb0d42e208723a53,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8833115429104992466, guid: df15693795190b84fb0d42e208723a53,
         type: 3}
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 2053155826}
+    - target: {fileID: 9212096269199910443, guid: df15693795190b84fb0d42e208723a53,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15504,7 +15598,6 @@ GameObject:
   - component: {fileID: 1340406697}
   - component: {fileID: 1340406703}
   - component: {fileID: 1340406704}
-  - component: {fileID: 1340406705}
   m_Layer: 0
   m_Name: Left Controller
   m_TagString: LeftHand
@@ -15895,48 +15988,6 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.068942666
   m_Center: {x: -0.03, y: -0.029940829, z: -0.0055523366}
---- !u!114 &1340406705
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1340406694}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb283e6e36f03e740bf31cfc8d8741b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isAttached: 0
-  rHand: 0
-  lHand: 0
-  rightHand: {fileID: 1516222169}
-  leftHand: {fileID: 1340406694}
-  moveProvider: {fileID: 238401070}
-  leftSelectvalue:
-    m_UseReference: 0
-    m_Action:
-      m_Name: Left Selectvalue
-      m_Type: 0
-      m_ExpectedControlType: 
-      m_Id: 6ebb45c7-b40a-4321-b143-e06a88cd4f15
-      m_Processors: 
-      m_Interactions: 
-      m_SingletonActionBindings: []
-      m_Flags: 0
-    m_Reference: {fileID: 0}
-  rightSelectvalue:
-    m_UseReference: 0
-    m_Action:
-      m_Name: Right Selectvalue
-      m_Type: 0
-      m_ExpectedControlType: 
-      m_Id: ece2b679-4a39-490f-aefa-4feb2f89c440
-      m_Processors: 
-      m_Interactions: 
-      m_SingletonActionBindings: []
-      m_Flags: 0
-    m_Reference: {fileID: 0}
 --- !u!1 &1341858231
 GameObject:
   m_ObjectHideFlags: 0
@@ -17875,7 +17926,6 @@ GameObject:
   - component: {fileID: 1516222171}
   - component: {fileID: 1516222177}
   - component: {fileID: 1516222178}
-  - component: {fileID: 1516222179}
   m_Layer: 0
   m_Name: Right Controller
   m_TagString: RightHand
@@ -18266,48 +18316,6 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.06894267
   m_Center: {x: 0.006971337, y: -0.029940799, z: -0.013409944}
---- !u!114 &1516222179
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1516222169}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb283e6e36f03e740bf31cfc8d8741b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isAttached: 0
-  rHand: 0
-  lHand: 0
-  rightHand: {fileID: 1516222169}
-  leftHand: {fileID: 1340406694}
-  moveProvider: {fileID: 238401070}
-  leftSelectvalue:
-    m_UseReference: 0
-    m_Action:
-      m_Name: Left Selectvalue
-      m_Type: 0
-      m_ExpectedControlType: 
-      m_Id: 17faf722-65ed-4fb3-a10a-f91f7d200928
-      m_Processors: 
-      m_Interactions: 
-      m_SingletonActionBindings: []
-      m_Flags: 0
-    m_Reference: {fileID: 0}
-  rightSelectvalue:
-    m_UseReference: 0
-    m_Action:
-      m_Name: Right Selectvalue
-      m_Type: 0
-      m_ExpectedControlType: 
-      m_Id: 3fc5f769-9cb8-49e8-9629-87ac2707229c
-      m_Processors: 
-      m_Interactions: 
-      m_SingletonActionBindings: []
-      m_Flags: 0
-    m_Reference: {fileID: 0}
 --- !u!1 &1522130956
 GameObject:
   m_ObjectHideFlags: 0
@@ -23052,6 +23060,37 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!1 &1938581598
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1938581599}
+  m_Layer: 6
+  m_Name: Body
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1938581599
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1938581598}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.981, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 238401073}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1940518854 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: d6fb88c13dd278a4cb294e7ddb3c43a9,

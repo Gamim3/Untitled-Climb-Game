@@ -48,7 +48,7 @@ public class Stamina : MonoBehaviour
         if (handCheck.isAttached == true)
         {
             currentStamina -= staminaUsage * Time.deltaTime;
-            Debug.Log(currentStamina);
+            //Debug.Log(currentStamina);
         }
     }
     public void StaminaRegain()
