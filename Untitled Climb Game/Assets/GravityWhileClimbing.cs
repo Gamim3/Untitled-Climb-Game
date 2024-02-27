@@ -20,12 +20,12 @@ public class GravityWhileClimbing : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        EnableGravity();
+        
     }
 
     private void OnTriggerStay(Collider other)
     {
-        if(other.CompareTag("Rock") && leftSelectvalue.action.ReadValue<float>() > 0.1f || rightSelectvalue.action.ReadValue<float>() > 0.1f)
+        if(other.CompareTag("Rock") && leftSelectvalue.action.ReadValue<float>() > 0.1f || other.CompareTag("Rock") && rightSelectvalue.action.ReadValue<float>() > 0.1f)
             
         {
             isAttached = true;
@@ -35,7 +35,7 @@ public class GravityWhileClimbing : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Rock") && leftSelectvalue.action.ReadValue<float>() > 0.1f || rightSelectvalue.action.ReadValue<float>() > 0.1f)
+        if (other.CompareTag("Rock") && leftSelectvalue.action.ReadValue<float>() > 0.1f || other.CompareTag("Rock") && rightSelectvalue.action.ReadValue<float>() > 0.1f)
 
         {
            
@@ -49,15 +49,6 @@ public class GravityWhileClimbing : MonoBehaviour
         dynojump.onWall = false;
     }
 
-    private void EnableGravity()
-    {
-        if (isAttached)
-        {
-           //moveProvider.GetComponent<CharacterController>().enabled = false;
-        }
-        else
-        {
-            //moveProvider.GetComponent<CharacterController>().enabled = true;
-        }
-    }
+    
+    
 }

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class DynoJump : MonoBehaviour
 {
@@ -12,9 +13,12 @@ public class DynoJump : MonoBehaviour
 
     public Vector3 handPosition;
     public Vector3 bodyPosition;
+    public Vector3 playerPosition;
+    public Vector3 preJumpPosition;
     
 
     public bool jumpIsReady;
+    public bool startTimer;
     public bool onWall = false;
     public bool jumped = false;
 
@@ -22,6 +26,7 @@ public class DynoJump : MonoBehaviour
 
     public Rigidbody rb;
     public float speed;
+    public float timer = 1f;
     public Vector3 rigidbodyVelocity;
   
     public InputActionProperty leftSelectValue;
@@ -37,15 +42,21 @@ public class DynoJump : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (startTimer)
+        {
+           timer =- Time.deltaTime;
+        }
+        else
+        {
+            timer = 1f;
+        }
+        TestJump();
+        ResetCollider();
         handPosition = playerHandR.position;
         bodyPosition = playerBody.position;
-        if (onWall == true && handPosition.y <= bodyPosition.y)
-        {
-            TestJump();
-            Debug.Log("Test");
-        }
+        
 
-        rigidbodyVelocity = (rb.velocity * speed)  *-1 * Time.deltaTime;
+        rigidbodyVelocity =- (rb.velocity * speed) * Time.deltaTime;
 
        /* currentPosition = playerHandL.position;
         if (currentPosition != lastPosition)
@@ -93,17 +104,41 @@ public class DynoJump : MonoBehaviour
 
     public void TestJump()
     {
-        if (rightSelectValue.action.ReadValue<float>() <= 0.1f || leftSelectValue.action.ReadValue<float>() <= 0.1f && jumped == false)
+        if (onWall)
         {
-            rb.AddForce(rigidbodyVelocity, ForceMode.Impulse);
-            Debug.Log("IKBENKLAAR");
-            player.GetComponent<CapsuleCollider>().enabled = false;
-            jumped = true;
+
+
+            if (rightSelectValue.action.ReadValue<float>() <= 0.1f && jumped == false || leftSelectValue.action.ReadValue<float>() <= 0.1f && jumped == false)
+            {
+                jumped = true;
+                preJumpPosition = player.transform.position;
+                rb.GetComponent<Rigidbody>().useGravity = false;
+                startTimer = true;
+                rb.AddForce(rigidbodyVelocity, ForceMode.Impulse);
+                Debug.Log("DynoJump:)");
+                //player.GetComponent<CapsuleCollider>().enabled = false;
+
+                
+            }
         }
-        else
+    }
+    public void ResetCollider()
+    {
+        playerPosition = player.transform.position;
+
+        if (playerPosition.y < preJumpPosition.y)
         {
-            player.GetComponent<CapsuleCollider>().enabled = true;
+            //player.GetComponent<CapsuleCollider>().enabled = true;
             jumped = false;
+        }
+        
+    }
+    public void UseGravity()
+    {
+        if (timer <= 0)
+        {
+            rb.GetComponent<Rigidbody>().useGravity = true;
+            startTimer = false;
         }
     }
 }
