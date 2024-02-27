@@ -6,22 +6,15 @@ using TMPro;
 
 public class WatchSlider : MonoBehaviour
 {
+    public GameObject _time;
     public GameObject _watchSlider;
     public Animator _watchAnimator;
     float _watchAniFloat;
     public GameObject _watchHight;
 
-    Slider _watchSliderS;
-
     public GameObject _quitSlider;
     public GameObject _quitButton;
     bool _quitting;
-
-    // Update is called once per frame
-    private void Start()
-    {
-        _watchSliderS = _watchSlider.GetComponent<Slider>();
-    }
 
     public void QuitClimb()
     {
@@ -29,7 +22,7 @@ public class WatchSlider : MonoBehaviour
     }
     void FixedUpdate()
     {
-        if (_watchSliderS.value >= 0.5)
+        if (_watchSlider.GetComponent<Slider>().value >= 0.5)
         {
             float tempfloatWatch = 1f;
             if(_watchAniFloat <= tempfloatWatch)
@@ -38,9 +31,9 @@ public class WatchSlider : MonoBehaviour
             }
 
         }
-        if (_watchSliderS.value <= 0.5)
+        if (_watchSlider.GetComponent<Slider>().value <= 0.5)
         {
-            float tempfloatWatch = 1f;
+            float tempfloatWatch = 0f;
             if (_watchAniFloat >= tempfloatWatch)
             {
                 _watchAniFloat -= 0.1f;
@@ -51,10 +44,11 @@ public class WatchSlider : MonoBehaviour
     private void Update()
     {
         float _hight = transform.position.y;
-        Mathf.Round(_hight);
-        _watchHight.GetComponent<TMP_Text>().text = new string(_hight.ToString());
+        _watchHight.GetComponent<TMP_Text>().text = new string(Mathf.Round(_hight).ToString());
 
         _watchAnimator.GetComponent<Animator>().SetFloat("Blend", _watchAniFloat);
+
+        _time.GetComponent<TMP_Text>().text = new string(System.DateTime.Now.ToString("HH:mm"));
 
         if (_quitting)
         {
