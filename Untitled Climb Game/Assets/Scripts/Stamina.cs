@@ -81,6 +81,6 @@ public class Stamina : MonoBehaviour
     }
     public void StaminaPanel()
     {
-        panel.GetComponent<Image>().fillAmount = currentStamina / 100;
+        panel.GetComponent<Slider>().value = currentStamina / 100;
     }
 }
