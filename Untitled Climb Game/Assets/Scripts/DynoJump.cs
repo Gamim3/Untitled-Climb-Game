@@ -26,7 +26,7 @@ public class DynoJump : MonoBehaviour
 
     public Rigidbody rb;
     public float speed;
-    public float timer = 1f;
+    public float timer;
     public Vector3 rigidbodyVelocity;
   
     public InputActionProperty leftSelectValue;
@@ -36,22 +36,24 @@ public class DynoJump : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        timer = 1.5f;
     }
 
     // Update is called once per frame
     void Update()
     {
+        
         if (startTimer)
         {
-           timer =- Time.deltaTime;
+           timer -= Time.deltaTime;
         }
-        else
+        else if (!startTimer)
         {
-            timer = 1f;
+            timer = 1.5f;
         }
         TestJump();
-        ResetCollider();
+        
+        UseGravity();
         handPosition = playerHandR.position;
         bodyPosition = playerBody.position;
         
@@ -114,7 +116,7 @@ public class DynoJump : MonoBehaviour
                 preJumpPosition = player.transform.position;
                 rb.GetComponent<Rigidbody>().useGravity = false;
                 startTimer = true;
-                rb.AddForce(rigidbodyVelocity, ForceMode.Impulse);
+                rb.AddForce(rigidbodyVelocity * 5 , ForceMode.Impulse);
                 Debug.Log("DynoJump:)");
                 //player.GetComponent<CapsuleCollider>().enabled = false;
 
@@ -122,21 +124,12 @@ public class DynoJump : MonoBehaviour
             }
         }
     }
-    public void ResetCollider()
-    {
-        playerPosition = player.transform.position;
-
-        if (playerPosition.y < preJumpPosition.y)
-        {
-            //player.GetComponent<CapsuleCollider>().enabled = true;
-            jumped = false;
-        }
-        
-    }
+   
     public void UseGravity()
     {
         if (timer <= 0)
         {
+            jumped = false;
             rb.GetComponent<Rigidbody>().useGravity = true;
             startTimer = false;
         }
