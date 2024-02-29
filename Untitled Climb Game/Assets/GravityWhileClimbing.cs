@@ -5,7 +5,7 @@ using UnityEngine.InputSystem;
 using UnityEngine.XR.Interaction.Toolkit;
 public class GravityWhileClimbing : MonoBehaviour
 {
-    public bool isAttached;
+    public bool isAttachedL, isAttachedR;
     public DynoJump dynojump;
     public bool rHand;
     public bool lHand;
@@ -25,11 +25,15 @@ public class GravityWhileClimbing : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if(other.CompareTag("Rock") && leftSelectvalue.action.ReadValue<float>() > 0.1f || other.CompareTag("Rock") && rightSelectvalue.action.ReadValue<float>() > 0.1f)
+        if(other.CompareTag("Rock") && leftSelectvalue.action.ReadValue<float>() > 0.1f) 
             
         {
-            isAttached = true;
+            isAttachedL = true;
            
+        }
+        else if(other.CompareTag("Rock") && rightSelectvalue.action.ReadValue<float>() > 0.1f)
+        {
+            isAttachedR = true;
         }
         
     }
@@ -41,11 +45,16 @@ public class GravityWhileClimbing : MonoBehaviour
            
             dynojump.onWall = true;
         }
+        if((other.CompareTag("Rock") && leftSelectvalue.action.ReadValue<float>() > 0.1f || other.CompareTag("Rock") && rightSelectvalue.action.ReadValue<float>() > 0.1f)
+        {
+
+        }
       
     }
     private void OnTriggerExit(Collider other)
     {
-        isAttached = false;
+        isAttachedL = false;
+        isAttachedR = false;
         dynojump.onWall = false;
     }
 

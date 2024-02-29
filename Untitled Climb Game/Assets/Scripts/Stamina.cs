@@ -45,7 +45,7 @@ public class Stamina : MonoBehaviour
     }
     public void StaminaConsumption()
     {
-        if (handCheck.isAttached == true)
+        if (handCheck.isAttachedR == true|| handCheck.isAttachedL == true)
         {
             currentStamina -= staminaUsage * Time.deltaTime;
             //Debug.Log(currentStamina);
@@ -53,7 +53,7 @@ public class Stamina : MonoBehaviour
     }
     public void StaminaRegain()
     {
-        if (!handCheck.isAttached && groundCheck == true)
+        if (!handCheck.isAttachedR && groundCheck == true || !handCheck.isAttachedR && groundCheck == true)
         {
             currentStamina += staminaRegain * Time.deltaTime;
             if (currentStamina >= maxStamina)
