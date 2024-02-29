@@ -809,6 +809,74 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 55c232b51cd84e744ac82054b90674e7, type: 3}
+--- !u!1001 &4617483317921346272
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2781607249991513253, guid: e18b854bb7ce9914a95783be4e543e90,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -33.13732
+      objectReference: {fileID: 0}
+    - target: {fileID: 2781607249991513253, guid: e18b854bb7ce9914a95783be4e543e90,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.8489151
+      objectReference: {fileID: 0}
+    - target: {fileID: 2781607249991513253, guid: e18b854bb7ce9914a95783be4e543e90,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 62.96333
+      objectReference: {fileID: 0}
+    - target: {fileID: 2781607249991513253, guid: e18b854bb7ce9914a95783be4e543e90,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2781607249991513253, guid: e18b854bb7ce9914a95783be4e543e90,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2781607249991513253, guid: e18b854bb7ce9914a95783be4e543e90,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2781607249991513253, guid: e18b854bb7ce9914a95783be4e543e90,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2781607249991513253, guid: e18b854bb7ce9914a95783be4e543e90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2781607249991513253, guid: e18b854bb7ce9914a95783be4e543e90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2781607249991513253, guid: e18b854bb7ce9914a95783be4e543e90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3301580130884087327, guid: e18b854bb7ce9914a95783be4e543e90,
+        type: 3}
+      propertyPath: m_Name
+      value: ClimbingShoesDoublesWhiOra
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e18b854bb7ce9914a95783be4e543e90, type: 3}
 --- !u!1001 &5018537523140860801
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -877,6 +945,74 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c609d7cfd684a5a418c10d85461edf9b, type: 3}
+--- !u!1001 &5406443898026802273
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1672595690108665049, guid: 2513bcf5148ff5a4ab5280b63e3c72c5,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -33.464874
+      objectReference: {fileID: 0}
+    - target: {fileID: 1672595690108665049, guid: 2513bcf5148ff5a4ab5280b63e3c72c5,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.8489151
+      objectReference: {fileID: 0}
+    - target: {fileID: 1672595690108665049, guid: 2513bcf5148ff5a4ab5280b63e3c72c5,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 62.936188
+      objectReference: {fileID: 0}
+    - target: {fileID: 1672595690108665049, guid: 2513bcf5148ff5a4ab5280b63e3c72c5,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1672595690108665049, guid: 2513bcf5148ff5a4ab5280b63e3c72c5,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1672595690108665049, guid: 2513bcf5148ff5a4ab5280b63e3c72c5,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1672595690108665049, guid: 2513bcf5148ff5a4ab5280b63e3c72c5,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1672595690108665049, guid: 2513bcf5148ff5a4ab5280b63e3c72c5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1672595690108665049, guid: 2513bcf5148ff5a4ab5280b63e3c72c5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1672595690108665049, guid: 2513bcf5148ff5a4ab5280b63e3c72c5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2052955641973499491, guid: 2513bcf5148ff5a4ab5280b63e3c72c5,
+        type: 3}
+      propertyPath: m_Name
+      value: ClimbingShoesDoublesYelBlu
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2513bcf5148ff5a4ab5280b63e3c72c5, type: 3}
 --- !u!1001 &5653980796130789838
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1098,3 +1234,5 @@ SceneRoots:
   - {fileID: 4077394}
   - {fileID: 5653980796130789838}
   - {fileID: 8075226874037049206}
+  - {fileID: 4617483317921346272}
+  - {fileID: 5406443898026802273}
