@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.XR.Interaction.Toolkit;
@@ -27,6 +28,7 @@ public class DynoJump : MonoBehaviour
     public Rigidbody rb;
     public float speed;
     public float timer;
+    public float averageHand;
     public Vector3 rigidbodyVelocity;
     public Vector3 currentPosition;
     public Vector3 lastPosition;
@@ -40,7 +42,7 @@ public class DynoJump : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        timer = 1f;
+        timer = 1.5f;
     }
 
     // Update is called once per frame
@@ -53,18 +55,22 @@ public class DynoJump : MonoBehaviour
         }
         else if (!startTimer)
         {
-            timer = 1f;
+            timer = 1.5f;
         }
         TestJump();
         
         UseGravity();
-        handPositionR = playerHandR.position;
-        handPositionL = playerHandL.position;
+        handPositionR.y = playerHandR.position.y;
+        handPositionL.y = playerHandL.position.y;
         bodyPosition = playerBody.position;
+
+        averageHand = (handPositionL.y + handPositionR.y) / 2;
+        //Debug.Log(averageHand);
+        
         
 
         rigidbodyVelocity =- (rb.velocity * speed) * Time.deltaTime;
-        if (bodyPosition.y <= handPositionR.y && bodyPosition.y <= handPositionL.y)
+        if (bodyPosition.y <= averageHand)
         {
             jumped = false;
         }
@@ -75,9 +81,9 @@ public class DynoJump : MonoBehaviour
     {
         if (onWall)
         {
-            print(handPositionR - bodyPosition);
-            print(handPositionL - bodyPosition);
-            if (handPositionR.y <= bodyPosition.y && handPositionL.y <= bodyPosition.y)
+           // print(handPositionR - bodyPosition);
+           // print(handPositionL - bodyPosition);
+            if (averageHand <= bodyPosition.y)
             {
                 if (rightSelectValue.action.ReadValue<float>() <= 0.1f && jumped == false || leftSelectValue.action.ReadValue<float>() <= 0.1f && jumped == false)
                 {

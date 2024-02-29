@@ -8,6 +8,7 @@ TagManager:
   - RightHand
   - Rock
   - Ground
+  - Zipline
   layers:
   - Default
   - TransparentFX

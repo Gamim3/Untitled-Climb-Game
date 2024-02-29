@@ -9,6 +9,7 @@ public class GravityWhileClimbing : MonoBehaviour
     public DynoJump dynojump;
     public bool rHand;
     public bool lHand;
+    public bool ziplineInHand;
     public GameObject rightHand;
     public GameObject leftHand;
     public GameObject moveProvider;
@@ -35,7 +36,16 @@ public class GravityWhileClimbing : MonoBehaviour
         {
             isAttachedR = true;
         }
-        
+        if (other.CompareTag("Zipline") && leftSelectvalue.action.ReadValue<float>() > 0.1f && rightSelectvalue.action.ReadValue<float>() > 0.1f)
+        {
+            ziplineInHand = true;
+        }
+        else
+        {
+            ziplineInHand = false;
+        }
+
+
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -45,11 +55,9 @@ public class GravityWhileClimbing : MonoBehaviour
            
             dynojump.onWall = true;
         }
-        if((other.CompareTag("Rock") && leftSelectvalue.action.ReadValue<float>() > 0.1f || other.CompareTag("Rock") && rightSelectvalue.action.ReadValue<float>() > 0.1f)
-        {
 
-        }
-      
+        
+
     }
     private void OnTriggerExit(Collider other)
     {
