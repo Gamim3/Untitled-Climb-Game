@@ -68,6 +68,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hold3
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ca280f837a76d1340b3f0e69463909ca,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ca280f837a76d1340b3f0e69463909ca,
+        type: 3}
+      propertyPath: m_TagString
+      value: Rock
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -102,5 +112,5 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.25907513, y: 0.28131095, z: 0.067597024}
-  m_Center: {x: 0.023615893, y: 0.03095062, z: 0.033798043}
+  m_Size: {x: 0.41270834, y: 0.4239833, z: 0.11622861}
+  m_Center: {x: 0.023615899, y: 0.03095062, z: 0.058113754}

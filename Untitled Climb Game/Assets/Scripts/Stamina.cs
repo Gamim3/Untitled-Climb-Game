@@ -64,7 +64,7 @@ public class Stamina : MonoBehaviour
     }
     public void GroundCheck()
     {
-        if(Physics.Raycast(startRay.position, -transform.up, out hit, 1f))
+        if(Physics.Raycast(startRay.position, -transform.up, out hit, 10f))
         {
             if (hit.collider.tag == "Ground")
             {

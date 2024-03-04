@@ -70,6 +70,7 @@ public class DynoJump : MonoBehaviour
         
 
         rigidbodyVelocity =- (rb.velocity * speed) * Time.deltaTime;
+        
         if (bodyPosition.y <= averageHand)
         {
             jumped = false;
