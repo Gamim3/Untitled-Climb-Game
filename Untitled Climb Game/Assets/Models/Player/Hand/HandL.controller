@@ -9,7 +9,7 @@ BlendTree:
   m_Name: Blend Tree
   m_Childs:
   - serializedVersion: 2
-    m_Motion: {fileID: -4283186021497461210, guid: d04b0c6137a08f54880cc8ef56e8512b,
+    m_Motion: {fileID: -4283186021497461210, guid: f8a44bc14cda3894c848d004a9dd7aac,
       type: 3}
     m_Threshold: 0
     m_Position: {x: 0, y: 0}
@@ -18,7 +18,7 @@ BlendTree:
     m_DirectBlendParameter: Grip
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 810651124711775985, guid: d04b0c6137a08f54880cc8ef56e8512b,
+    m_Motion: {fileID: 810651124711775985, guid: f8a44bc14cda3894c848d004a9dd7aac,
       type: 3}
     m_Threshold: 1
     m_Position: {x: 0, y: 0}
@@ -42,7 +42,7 @@ BlendTree:
   m_Name: Blend Tree
   m_Childs:
   - serializedVersion: 2
-    m_Motion: {fileID: -4283186021497461210, guid: d04b0c6137a08f54880cc8ef56e8512b,
+    m_Motion: {fileID: -4283186021497461210, guid: f8a44bc14cda3894c848d004a9dd7aac,
       type: 3}
     m_Threshold: 0
     m_Position: {x: 0, y: 0}
@@ -51,7 +51,7 @@ BlendTree:
     m_DirectBlendParameter: Grip
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: -6585190861096666600, guid: d04b0c6137a08f54880cc8ef56e8512b,
+    m_Motion: {fileID: -6585190861096666600, guid: f8a44bc14cda3894c848d004a9dd7aac,
       type: 3}
     m_Threshold: 0.33333334
     m_Position: {x: 1, y: 0}
@@ -60,7 +60,7 @@ BlendTree:
     m_DirectBlendParameter: Grip
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: -4283186021497461210, guid: d04b0c6137a08f54880cc8ef56e8512b,
+    m_Motion: {fileID: -4283186021497461210, guid: f8a44bc14cda3894c848d004a9dd7aac,
       type: 3}
     m_Threshold: 0.6666667
     m_Position: {x: 0, y: 1}
@@ -69,7 +69,7 @@ BlendTree:
     m_DirectBlendParameter: Grip
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 810651124711775985, guid: d04b0c6137a08f54880cc8ef56e8512b,
+    m_Motion: {fileID: 810651124711775985, guid: f8a44bc14cda3894c848d004a9dd7aac,
       type: 3}
     m_Threshold: 1
     m_Position: {x: 1, y: 1}
@@ -242,7 +242,7 @@ BlendTree:
   m_Name: Blend Tree
   m_Childs:
   - serializedVersion: 2
-    m_Motion: {fileID: -5273412514511738642, guid: d04b0c6137a08f54880cc8ef56e8512b,
+    m_Motion: {fileID: -5273412514511738642, guid: f8a44bc14cda3894c848d004a9dd7aac,
       type: 3}
     m_Threshold: 0
     m_Position: {x: 0, y: 0}
@@ -251,7 +251,7 @@ BlendTree:
     m_DirectBlendParameter: Grip
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: -7175349204591135860, guid: d04b0c6137a08f54880cc8ef56e8512b,
+    m_Motion: {fileID: -7175349204591135860, guid: f8a44bc14cda3894c848d004a9dd7aac,
       type: 3}
     m_Threshold: 1
     m_Position: {x: 0, y: 0}
@@ -305,31 +305,31 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: GripTouch
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 1
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Trigger
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: TriggerTouch
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 1
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: TouchPadTouch
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: PointerFinger
@@ -346,7 +346,7 @@ AnimatorController:
   - serializedVersion: 5
     m_Name: RingFinger
     m_StateMachine: {fileID: 6425512875776950110}
-    m_Mask: {fileID: 31900000, guid: f38af41dcaab8cf45b0d8ee2271895b1, type: 2}
+    m_Mask: {fileID: 31900000, guid: 09e24674c54aee448a7c8ada45b526f3, type: 2}
     m_Motions: []
     m_Behaviours: []
     m_BlendingMode: 0
@@ -358,7 +358,7 @@ AnimatorController:
   - serializedVersion: 5
     m_Name: MiddleFinger
     m_StateMachine: {fileID: 481013102251961217}
-    m_Mask: {fileID: 31900000, guid: ee80a0ba38f0d8c4ca57a14b5fe89ebc, type: 2}
+    m_Mask: {fileID: 31900000, guid: 451aff1b7cd9a9541962e1d9061df7fb, type: 2}
     m_Motions: []
     m_Behaviours: []
     m_BlendingMode: 0
@@ -370,7 +370,7 @@ AnimatorController:
   - serializedVersion: 5
     m_Name: PinkyFinger
     m_StateMachine: {fileID: -2053639292679414651}
-    m_Mask: {fileID: 31900000, guid: 1cd7adcb02c16e54fbeb1ac7248d8f98, type: 2}
+    m_Mask: {fileID: 31900000, guid: 5d62c8ec66fbb344c8290391799ab0a2, type: 2}
     m_Motions: []
     m_Behaviours: []
     m_BlendingMode: 0
@@ -382,7 +382,7 @@ AnimatorController:
   - serializedVersion: 5
     m_Name: Thumb
     m_StateMachine: {fileID: 7591365065855756441}
-    m_Mask: {fileID: 31900000, guid: 97ced840c01995d49b2a705158d26b04, type: 2}
+    m_Mask: {fileID: 31900000, guid: 2aefed0c438191b4e86c39699c396f2b, type: 2}
     m_Motions: []
     m_Behaviours: []
     m_BlendingMode: 0
@@ -400,7 +400,7 @@ BlendTree:
   m_Name: Blend Tree
   m_Childs:
   - serializedVersion: 2
-    m_Motion: {fileID: -5757158697150549731, guid: d04b0c6137a08f54880cc8ef56e8512b,
+    m_Motion: {fileID: -5757158697150549731, guid: f8a44bc14cda3894c848d004a9dd7aac,
       type: 3}
     m_Threshold: 0
     m_Position: {x: 0, y: 0}
@@ -409,7 +409,7 @@ BlendTree:
     m_DirectBlendParameter: Grip
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: -5170068771098098493, guid: d04b0c6137a08f54880cc8ef56e8512b,
+    m_Motion: {fileID: -5170068771098098493, guid: f8a44bc14cda3894c848d004a9dd7aac,
       type: 3}
     m_Threshold: 1
     m_Position: {x: 0, y: 0}
@@ -455,7 +455,7 @@ BlendTree:
   m_Name: Blend Tree
   m_Childs:
   - serializedVersion: 2
-    m_Motion: {fileID: -3034321143985417934, guid: d04b0c6137a08f54880cc8ef56e8512b,
+    m_Motion: {fileID: -3034321143985417934, guid: f8a44bc14cda3894c848d004a9dd7aac,
       type: 3}
     m_Threshold: 0
     m_Position: {x: 0, y: 0}
@@ -464,7 +464,7 @@ BlendTree:
     m_DirectBlendParameter: Grip
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: -9029805240229571288, guid: d04b0c6137a08f54880cc8ef56e8512b,
+    m_Motion: {fileID: -9029805240229571288, guid: f8a44bc14cda3894c848d004a9dd7aac,
       type: 3}
     m_Threshold: 1
     m_Position: {x: 0, y: 0}
@@ -488,7 +488,7 @@ BlendTree:
   m_Name: Blend Tree
   m_Childs:
   - serializedVersion: 2
-    m_Motion: {fileID: 6463618359143451574, guid: d04b0c6137a08f54880cc8ef56e8512b,
+    m_Motion: {fileID: 6463618359143451574, guid: f8a44bc14cda3894c848d004a9dd7aac,
       type: 3}
     m_Threshold: 0
     m_Position: {x: 0, y: 1}
@@ -497,7 +497,7 @@ BlendTree:
     m_DirectBlendParameter: Grip
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 6739566383264475213, guid: d04b0c6137a08f54880cc8ef56e8512b,
+    m_Motion: {fileID: 6739566383264475213, guid: f8a44bc14cda3894c848d004a9dd7aac,
       type: 3}
     m_Threshold: 0.33333334
     m_Position: {x: 1, y: 0}
@@ -506,7 +506,7 @@ BlendTree:
     m_DirectBlendParameter: Grip
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 1254967309547004155, guid: d04b0c6137a08f54880cc8ef56e8512b,
+    m_Motion: {fileID: 1254967309547004155, guid: f8a44bc14cda3894c848d004a9dd7aac,
       type: 3}
     m_Threshold: 0.6666667
     m_Position: {x: 0, y: 0}
@@ -515,7 +515,7 @@ BlendTree:
     m_DirectBlendParameter: Grip
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 6739566383264475213, guid: d04b0c6137a08f54880cc8ef56e8512b,
+    m_Motion: {fileID: 6739566383264475213, guid: f8a44bc14cda3894c848d004a9dd7aac,
       type: 3}
     m_Threshold: 1
     m_Position: {x: 1, y: 1}
@@ -611,7 +611,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 4520807991033474915, guid: d04b0c6137a08f54880cc8ef56e8512b,
+  m_Motion: {fileID: 4520807991033474915, guid: f8a44bc14cda3894c848d004a9dd7aac,
     type: 3}
   m_Tag: 
   m_SpeedParameter: 
