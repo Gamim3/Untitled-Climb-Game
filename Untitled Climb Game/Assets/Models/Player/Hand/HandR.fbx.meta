@@ -24,7 +24,7 @@ ModelImporter:
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     importConstraints: 0
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -33,9 +33,9 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: HandR_Pinch
-      takeName: HandR_Pinch
-      internalID: 7981851532016789223
+      name: MiddleFingerClosed
+      takeName: MiddleFingerClosed
+      internalID: -7175349204591135860
       firstFrame: 0
       lastFrame: 1
       wrapMode: 0
@@ -44,7 +44,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 1
+      loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -62,9 +62,9 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: HandR_Relaxed
-      takeName: HandR_Relaxed
-      internalID: 951505414833729806
+      name: MiddleFingerOpen
+      takeName: MiddleFingerOpen
+      internalID: -5273412514511738642
       firstFrame: 0
       lastFrame: 1
       wrapMode: 0
@@ -73,7 +73,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 1
+      loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -91,9 +91,9 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: HandR_Fist
-      takeName: HandR_Fist
-      internalID: 8835579475481004782
+      name: PinkyFingerClosed
+      takeName: PinkyFingerClosed
+      internalID: -5170068771098098493
       firstFrame: 0
       lastFrame: 1
       wrapMode: 0
@@ -102,7 +102,297 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 1
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: PinkyFingerOpen
+      takeName: PinkyFingerOpen
+      internalID: -5757158697150549731
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: PointerFingerClosed
+      takeName: PointerFingerClosed
+      internalID: 810651124711775985
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: PointerFingerOpen
+      takeName: PointerFingerOpen
+      internalID: -4283186021497461210
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: RingFingerClosed
+      takeName: RingFingerClosed
+      internalID: -9029805240229571288
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: RingFingerOpen
+      takeName: RingFingerOpen
+      internalID: -3034321143985417934
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: ThumbFist
+      takeName: ThumbFist
+      internalID: 6739566383264475213
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: ThumbPinch
+      takeName: ThumbPinch
+      internalID: 6463618359143451574
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: ThumbUp
+      takeName: ThumbUp
+      internalID: 4520807991033474915
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: ThumbRelaxed
+      takeName: ThumbRelaxed
+      internalID: 1254967309547004155
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: PointerFingerPinch
+      takeName: PointerFingerPinch
+      internalID: -6585190861096666600
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -169,7 +459,147 @@ ModelImporter:
   humanDescription:
     serializedVersion: 3
     human: []
-    skeleton: []
+    skeleton:
+    - name: HandR(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hand_low
+      parentName: HandR(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071067, y: -0.000000030908616, z: 0.000000030908623, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: HandRight
+      parentName: HandR(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071067, y: 5.302452e-33, z: 5.302451e-33, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Def_Hand
+      parentName: HandRight
+      position: {x: 0.010580889, y: 0.07776792, z: -0.007341744}
+      rotation: {x: 0.99918205, y: 0.029332392, z: -0.024743559, w: -0.01275379}
+      scale: {x: 0.99999654, y: 0.99999994, z: 0.9999992}
+    - name: Def_MiddleFinger01
+      parentName: Def_Hand
+      position: {x: 0.00078620866, y: 0.07007859, z: -0.018865481}
+      rotation: {x: 0.013660872, y: 0.032899205, z: 0.014171624, w: 0.99926484}
+      scale: {x: 1, y: 1, z: 0.9999999}
+    - name: Def_MiddleFinger02
+      parentName: Def_MiddleFinger01
+      position: {x: 4.0017767e-10, y: 0.05855068, z: 8.731149e-10}
+      rotation: {x: -0.019452589, y: -0.008179178, z: 0.7076846, w: 0.7062134}
+      scale: {x: 0.9999999, y: 1.0000001, z: 0.99999994}
+    - name: Def_MiddleFinger03
+      parentName: Def_MiddleFinger02
+      position: {x: -0.0000000045693014, y: 0.044993356, z: 1.7462298e-10}
+      rotation: {x: -0.0059071896, y: 0.0023418134, z: 0.7446658, w: 0.66740733}
+      scale: {x: 1.0000002, y: 1.0000004, z: 1}
+    - name: Def_MiddleFinger04
+      parentName: Def_MiddleFinger03
+      position: {x: -6.9849193e-10, y: 0.041213375, z: 2.3283064e-10}
+      rotation: {x: 0.014846949, y: -0.0020093312, z: 0.6827267, w: 0.7305203}
+      scale: {x: 1, y: 1, z: 0.9999999}
+    - name: Def_MiddleFinger04_end
+      parentName: Def_MiddleFinger04
+      position: {x: -0, y: 0.020337043, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Def_PinkyFinger01
+      parentName: Def_Hand
+      position: {x: -0.0066284137, y: 0.061654642, z: 0.033781316}
+      rotation: {x: 0.05631871, y: -0.12545599, z: 0.031059906, w: 0.9900123}
+      scale: {x: 0.99999994, y: 0.9999999, z: 0.99999994}
+    - name: Def_PinkyFinger02
+      parentName: Def_PinkyFinger01
+      position: {x: 8.1490725e-10, y: 0.056047875, z: -0.000000005820766}
+      rotation: {x: 0.08575186, y: -0.0020928683, z: 0.14140105, w: 0.9862292}
+      scale: {x: 0.9999998, y: 0.99999976, z: 0.9999999}
+    - name: Def_PinkyFinger03
+      parentName: Def_PinkyFinger02
+      position: {x: -4.656613e-10, y: 0.034685463, z: -0.0000000013969839}
+      rotation: {x: 0.008217664, y: -0.00015016535, z: 0.1834755, w: 0.98298997}
+      scale: {x: 0.99999994, y: 0.9999998, z: 1}
+    - name: Def_PinkyFinger04
+      parentName: Def_PinkyFinger03
+      position: {x: -0, y: 0.028895997, z: 0.000000007450581}
+      rotation: {x: 0.00028892639, y: 0.00230617, z: 0.094818145, w: 0.9954919}
+      scale: {x: 0.99999994, y: 1, z: 0.99999994}
+    - name: Def_PinkyFinger04_end
+      parentName: Def_PinkyFinger04
+      position: {x: -0, y: 0.021016061, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Def_PointerFinger01
+      parentName: Def_Hand
+      position: {x: -0.0046540224, y: 0.062955394, z: -0.045121852}
+      rotation: {x: -0.016152577, y: 0.09901491, z: -0.017686563, w: 0.99479765}
+      scale: {x: 0.99999994, y: 1, z: 0.9999999}
+    - name: Def_PointerFinger02
+      parentName: Def_PointerFinger01
+      position: {x: 0.0000000013969839, y: 0.05902631, z: 0.000000001717126}
+      rotation: {x: -0.029119417, y: -0.045750335, z: 0.10337913, w: 0.9931625}
+      scale: {x: 0.99999994, y: 1, z: 0.9999999}
+    - name: Def_PointerFinger03
+      parentName: Def_PointerFinger02
+      position: {x: -4.656613e-10, y: 0.042718794, z: -0.0000000018626451}
+      rotation: {x: -0.019473296, y: 0.03375083, z: 0.18684858, w: 0.98161566}
+      scale: {x: 1.0000001, y: 0.99999994, z: 0.99999994}
+    - name: Def_PointerFinger04
+      parentName: Def_PointerFinger03
+      position: {x: 0.0000000030267984, y: 0.03275278, z: 0.000000001542503}
+      rotation: {x: 0.004268066, y: -0.017993048, z: 0.03566163, w: 0.99919283}
+      scale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+    - name: Def_PointerFinger04_end
+      parentName: Def_PointerFinger04
+      position: {x: -0, y: 0.018946154, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Def_RingFinger01
+      parentName: Def_Hand
+      position: {x: -0.0019925497, y: 0.06959036, z: 0.010394521}
+      rotation: {x: 0.021680385, y: -0.11876321, z: 0.004858181, w: 0.99267405}
+      scale: {x: 0.99999994, y: 0.9999999, z: 0.99999994}
+    - name: Def_RingFinger02
+      parentName: Def_RingFinger01
+      position: {x: 0.0000000016298145, y: 0.05536749, z: -0.0000000016298145}
+      rotation: {x: 0.017296527, y: 0.043177124, z: 0.06625056, w: 0.99671835}
+      scale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+    - name: Def_RingFinger03
+      parentName: Def_RingFinger02
+      position: {x: 4.656613e-10, y: 0.041655384, z: -9.313226e-10}
+      rotation: {x: 0.03391151, y: 0.007879841, z: 0.2441578, w: 0.96911037}
+      scale: {x: 1, y: 0.9999999, z: 1}
+    - name: Def_RingFinger04
+      parentName: Def_RingFinger03
+      position: {x: 0.0000000027939677, y: 0.031182323, z: -0.0000000020954758}
+      rotation: {x: -0.019561073, y: -0.048949134, z: 0.023167247, w: 0.99834096}
+      scale: {x: 1, y: 1, z: 0.99999994}
+    - name: Def_RingFinger04_end
+      parentName: Def_RingFinger04
+      position: {x: -0, y: 0.019045897, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Def_Thumb01
+      parentName: Def_Hand
+      position: {x: -0.0012945797, y: 0.015429769, z: -0.031831674}
+      rotation: {x: -0.4187336, y: 0.7418812, z: -0.15424328, w: 0.5004832}
+      scale: {x: 0.9999999, y: 0.99999976, z: 0.99999976}
+    - name: Def_Thumb02
+      parentName: Def_Thumb01
+      position: {x: 0.0000000034924597, y: 0.05704635, z: 0.0000000013969839}
+      rotation: {x: -0.0017041592, y: -0.00020727178, z: -0.0005675806, w: 0.9999984}
+      scale: {x: 0.9999999, y: 0.9999999, z: 1.0000001}
+    - name: Def_Thumb03
+      parentName: Def_Thumb02
+      position: {x: -4.656613e-10, y: 0.04106874, z: 3.6379788e-10}
+      rotation: {x: 0.0077954973, y: 0.0030630047, z: 0.026726423, w: 0.9996077}
+      scale: {x: 0.99999994, y: 1, z: 0.99999994}
+    - name: Def_Thumb03_end
+      parentName: Def_Thumb03
+      position: {x: -0, y: 0.032485113, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
     armTwist: 0.5
     foreArmTwist: 0.5
     upperLegTwist: 0.5
@@ -180,13 +610,13 @@ ModelImporter:
     globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
-    hasExtraRoot: 0
+    hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
-  avatarSetup: 0
+  avatarSetup: 1
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
   importBlendShapeDeformPercent: 1
   remapMaterialsIfMaterialImportModeIsNone: 0

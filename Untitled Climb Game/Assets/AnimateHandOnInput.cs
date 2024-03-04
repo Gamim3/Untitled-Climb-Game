@@ -8,6 +8,7 @@ public class AnimateHandOnInput : MonoBehaviour
 {
     public InputActionProperty pinchAnimationAction;
     public InputActionProperty gripAnimationAction;
+    public InputActionProperty thumbTouch;
     public Animator handAnimator;
     // Start is called before the first frame update
     void Start()
@@ -23,5 +24,8 @@ public class AnimateHandOnInput : MonoBehaviour
 
         float gripValue = gripAnimationAction.action.ReadValue<float>();
         handAnimator.SetFloat("Grip", gripValue);
+
+        float thumbValue = thumbTouch.action.ReadValue<float>();
+        handAnimator.SetFloat("TouchPadTouch", thumbValue);
     }
 }

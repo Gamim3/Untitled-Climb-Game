@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!319 &31900000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: PinkyR
+  m_Mask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: Hand_low
+    m_Weight: 1
+  - m_Path: HandRight
+    m_Weight: 1
+  - m_Path: HandRight/Def_Hand
+    m_Weight: 1
+  - m_Path: HandRight/Def_Hand/Def_MiddleFinger01
+    m_Weight: 0
+  - m_Path: HandRight/Def_Hand/Def_MiddleFinger01/Def_MiddleFinger02
+    m_Weight: 0
+  - m_Path: HandRight/Def_Hand/Def_MiddleFinger01/Def_MiddleFinger02/Def_MiddleFinger03
+    m_Weight: 0
+  - m_Path: HandRight/Def_Hand/Def_MiddleFinger01/Def_MiddleFinger02/Def_MiddleFinger03/Def_MiddleFinger04
+    m_Weight: 0
+  - m_Path: HandRight/Def_Hand/Def_MiddleFinger01/Def_MiddleFinger02/Def_MiddleFinger03/Def_MiddleFinger04/Def_MiddleFinger04_end
+    m_Weight: 0
+  - m_Path: HandRight/Def_Hand/Def_PinkyFinger01
+    m_Weight: 1
+  - m_Path: HandRight/Def_Hand/Def_PinkyFinger01/Def_PinkyFinger02
+    m_Weight: 1
+  - m_Path: HandRight/Def_Hand/Def_PinkyFinger01/Def_PinkyFinger02/Def_PinkyFinger03
+    m_Weight: 1
+  - m_Path: HandRight/Def_Hand/Def_PinkyFinger01/Def_PinkyFinger02/Def_PinkyFinger03/Def_PinkyFinger04
+    m_Weight: 1
+  - m_Path: HandRight/Def_Hand/Def_PinkyFinger01/Def_PinkyFinger02/Def_PinkyFinger03/Def_PinkyFinger04/Def_PinkyFinger04_end
+    m_Weight: 1
+  - m_Path: HandRight/Def_Hand/Def_PointerFinger01
+    m_Weight: 0
+  - m_Path: HandRight/Def_Hand/Def_PointerFinger01/Def_PointerFinger02
+    m_Weight: 0
+  - m_Path: HandRight/Def_Hand/Def_PointerFinger01/Def_PointerFinger02/Def_PointerFinger03
+    m_Weight: 0
+  - m_Path: HandRight/Def_Hand/Def_PointerFinger01/Def_PointerFinger02/Def_PointerFinger03/Def_PointerFinger04
+    m_Weight: 0
+  - m_Path: HandRight/Def_Hand/Def_PointerFinger01/Def_PointerFinger02/Def_PointerFinger03/Def_PointerFinger04/Def_PointerFinger04_end
+    m_Weight: 0
+  - m_Path: HandRight/Def_Hand/Def_RingFinger01
+    m_Weight: 0
+  - m_Path: HandRight/Def_Hand/Def_RingFinger01/Def_RingFinger02
+    m_Weight: 0
+  - m_Path: HandRight/Def_Hand/Def_RingFinger01/Def_RingFinger02/Def_RingFinger03
+    m_Weight: 0
+  - m_Path: HandRight/Def_Hand/Def_RingFinger01/Def_RingFinger02/Def_RingFinger03/Def_RingFinger04
+    m_Weight: 0
+  - m_Path: HandRight/Def_Hand/Def_RingFinger01/Def_RingFinger02/Def_RingFinger03/Def_RingFinger04/Def_RingFinger04_end
+    m_Weight: 0
+  - m_Path: HandRight/Def_Hand/Def_Thumb01
+    m_Weight: 0
+  - m_Path: HandRight/Def_Hand/Def_Thumb01/Def_Thumb02
+    m_Weight: 0
+  - m_Path: HandRight/Def_Hand/Def_Thumb01/Def_Thumb02/Def_Thumb03
+    m_Weight: 0
+  - m_Path: HandRight/Def_Hand/Def_Thumb01/Def_Thumb02/Def_Thumb03/Def_Thumb03_end
+    m_Weight: 0

@@ -141,7 +141,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: d04b0c6137a08f54880cc8ef56e8512b,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.0302
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d04b0c6137a08f54880cc8ef56e8512b,
         type: 3}
@@ -289,6 +289,19 @@ MonoBehaviour:
       m_SingletonActionBindings: []
       m_Flags: 0
     m_Reference: {fileID: -1758520528963094988, guid: c348712bda248c246b8c49b3db54643f,
+      type: 3}
+  thumbTouch:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Thumb Touch
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 6cf992b0-6a56-41bf-aa05-f096b5571f76
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: -143781479689359200, guid: c348712bda248c246b8c49b3db54643f,
       type: 3}
   handAnimator: {fileID: 2709230048417182099}
 --- !u!4 &8814189944304598102 stripped
