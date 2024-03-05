@@ -10,6 +10,7 @@ public class Zipline : MonoBehaviour
     public Transform attachPoint;
     public float speed;
     public float step;
+    public bool hasHandle;
     public GameObject handle;
     public GameObject endpoint;
     public GameObject player;
@@ -20,6 +21,14 @@ public class Zipline : MonoBehaviour
     void Start()
     {
         goToPoint = endpoint.transform.position;
+    }
+    public void FixedUpdate()
+    {
+        if(hasHandle)
+        {
+            player.transform.position = attachPoint.position;
+        }
+        
     }
 
     // Update is called once per frame
@@ -35,8 +44,8 @@ public class Zipline : MonoBehaviour
             step = speed * Time.deltaTime;
             transform.position = Vector3.MoveTowards(zipHandle, goToPoint, step);
             player.transform.SetParent(handle.transform);
-            
-            FollowHandle();
+
+            hasHandle = true;
         }
         else
         {
@@ -45,8 +54,5 @@ public class Zipline : MonoBehaviour
             
         }
     }
-    public void FollowHandle()
-    {
-        player.transform.position = attachPoint.position;
-    }
+   
 }

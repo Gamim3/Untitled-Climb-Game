@@ -20,6 +20,7 @@ public class DynoJump : MonoBehaviour
     
 
     public bool startTimer;
+    public bool startJumpCooldown;
     public bool onWall = false;
     public bool jumped = false;
 
@@ -28,6 +29,7 @@ public class DynoJump : MonoBehaviour
     public Rigidbody rb;
     public float speed;
     public float timer;
+    public float jumpCooldown;
     public float averageHand;
     public Vector3 rigidbodyVelocity;
     public Vector3 currentPosition;
@@ -42,7 +44,8 @@ public class DynoJump : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        timer = 1.5f;
+        timer = 1.2f;
+        jumpCooldown = 4f;
     }
 
     // Update is called once per frame
@@ -51,11 +54,17 @@ public class DynoJump : MonoBehaviour
         
         if (startTimer)
         {
-           timer -= Time.deltaTime;
+            timer -= Time.deltaTime;
+            
         }
-        else if (!startTimer)
+        if (startJumpCooldown)
         {
-            timer = 1.5f;
+            jumpCooldown -= Time.deltaTime;
+        }
+        else
+        {
+            timer = 1.2f;
+            jumpCooldown = 4f;
         }
         TestJump();
         
@@ -66,15 +75,6 @@ public class DynoJump : MonoBehaviour
 
         averageHand = (handPositionL.y + handPositionR.y) / 2;
         //Debug.Log(averageHand);
-        
-        
-
-        rigidbodyVelocity =- (rb.velocity * speed) * Time.deltaTime;
-        
-        if (bodyPosition.y <= averageHand)
-        {
-            jumped = false;
-        }
     }
    
 
@@ -82,17 +82,19 @@ public class DynoJump : MonoBehaviour
     {
         if (onWall)
         {
-           // print(handPositionR - bodyPosition);
-           // print(handPositionL - bodyPosition);
             if (averageHand <= bodyPosition.y)
             {
-                if (rightSelectValue.action.ReadValue<float>() <= 0.1f && jumped == false || leftSelectValue.action.ReadValue<float>() <= 0.1f && jumped == false)
+                rigidbodyVelocity = new Vector3(rb.velocity.x, - rb.velocity.y, 0f);
+                float averageVelocity =  rigidbodyVelocity.magnitude;
+                print(averageVelocity);
+                if (rightSelectValue.action.ReadValue<float>() <= 0.1f && leftSelectValue.action.ReadValue<float>() <= 0.1f && jumped == false)
                 {
                     preJumpPosition = player.transform.position;
                     rb.GetComponent<Rigidbody>().useGravity = false;
-                    rb.AddForce(rigidbodyVelocity * 1.75f, ForceMode.Impulse);
+                    rb.AddForce(rigidbodyVelocity * 0.75f ,ForceMode.Impulse);
                     player.GetComponent<CapsuleCollider>().enabled = false;
                     startTimer = true;
+                    startJumpCooldown = true;
                     jumped = true;
                     Debug.Log("DynoJump:)");
                     //player.GetComponent<CapsuleCollider>().enabled = false;
@@ -100,7 +102,6 @@ public class DynoJump : MonoBehaviour
 
                 }
             }
-            
             
         }
     }
@@ -113,6 +114,12 @@ public class DynoJump : MonoBehaviour
             startTimer = false;
             player.GetComponent<CapsuleCollider>().enabled = true;
             
+
+        }
+        if(jumpCooldown <= 0)
+        {
+            jumped = false;
+            startJumpCooldown = false;
         }
     }
 }

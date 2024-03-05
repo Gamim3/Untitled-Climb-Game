@@ -930,9 +930,10 @@ MonoBehaviour:
   attachPoint: {fileID: 98431330}
   speed: 2
   step: 0
+  hasHandle: 0
   handle: {fileID: 124942331}
   endpoint: {fileID: 2076377405}
-  player: {fileID: 0}
+  player: {fileID: 412961181}
   body: {fileID: 4541662915202355602}
 --- !u!1001 &141073899
 PrefabInstance:
@@ -1415,7 +1416,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 4541662915202355600}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 412961181}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 496880615cd240be960d436c1c8ae570, type: 3}
@@ -2826,6 +2827,12 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.18617131, y: 0.13942713, z: 0.06109606}
   m_Center: {x: -0.0031020518, y: 0.0017246885, z: 0.030549346}
+--- !u!1 &412961181 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5708167583290570310, guid: 8d2314720748d0744a9291129955fea4,
+    type: 3}
+  m_PrefabInstance: {fileID: 4541662915202355600}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &416263963
 GameObject:
   m_ObjectHideFlags: 0
@@ -11430,7 +11437,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 4541662915202355600}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 412961181}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bb283e6e36f03e740bf31cfc8d8741b5, type: 3}
@@ -21352,8 +21359,23 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 103883459478846497, guid: 8d2314720748d0744a9291129955fea4,
         type: 3}
+      propertyPath: jumped
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 103883459478846497, guid: 8d2314720748d0744a9291129955fea4,
+        type: 3}
+      propertyPath: onWall
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 103883459478846497, guid: 8d2314720748d0744a9291129955fea4,
+        type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 103883459478846497, guid: 8d2314720748d0744a9291129955fea4,
+        type: 3}
+      propertyPath: startTimer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 103883459478846497, guid: 8d2314720748d0744a9291129955fea4,
         type: 3}
@@ -21390,7 +21412,7 @@ PrefabInstance:
     - target: {fileID: 485282594491051940, guid: 8d2314720748d0744a9291129955fea4,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.5
+      value: 5.18
       objectReference: {fileID: 0}
     - target: {fileID: 485282594491051940, guid: 8d2314720748d0744a9291129955fea4,
         type: 3}
@@ -21400,7 +21422,7 @@ PrefabInstance:
     - target: {fileID: 485282594491051940, guid: 8d2314720748d0744a9291129955fea4,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.433
+      value: 0.19
       objectReference: {fileID: 0}
     - target: {fileID: 485282594491051940, guid: 8d2314720748d0744a9291129955fea4,
         type: 3}
@@ -21441,6 +21463,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Constraints
       value: 112
+      objectReference: {fileID: 0}
+    - target: {fileID: 910493554156983494, guid: 8d2314720748d0744a9291129955fea4,
+        type: 3}
+      propertyPath: m_Interpolate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 910493554156983494, guid: 8d2314720748d0744a9291129955fea4,
+        type: 3}
+      propertyPath: m_ExcludeLayers.m_Bits
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2348420834133388891, guid: 8d2314720748d0744a9291129955fea4,
         type: 3}
@@ -21511,6 +21543,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Center.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4704512223976315449, guid: 8d2314720748d0744a9291129955fea4,
+        type: 3}
+      propertyPath: m_ExcludeLayers.m_Bits
+      value: 256
       objectReference: {fileID: 0}
     - target: {fileID: 5543590693726327679, guid: 8d2314720748d0744a9291129955fea4,
         type: 3}
