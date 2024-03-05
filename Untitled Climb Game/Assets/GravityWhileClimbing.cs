@@ -38,18 +38,22 @@ public class GravityWhileClimbing : MonoBehaviour
         {
             isAttachedR = true;
         }
-        if (other.CompareTag("Zipline") && leftSelectvalue.action.ReadValue<float>() > 0.1f && rightSelectvalue.action.ReadValue<float>() > 0.1f)
+      
+        if (other.CompareTag("Rock") && leftSelectvalue.action.ReadValue<float>() > 0.1f || other.CompareTag("Rock") && rightSelectvalue.action.ReadValue<float>() > 0.1f)
+        {
+
+            dynojump.onWall = true;
+        }
+    }
+    private void OnCollisionStay(Collision collision)
+    {
+        if (collision.collider.CompareTag("Zipline") && leftSelectvalue.action.ReadValue<float>() > 0.1f || (collision.collider.CompareTag("Zipline") && rightSelectvalue.action.ReadValue<float>() > 0.1f))
         {
             ziplineInHand = true;
         }
         else
         {
             ziplineInHand = false;
-        }
-        if (other.CompareTag("Rock") && leftSelectvalue.action.ReadValue<float>() > 0.1f || other.CompareTag("Rock") && rightSelectvalue.action.ReadValue<float>() > 0.1f)
-        {
-
-            dynojump.onWall = true;
         }
     }
 

@@ -2886,12 +2886,14 @@ MonoBehaviour:
   playerPosition: {x: 0, y: 0, z: 0}
   preJumpPosition: {x: 0, y: 0, z: 0}
   startTimer: 0
+  startJumpCooldown: 0
   onWall: 0
   jumped: 0
   player: {fileID: 5708167583290570310}
   rb: {fileID: 910493554156983494}
   speed: 50
   timer: 30
+  jumpCooldown: 0
   averageHand: 0
   rigidbodyVelocity: {x: 0, y: 0, z: 0}
   currentPosition: {x: 0, y: 0, z: 0}
