@@ -86,7 +86,6 @@ public class DynoJump : MonoBehaviour
             {
                 rigidbodyVelocity = new Vector3(rb.velocity.x, - rb.velocity.y, 0f);
                 float averageVelocity =  rigidbodyVelocity.magnitude;
-                print(averageVelocity);
                 if (rightSelectValue.action.ReadValue<float>() <= 0.1f && leftSelectValue.action.ReadValue<float>() <= 0.1f && jumped == false)
                 {
                     preJumpPosition = player.transform.position;

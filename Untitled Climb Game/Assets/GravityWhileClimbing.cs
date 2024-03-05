@@ -44,10 +44,7 @@ public class GravityWhileClimbing : MonoBehaviour
 
             dynojump.onWall = true;
         }
-    }
-    private void OnCollisionStay(Collision collision)
-    {
-        if (collision.collider.CompareTag("Zipline") && leftSelectvalue.action.ReadValue<float>() > 0.1f || (collision.collider.CompareTag("Zipline") && rightSelectvalue.action.ReadValue<float>() > 0.1f))
+        if (other.CompareTag("Zipline") && leftSelectvalue.action.ReadValue<float>() > 0.1f || (other.CompareTag("Zipline") && rightSelectvalue.action.ReadValue<float>() > 0.1f))
         {
             ziplineInHand = true;
         }
