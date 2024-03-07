@@ -27,7 +27,7 @@ MonoBehaviour:
     m_Value: 0
   saturation:
     m_OverrideState: 1
-    m_Value: 5.6
+    m_Value: 0.2
 --- !u!114 &-5248725206823936263
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -90,13 +90,13 @@ MonoBehaviour:
   active: 1
   lift:
     m_OverrideState: 1
-    m_Value: {x: 1, y: 1, z: 1, w: -0.004754221}
+    m_Value: {x: 1, y: 1, z: 1, w: -0.007830977}
   gamma:
     m_OverrideState: 1
     m_Value: {x: 1, y: 1, z: 1, w: -0.026893772}
   gain:
     m_OverrideState: 1
-    m_Value: {x: 1, y: 1, z: 1, w: 0.16136263}
+    m_Value: {x: 1, y: 1, z: 1, w: 0.0830541}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -111,8 +111,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   components:
   - {fileID: -5248725206823936263}
-  - {fileID: -5638830569281333380}
   - {fileID: 3118280692967035084}
+  - {fileID: -5638830569281333380}
   - {fileID: -2465285213468486296}
 --- !u!114 &3118280692967035084
 MonoBehaviour:

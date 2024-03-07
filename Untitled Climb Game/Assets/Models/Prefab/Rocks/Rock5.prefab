@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &180782876302547322
+--- !u!1 &671388153695394114
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,167 +8,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1460569398930231237}
-  - component: {fileID: 5850352079508358189}
-  m_Layer: 0
-  m_Name: Climbeble (2)
-  m_TagString: Rock
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1460569398930231237
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 180782876302547322}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.10620718, z: -0, w: 0.99434406}
-  m_LocalPosition: {x: -0.2354, y: 0.301, z: 0.1393}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 5631252249885513189}
-  m_LocalEulerAnglesHint: {x: 0, y: -12.193, z: 0}
---- !u!65 &5850352079508358189
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 180782876302547322}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.38227648, y: 0.06443386, z: 0.09212868}
-  m_Center: {x: -0.05886176, y: -0.017783068, z: -0.0039356705}
---- !u!1 &916761197228493789
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 9185938521035473862}
-  - component: {fileID: 2413287888209656605}
-  m_Layer: 0
-  m_Name: Climbeble (6)
-  m_TagString: Rock
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &9185938521035473862
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 916761197228493789}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.1789207, z: -4.6566134e-10, w: 0.9838635}
-  m_LocalPosition: {x: 0.422, y: -0.325, z: 0.056}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 5631252249885513189}
-  m_LocalEulerAnglesHint: {x: 0, y: 20.614, z: 0}
---- !u!65 &2413287888209656605
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 916761197228493789}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.4162882, y: 0.03365085, z: 0.10000156}
-  m_Center: {x: -0.0136218155, y: -0.033174954, z: -0.000000023541583}
---- !u!1 &1589526453059649553
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2456634871876944888}
-  - component: {fileID: 2233561115303418438}
-  m_Layer: 0
-  m_Name: Climbeble (3)
-  m_TagString: Rock
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2456634871876944888
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1589526453059649553}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.1757, y: 0.2221, z: 0.1889}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 5631252249885513189}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &2233561115303418438
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1589526453059649553}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.04, y: 0.03, z: 0.02}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!1 &3016048702046496909
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1668806624012605590}
-  - component: {fileID: 1728860592648593918}
+  - component: {fileID: 616219828127606451}
+  - component: {fileID: 3978658829288863693}
   m_Layer: 0
   m_Name: Climbeble (5)
   m_TagString: Rock
@@ -176,28 +17,29 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1668806624012605590
+--- !u!4 &616219828127606451
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3016048702046496909}
+  m_GameObject: {fileID: 671388153695394114}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: 0.091239646, w: 0.995829}
-  m_LocalPosition: {x: 0.015, y: 0.446, z: 0.08}
+  m_LocalRotation: {x: 0.0000000037252903, y: -0.0000000037252903, z: 0.09123965,
+    w: 0.995829}
+  m_LocalPosition: {x: 0.015003204, y: 0.44600105, z: 0.08001709}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 5631252249885513189}
+  m_Father: {fileID: 5666464422178734964}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 10.47}
---- !u!65 &1728860592648593918
+--- !u!65 &3978658829288863693
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3016048702046496909}
+  m_GameObject: {fileID: 671388153695394114}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -212,7 +54,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.29, y: 0.06443386, z: 0.1}
   m_Center: {x: -0.01, y: -0.017783068, z: 0}
---- !u!1 &4887047586417878183
+--- !u!1 &1916910770606922463
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -220,37 +62,90 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8857086185729100807}
-  - component: {fileID: 6114672333862818615}
+  - component: {fileID: 266416235524910186}
+  - component: {fileID: 6010960791048446957}
   m_Layer: 0
-  m_Name: Climbeble (4)
+  m_Name: Climbeble (2)
   m_TagString: Rock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &8857086185729100807
+--- !u!4 &266416235524910186
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4887047586417878183}
+  m_GameObject: {fileID: 1916910770606922463}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.004958079, y: -0.028257906, z: -0.17274697, w: 0.98454833}
-  m_LocalPosition: {x: 0.418, y: 0.181, z: 0.096}
+  m_LocalRotation: {x: -0, y: -0.106207184, z: -0, w: 0.99434406}
+  m_LocalPosition: {x: -0.23540115, y: 0.30099964, z: 0.13928223}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 5631252249885513189}
-  m_LocalEulerAnglesHint: {x: -1.119, y: -3.092, z: -19.873}
---- !u!65 &6114672333862818615
+  m_Father: {fileID: 5666464422178734964}
+  m_LocalEulerAnglesHint: {x: 0, y: -12.193, z: 0}
+--- !u!65 &6010960791048446957
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4887047586417878183}
+  m_GameObject: {fileID: 1916910770606922463}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.38227648, y: 0.06443386, z: 0.09212868}
+  m_Center: {x: -0.05886176, y: -0.017783068, z: -0.0039356705}
+--- !u!1 &2387055290509648331
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7991334585010832188}
+  - component: {fileID: 3560603592829035717}
+  m_Layer: 0
+  m_Name: Climbeble
+  m_TagString: Rock
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7991334585010832188
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2387055290509648331}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.0000000018626451, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.11299896, y: -0.061000824, z: 0.17797852}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5666464422178734964}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &3560603592829035717
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2387055290509648331}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -265,7 +160,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.38227648, y: 0.06443386, z: 0.1}
   m_Center: {x: -0.058861762, y: -0.017783068, z: 0}
---- !u!1 &8468488285921312936
+--- !u!1 &2387556283134784096
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -273,8 +168,114 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3927382609938990717}
-  - component: {fileID: 3990042781299067975}
+  - component: {fileID: 9212156702169569000}
+  - component: {fileID: 6625439636053913618}
+  m_Layer: 0
+  m_Name: Climbeble (6)
+  m_TagString: Rock
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9212156702169569000
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2387556283134784096}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.17892072, z: -9.313226e-10, w: 0.98386353}
+  m_LocalPosition: {x: 0.42200089, y: -0.32500076, z: 0.055999756}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5666464422178734964}
+  m_LocalEulerAnglesHint: {x: 0, y: 20.614, z: 0}
+--- !u!65 &6625439636053913618
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2387556283134784096}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.4162882, y: 0.03365085, z: 0.10000156}
+  m_Center: {x: -0.0136218155, y: -0.033174954, z: -0.000000023541583}
+--- !u!1 &4322244276340418509
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5961023811536997616}
+  - component: {fileID: 486717715701278261}
+  m_Layer: 0
+  m_Name: Climbeble (3)
+  m_TagString: Rock
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5961023811536997616
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4322244276340418509}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.0000000018626451, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.17570114, y: 0.2220993, z: 0.18890381}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5666464422178734964}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &486717715701278261
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4322244276340418509}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.04, y: 0.03, z: 0.02}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &7105122022105378384
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3441602037809428943}
+  - component: {fileID: 1799714683219883097}
   m_Layer: 0
   m_Name: Climbeble (1)
   m_TagString: Rock
@@ -282,28 +283,28 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &3927382609938990717
+--- !u!4 &3441602037809428943
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8468488285921312936}
+  m_GameObject: {fileID: 7105122022105378384}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.22788149, z: -0, w: 0.9736889}
-  m_LocalPosition: {x: 0.5005, y: -0.189, z: 0.0641}
+  m_LocalRotation: {x: -0, y: 0.22788152, z: -0, w: 0.9736889}
+  m_LocalPosition: {x: 0.50050354, y: -0.18899918, z: 0.06410217}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 5631252249885513189}
+  m_Father: {fileID: 5666464422178734964}
   m_LocalEulerAnglesHint: {x: 0, y: 26.345, z: 0}
---- !u!65 &3990042781299067975
+--- !u!65 &1799714683219883097
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8468488285921312936}
+  m_GameObject: {fileID: 7105122022105378384}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -318,7 +319,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.27908453, y: 0.06443386, z: 0.1}
   m_Center: {x: -0.0072658216, y: -0.017783068, z: -2.0850058e-11}
---- !u!1 &8963124153326629309
+--- !u!1 &7758677410419620623
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -326,37 +327,75 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8319254950793894805}
-  - component: {fileID: 1022857279587139364}
+  - component: {fileID: 5666464422178734964}
   m_Layer: 0
-  m_Name: Climbeble
-  m_TagString: Rock
+  m_Name: Holdables
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &8319254950793894805
+--- !u!4 &5666464422178734964
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8963124153326629309}
+  m_GameObject: {fileID: 7758677410419620623}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.113, y: -0.061, z: 0.178}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7991334585010832188}
+  - {fileID: 616219828127606451}
+  - {fileID: 680781072500430267}
+  - {fileID: 5961023811536997616}
+  - {fileID: 266416235524910186}
+  - {fileID: 3441602037809428943}
+  - {fileID: 9212156702169569000}
+  m_Father: {fileID: 5027551527595551215}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &8705849752908200238
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 680781072500430267}
+  - component: {fileID: 4553632526679315689}
+  m_Layer: 0
+  m_Name: Climbeble (4)
+  m_TagString: Rock
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &680781072500430267
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8705849752908200238}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.0049580806, y: -0.028257908, z: -0.17274697, w: 0.98454833}
+  m_LocalPosition: {x: 0.41799927, y: 0.18099976, z: 0.09599304}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 5631252249885513189}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1022857279587139364
+  m_Father: {fileID: 5666464422178734964}
+  m_LocalEulerAnglesHint: {x: -1.119, y: -3.092, z: -19.873}
+--- !u!65 &4553632526679315689
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8963124153326629309}
+  m_GameObject: {fileID: 8705849752908200238}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -371,58 +410,91 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.38227648, y: 0.06443386, z: 0.1}
   m_Center: {x: -0.058861762, y: -0.017783068, z: 0}
---- !u!1001 &5308762545974604302
+--- !u!1 &8861630755945179582
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5027551527595551215}
+  m_Layer: 0
+  m_Name: Rock5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5027551527595551215
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8861630755945179582}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5339199014754950829}
+  - {fileID: 5666464422178734964}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &5589561192967895366
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 5027551527595551215}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 416e5feced79c8e4e9490235edf76c3a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 22.648874
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 416e5feced79c8e4e9490235edf76c3a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.818
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 416e5feced79c8e4e9490235edf76c3a,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -171.98431
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 416e5feced79c8e4e9490235edf76c3a,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9983498
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 416e5feced79c8e4e9490235edf76c3a,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.022763547
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 416e5feced79c8e4e9490235edf76c3a,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.052707076
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 416e5feced79c8e4e9490235edf76c3a,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.0012017837
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 416e5feced79c8e4e9490235edf76c3a,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 2.612
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 416e5feced79c8e4e9490235edf76c3a,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -13.929
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 416e5feced79c8e4e9490235edf76c3a,
         type: 3}
@@ -441,40 +513,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 416e5feced79c8e4e9490235edf76c3a,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 8319254950793894805}
-    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 416e5feced79c8e4e9490235edf76c3a,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1668806624012605590}
-    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 416e5feced79c8e4e9490235edf76c3a,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 8857086185729100807}
-    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 416e5feced79c8e4e9490235edf76c3a,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2456634871876944888}
-    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 416e5feced79c8e4e9490235edf76c3a,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1460569398930231237}
-    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 416e5feced79c8e4e9490235edf76c3a,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 3927382609938990717}
-    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 416e5feced79c8e4e9490235edf76c3a,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 9185938521035473862}
+    m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 416e5feced79c8e4e9490235edf76c3a, type: 3}
---- !u!4 &5631252249885513189 stripped
+--- !u!4 &5339199014754950829 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 416e5feced79c8e4e9490235edf76c3a,
     type: 3}
-  m_PrefabInstance: {fileID: 5308762545974604302}
+  m_PrefabInstance: {fileID: 5589561192967895366}
   m_PrefabAsset: {fileID: 0}
