@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class Stamina : MonoBehaviour
 {
     public GameObject panel;
-    public ClimbProvider climbProvider;
+   
     public GravityWhileClimbing handCheck;
     public float maxStamina = 100;
     public float currentStamina;
@@ -30,12 +30,12 @@ public class Stamina : MonoBehaviour
     {
         if(currentStamina > 0)
         {
-            climbProvider.enabled = true;
+            gameObject.GetComponent<ClimbProvider>().enabled = true;
             StaminaConsumption();
         }
         else if(currentStamina <= 0)
         {
-            climbProvider.enabled = false;
+            gameObject.GetComponent<ClimbProvider>().enabled = false;
         }
         StaminaRegain();
         GroundCheck();

@@ -9,6 +9,10 @@ TagManager:
   - Rock
   - Ground
   - Zipline
+  - Climbable
+  - Climb
+  - RightHand Controller
+  - LeftHand Controller
   layers:
   - Default
   - TransparentFX
