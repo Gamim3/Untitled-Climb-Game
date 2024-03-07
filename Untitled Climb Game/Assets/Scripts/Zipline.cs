@@ -15,15 +15,15 @@ public class Zipline : MonoBehaviour
     public GameObject handle;
     public GameObject endpoint;
     public GameObject player;
-    public GameObject righthandPosition;
-    public GameObject lefthandPosition;
-    public GameObject fakeHandR;
-    public GameObject fakeHandL;
-    public GameObject realHandL;
-    public GameObject realHandR;
+   // public GameObject righthandPosition;
+   // public GameObject lefthandPosition;
+   // public GameObject fakeHandR;
+   // public GameObject fakeHandL;
+//    public GameObject realHandL;
+   // public GameObject realHandR;
     public GameObject playerCam;
     public Rigidbody body;
-    public GameObject originalPlayer;
+    //public GameObject originalPlayer;
 
     public InputActionProperty leftSelectvalue;
     public InputActionProperty rightSelectvalue;
@@ -41,7 +41,7 @@ public class Zipline : MonoBehaviour
     {
         zipHandle = handle.transform.position;
         Zipping();
-        PlayerColliderFix();
+       // PlayerColliderFix();
     }
     public void Zipping()
     {
@@ -50,7 +50,7 @@ public class Zipline : MonoBehaviour
             step = speed * Time.deltaTime;
             transform.position = Vector3.MoveTowards(zipHandle, goToPoint, step);
             //player.transform.SetParent(handle.transform);
-            FollowPosition();
+            //FollowPosition();
             hasHandle = true;
         }
         else
@@ -61,7 +61,7 @@ public class Zipline : MonoBehaviour
             
         }
     }
-    private void OnTriggerEnter(Collider other)
+  /*  private void OnTriggerEnter(Collider other)
     {
         print("rightHand");
         
@@ -94,4 +94,5 @@ public class Zipline : MonoBehaviour
     {
         player.GetComponent<CapsuleCollider>().center = playerCam.transform.position;
     }
+    */
 }
