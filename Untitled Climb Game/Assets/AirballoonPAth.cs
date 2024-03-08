@@ -2,32 +2,60 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class AirballoonPAth : MonoBehaviour
 { 
-    public Transform pathPos;
+    public Transform[] pathPos;
+    public Transform playerMayNotMove;
+    public int indexForArray;
     public float speed;
     public bool readyToFly;
 
  // Start is called before the first frame update
     void Start()
     {
+        // set bool to false so balloon wont go rogue!
         readyToFly = false;   
+        indexForArray =0;
     }
 
  // Update is called once per frame
     void Update()
     {
-       transform.position= Vector3.MoveTowards(transform.position,pathPos.position,speed);
+       //if balloon is ready to fly by checking in the ontriggerEnter, Fly to the index of the array
         if(readyToFly)
         {
-           
-           
+           transform.position= Vector3.MoveTowards(transform.position,pathPos[indexForArray].position,speed);
+           GoToNextInArray();
         }
      
     }
+    // is player in on trigger 
     public void OnTriggerEnter(Collider other)
     {
-        readyToFly = true;
+        if(other.tag == "Player")
+        {
+            playerMayNotMove = other.transform;
+            playerMayNotMove.SetParent(transform);
+            readyToFly = true;
+        }
+     
+    }
+    
+    // goes to next point in array.
+     public void GoToNextInArray()
+    {
+        if(!pathPos[pathPos.Length]== pathPos[indexForArray])
+        {
+            if(transform.position == pathPos[indexForArray].position)
+            {
+             indexForArray +=1;
+            
+            }
+       
+        }
+       
+
     }
 }
