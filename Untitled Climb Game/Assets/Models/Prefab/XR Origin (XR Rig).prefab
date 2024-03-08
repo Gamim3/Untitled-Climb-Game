@@ -2808,7 +2808,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panel: {fileID: 6847465534460087937}
-  climbProvider: {fileID: 1410315651907740251}
   handCheck: {fileID: 159676142752926838}
   maxStamina: 100
   currentStamina: 0
