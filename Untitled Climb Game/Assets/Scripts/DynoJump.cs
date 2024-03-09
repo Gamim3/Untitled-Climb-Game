@@ -90,7 +90,7 @@ public class DynoJump : MonoBehaviour
                 {
                     preJumpPosition = player.transform.position;
                     rb.GetComponent<Rigidbody>().useGravity = false;
-                    rb.AddForce(rigidbodyVelocity * 0.75f ,ForceMode.Impulse);
+                    rb.AddForce(rigidbodyVelocity * 0.5f ,ForceMode.Impulse);
                     player.GetComponent<CapsuleCollider>().enabled = false;
                     startTimer = true;
                     startJumpCooldown = true;
