@@ -8,8 +8,10 @@ public class AirballoonPAth : MonoBehaviour
 { 
     public Transform[] pathPos;
     public Transform playerMayNotMove;
+    public Transform player;
     public int indexForArray;
     public float speed;
+    
     public bool readyToFly;
 
  // Start is called before the first frame update
@@ -36,8 +38,8 @@ public class AirballoonPAth : MonoBehaviour
     {
         if(other.tag == "Player")
         {
-            playerMayNotMove = other.transform;
-            playerMayNotMove.SetParent(transform);
+            
+            player.transform.position = playerMayNotMove.transform.position;
             readyToFly = true;
         }
      
@@ -46,15 +48,20 @@ public class AirballoonPAth : MonoBehaviour
     // goes to next point in array.
      public void GoToNextInArray()
     {
-        if(!pathPos[pathPos.Length]== pathPos[indexForArray])
-        {
-            if(transform.position == pathPos[indexForArray].position)
+           if(transform.position == pathPos[indexForArray].position)
             {
-             indexForArray +=1;
+                indexForArray +=1;
             
             }
+            else
+            {
+                player.transform.position = player.transform.position;
+                indexForArray +=0;
+
+            }
        
-        }
+        
+        
        
 
     }
