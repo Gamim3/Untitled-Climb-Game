@@ -13,6 +13,7 @@ public class AirballoonPAth : MonoBehaviour
     public float speed;
     
     public bool readyToFly;
+    public bool lastCheckpoint =false;
 
  // Start is called before the first frame update
     void Start()
@@ -30,6 +31,11 @@ public class AirballoonPAth : MonoBehaviour
         {
            transform.position= Vector3.MoveTowards(transform.position,pathPos[indexForArray].position,speed);
            GoToNextInArray();
+
+        }
+        if (pathPos[indexForArray] == pathPos[3]) 
+        {
+            lastCheckpoint = true;
         }
      
     }
@@ -48,7 +54,7 @@ public class AirballoonPAth : MonoBehaviour
     // goes to next point in array.
      public void GoToNextInArray()
     {
-           if(transform.position == pathPos[indexForArray].position)
+           if(transform.position == pathPos[indexForArray].position && !lastCheckpoint)
             {
                 indexForArray +=1;
             
