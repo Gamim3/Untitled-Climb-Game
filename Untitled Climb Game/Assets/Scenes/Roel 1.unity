@@ -8,8 +8,9 @@ OcclusionCullingSettings:
     smallestOccluder: 5
     smallestHole: 0.25
     backfaceThreshold: 100
-  m_SceneGUID: 00000000000000000000000000000000
-  m_OcclusionCullingData: {fileID: 0}
+  m_SceneGUID: 955d1063b4281f843a969f81a88d85c8
+  m_OcclusionCullingData: {fileID: 36300000, guid: 659f3b8ba2f235142a6d30c5d347650f,
+    type: 2}
 --- !u!104 &2
 RenderSettings:
   m_ObjectHideFlags: 0
@@ -38,7 +39,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.2997616, g: 0.38243592, b: 0.46044272, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -97,7 +98,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 112000000, guid: 86d9b01c890da6246b78ea26a44def50,
+  m_LightingDataAsset: {fileID: 112000000, guid: 186131b5c5ab97d4bb2f6f2ad3546ad8,
     type: 2}
   m_LightingSettings: {fileID: 4890085278179872738, guid: 06290fdcef4158e45a03c28640c24ae3,
     type: 2}
@@ -712,7 +713,7 @@ PrefabInstance:
     - target: {fileID: 4704512223976315449, guid: 8d2314720748d0744a9291129955fea4,
         type: 3}
       propertyPath: m_Center.y
-      value: -0.8
+      value: 0.42
       objectReference: {fileID: 0}
     - target: {fileID: 4704512223976315449, guid: 8d2314720748d0744a9291129955fea4,
         type: 3}

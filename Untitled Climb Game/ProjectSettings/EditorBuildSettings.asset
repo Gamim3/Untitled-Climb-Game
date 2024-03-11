@@ -11,9 +11,12 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Roel.unity
     guid: aa260e2c117edaf4ba16a12b39fdc562
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/BasClimbing test.unity
     guid: 94f7e80af85bd474b9f60791a6b07ff3
+  - enabled: 1
+    path: Assets/Scenes/Roel 1.unity
+    guid: 955d1063b4281f843a969f81a88d85c8
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 44b02afe70c9a42489c1f7fbc9a3fe40,
       type: 2}
