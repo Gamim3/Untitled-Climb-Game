@@ -34,12 +34,12 @@ public class AirballoonPAth : MonoBehaviour
      
     }
     // is player in on trigger 
-    public void OnTriggerEnter(Collider other)
+    public void OnTriggerStay(Collider other)
     {
         if(other.tag == "Player")
         {
-            
-            player.transform.position = playerMayNotMove.transform.position;
+
+            player.SetParent(playerMayNotMove);
             readyToFly = true;
         }
      
@@ -57,6 +57,7 @@ public class AirballoonPAth : MonoBehaviour
             {
                 player.transform.position = player.transform.position;
                 indexForArray +=0;
+                player.SetParent(null);
 
             }
        
