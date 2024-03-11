@@ -712,7 +712,7 @@ PrefabInstance:
     - target: {fileID: 4704512223976315449, guid: 8d2314720748d0744a9291129955fea4,
         type: 3}
       propertyPath: m_Center.y
-      value: 1
+      value: -0.8
       objectReference: {fileID: 0}
     - target: {fileID: 4704512223976315449, guid: 8d2314720748d0744a9291129955fea4,
         type: 3}
@@ -812,6 +812,12 @@ Transform:
   - {fileID: 1565739322}
   m_Father: {fileID: 1885080615}
   m_LocalEulerAnglesHint: {x: 63.459, y: -274.803, z: -24.073}
+--- !u!1 &85499832 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 2f28a50c29c6be14fb00444a14e026fe,
+    type: 3}
+  m_PrefabInstance: {fileID: 1887005823}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &88484239
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5393,7 +5399,7 @@ GameObject:
   - component: {fileID: 428252180}
   - component: {fileID: 428252179}
   - component: {fileID: 428252181}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder (14)
   m_TagString: Rock
   m_Icon: {fileID: 0}
@@ -6922,7 +6928,7 @@ GameObject:
   - component: {fileID: 532866968}
   - component: {fileID: 532866967}
   - component: {fileID: 532866969}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder (15)
   m_TagString: Rock
   m_Icon: {fileID: 0}
@@ -8023,6 +8029,37 @@ Transform:
   - {fileID: 2024931847}
   m_Father: {fileID: 1885080615}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &599344836
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 599344837}
+  m_Layer: 0
+  m_Name: PlayerPlacePoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &599344837
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 599344836}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -11.712, z: -8.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1952575961}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &614257221
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8349,7 +8386,7 @@ GameObject:
   - component: {fileID: 638851801}
   - component: {fileID: 638851800}
   - component: {fileID: 638851802}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder (18)
   m_TagString: Rock
   m_Icon: {fileID: 0}
@@ -9207,7 +9244,7 @@ GameObject:
   - component: {fileID: 666088363}
   - component: {fileID: 666088362}
   - component: {fileID: 666088364}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: zijspan
   m_TagString: Rock
   m_Icon: {fileID: 0}
@@ -11094,6 +11131,34 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1925798251}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &823011010 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 688387714330099096, guid: e47f9e5b347e6a342b010b696972dcfe,
+    type: 3}
+  m_PrefabInstance: {fileID: 1304536520}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &823011014
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 823011010}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 9067793445729387362, guid: dedaa15460ade144c885a500d04bfc9e, type: 3}
 --- !u!1001 &830519559
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15645,7 +15710,7 @@ GameObject:
   - component: {fileID: 1032370572}
   - component: {fileID: 1032370571}
   - component: {fileID: 1032370573}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder (13)
   m_TagString: Rock
   m_Icon: {fileID: 0}
@@ -15752,7 +15817,7 @@ GameObject:
   - component: {fileID: 1034003635}
   - component: {fileID: 1034003634}
   - component: {fileID: 1034003633}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: zijspan
   m_TagString: Rock
   m_Icon: {fileID: 0}
@@ -15966,7 +16031,7 @@ GameObject:
   - component: {fileID: 1042234455}
   - component: {fileID: 1042234454}
   - component: {fileID: 1042234456}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder (16)
   m_TagString: Rock
   m_Icon: {fileID: 0}
@@ -18871,12 +18936,6 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
---- !u!4 &1196106270 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8397864792138099776, guid: e47f9e5b347e6a342b010b696972dcfe,
-    type: 3}
-  m_PrefabInstance: {fileID: 1304536520}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1196152542
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20147,9 +20206,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1267901938}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ladder
-  m_TagString: Untagged
+  m_TagString: Rock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20163,7 +20222,7 @@ Transform:
   m_GameObject: {fileID: 1267901937}
   serializedVersion: 2
   m_LocalRotation: {x: 0.513688, y: -0.46103927, z: -0.47384804, w: 0.5468414}
-  m_LocalPosition: {x: 0.65999997, y: -26.860003, z: -14.426908}
+  m_LocalPosition: {x: 0.65999997, y: -25.99, z: -14.426908}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -22138,7 +22197,7 @@ PrefabInstance:
     - target: {fileID: 5405973381253413780, guid: e47f9e5b347e6a342b010b696972dcfe,
         type: 3}
       propertyPath: m_Colliders.Array.size
-      value: 135
+      value: 123
       objectReference: {fileID: 0}
     - target: {fileID: 5405973381253413780, guid: e47f9e5b347e6a342b010b696972dcfe,
         type: 3}
@@ -22704,117 +22763,117 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Colliders.Array.data[111]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 666088364}
     - target: {fileID: 5405973381253413780, guid: e47f9e5b347e6a342b010b696972dcfe,
         type: 3}
       propertyPath: m_Colliders.Array.data[112]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1603210533}
     - target: {fileID: 5405973381253413780, guid: e47f9e5b347e6a342b010b696972dcfe,
         type: 3}
       propertyPath: m_Colliders.Array.data[113]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1925476736}
     - target: {fileID: 5405973381253413780, guid: e47f9e5b347e6a342b010b696972dcfe,
         type: 3}
       propertyPath: m_Colliders.Array.data[114]
       value: 
-      objectReference: {fileID: 666088364}
+      objectReference: {fileID: 2058543092}
     - target: {fileID: 5405973381253413780, guid: e47f9e5b347e6a342b010b696972dcfe,
         type: 3}
       propertyPath: m_Colliders.Array.data[115]
       value: 
-      objectReference: {fileID: 1603210533}
+      objectReference: {fileID: 1032370573}
     - target: {fileID: 5405973381253413780, guid: e47f9e5b347e6a342b010b696972dcfe,
         type: 3}
       propertyPath: m_Colliders.Array.data[116]
       value: 
-      objectReference: {fileID: 1925476736}
+      objectReference: {fileID: 428252181}
     - target: {fileID: 5405973381253413780, guid: e47f9e5b347e6a342b010b696972dcfe,
         type: 3}
       propertyPath: m_Colliders.Array.data[117]
       value: 
-      objectReference: {fileID: 2058543092}
+      objectReference: {fileID: 532866969}
     - target: {fileID: 5405973381253413780, guid: e47f9e5b347e6a342b010b696972dcfe,
         type: 3}
       propertyPath: m_Colliders.Array.data[118]
       value: 
-      objectReference: {fileID: 1032370573}
+      objectReference: {fileID: 1042234456}
     - target: {fileID: 5405973381253413780, guid: e47f9e5b347e6a342b010b696972dcfe,
         type: 3}
       propertyPath: m_Colliders.Array.data[119]
       value: 
-      objectReference: {fileID: 428252181}
+      objectReference: {fileID: 1565469864}
     - target: {fileID: 5405973381253413780, guid: e47f9e5b347e6a342b010b696972dcfe,
         type: 3}
       propertyPath: m_Colliders.Array.data[120]
       value: 
-      objectReference: {fileID: 532866969}
+      objectReference: {fileID: 638851802}
     - target: {fileID: 5405973381253413780, guid: e47f9e5b347e6a342b010b696972dcfe,
         type: 3}
       propertyPath: m_Colliders.Array.data[121]
       value: 
-      objectReference: {fileID: 1042234456}
+      objectReference: {fileID: 1828303014}
     - target: {fileID: 5405973381253413780, guid: e47f9e5b347e6a342b010b696972dcfe,
         type: 3}
       propertyPath: m_Colliders.Array.data[122]
       value: 
-      objectReference: {fileID: 1565469864}
+      objectReference: {fileID: 1034003633}
     - target: {fileID: 5405973381253413780, guid: e47f9e5b347e6a342b010b696972dcfe,
         type: 3}
       propertyPath: m_Colliders.Array.data[123]
       value: 
-      objectReference: {fileID: 638851802}
+      objectReference: {fileID: 1034003633}
     - target: {fileID: 5405973381253413780, guid: e47f9e5b347e6a342b010b696972dcfe,
         type: 3}
       propertyPath: m_Colliders.Array.data[124]
       value: 
-      objectReference: {fileID: 1828303014}
+      objectReference: {fileID: 1034003633}
     - target: {fileID: 5405973381253413780, guid: e47f9e5b347e6a342b010b696972dcfe,
         type: 3}
       propertyPath: m_Colliders.Array.data[125]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1034003633}
     - target: {fileID: 5405973381253413780, guid: e47f9e5b347e6a342b010b696972dcfe,
         type: 3}
       propertyPath: m_Colliders.Array.data[126]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1034003633}
     - target: {fileID: 5405973381253413780, guid: e47f9e5b347e6a342b010b696972dcfe,
         type: 3}
       propertyPath: m_Colliders.Array.data[127]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1034003633}
     - target: {fileID: 5405973381253413780, guid: e47f9e5b347e6a342b010b696972dcfe,
         type: 3}
       propertyPath: m_Colliders.Array.data[128]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1034003633}
     - target: {fileID: 5405973381253413780, guid: e47f9e5b347e6a342b010b696972dcfe,
         type: 3}
       propertyPath: m_Colliders.Array.data[129]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1034003633}
     - target: {fileID: 5405973381253413780, guid: e47f9e5b347e6a342b010b696972dcfe,
         type: 3}
       propertyPath: m_Colliders.Array.data[130]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1034003633}
     - target: {fileID: 5405973381253413780, guid: e47f9e5b347e6a342b010b696972dcfe,
         type: 3}
       propertyPath: m_Colliders.Array.data[131]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1034003633}
     - target: {fileID: 5405973381253413780, guid: e47f9e5b347e6a342b010b696972dcfe,
         type: 3}
       propertyPath: m_Colliders.Array.data[132]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1034003633}
     - target: {fileID: 5405973381253413780, guid: e47f9e5b347e6a342b010b696972dcfe,
         type: 3}
       propertyPath: m_Colliders.Array.data[133]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1034003633}
     - target: {fileID: 5405973381253413780, guid: e47f9e5b347e6a342b010b696972dcfe,
         type: 3}
       propertyPath: m_Colliders.Array.data[134]
@@ -24195,8 +24254,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -15.185
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 835438355350213021, guid: e47f9e5b347e6a342b010b696972dcfe, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 8844736757947934695, guid: e47f9e5b347e6a342b010b696972dcfe, type: 3}
     - {fileID: 4045771520486504842, guid: e47f9e5b347e6a342b010b696972dcfe, type: 3}
@@ -24205,10 +24263,6 @@ PrefabInstance:
     - {fileID: 9185503919558993455, guid: e47f9e5b347e6a342b010b696972dcfe, type: 3}
     - {fileID: 205956688066398601, guid: e47f9e5b347e6a342b010b696972dcfe, type: 3}
     m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 8397864792138099776, guid: e47f9e5b347e6a342b010b696972dcfe,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1952575961}
     - targetCorrespondingSourceObject: {fileID: 2155629296468636256, guid: e47f9e5b347e6a342b010b696972dcfe,
         type: 3}
       insertIndex: 2
@@ -24346,6 +24400,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 387744846}
+    - targetCorrespondingSourceObject: {fileID: 688387714330099096, guid: e47f9e5b347e6a342b010b696972dcfe,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 823011014}
   m_SourcePrefab: {fileID: 100100000, guid: e47f9e5b347e6a342b010b696972dcfe, type: 3}
 --- !u!1 &1305267963
 GameObject:
@@ -28000,7 +28058,7 @@ GameObject:
   - component: {fileID: 1565469863}
   - component: {fileID: 1565469862}
   - component: {fileID: 1565469864}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder (17)
   m_TagString: Rock
   m_Icon: {fileID: 0}
@@ -29305,7 +29363,7 @@ GameObject:
   - component: {fileID: 1603210532}
   - component: {fileID: 1603210531}
   - component: {fileID: 1603210533}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder (2)
   m_TagString: Rock
   m_Icon: {fileID: 0}
@@ -29837,8 +29895,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2.6811156, y: 0.21447372, z: 1.0467908}
-  m_Center: {x: 0, y: -21.639399, z: 0.11951196}
+  m_Size: {x: 2.6811156, y: 0.3764, z: 1.110647}
+  m_Center: {x: 0, y: -21.720362, z: 0.15144002}
 --- !u!4 &1654518988 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2125042870029826048, guid: 277cc8c41be1e3d4b85b0c7ebdb9f1b2,
@@ -30195,7 +30253,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1692527767}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: PlayerPos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31231,7 +31289,7 @@ PrefabInstance:
     - target: {fileID: 3058312581611946345, guid: b633cb29a9fcb994f9bd5243c5d09071,
         type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3984024315397640701, guid: b633cb29a9fcb994f9bd5243c5d09071,
         type: 3}
@@ -31241,7 +31299,7 @@ PrefabInstance:
     - target: {fileID: 4323958863016217415, guid: b633cb29a9fcb994f9bd5243c5d09071,
         type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5396381935463509505, guid: b633cb29a9fcb994f9bd5243c5d09071,
         type: 3}
@@ -31316,7 +31374,7 @@ PrefabInstance:
     - target: {fileID: 9048527105898742006, guid: b633cb29a9fcb994f9bd5243c5d09071,
         type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9048527105898742006, guid: b633cb29a9fcb994f9bd5243c5d09071,
         type: 3}
@@ -33615,7 +33673,7 @@ GameObject:
   - component: {fileID: 1828303013}
   - component: {fileID: 1828303012}
   - component: {fileID: 1828303014}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder (19)
   m_TagString: Rock
   m_Icon: {fileID: 0}
@@ -33733,7 +33791,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 17.807554, y: 0.29153824, z: 4.630967}
   m_Center: {x: 0.33149433, y: 10.09, z: -5.970184}
@@ -34285,7 +34343,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2f28a50c29c6be14fb00444a14e026fe,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1887005827}
   m_SourcePrefab: {fileID: 100100000, guid: 2f28a50c29c6be14fb00444a14e026fe, type: 3}
 --- !u!4 &1887005824 stripped
 Transform:
@@ -34293,6 +34355,28 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1887005823}
   m_PrefabAsset: {fileID: 0}
+--- !u!64 &1887005827
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 85499832}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 8334816233214789825, guid: 2f28a50c29c6be14fb00444a14e026fe, type: 3}
 --- !u!65 &1891181197 stripped
 BoxCollider:
   m_CorrespondingSourceObject: {fileID: 2002730682790449328, guid: 212bd395231b9aa47a22c0636289f393,
@@ -34708,7 +34792,7 @@ GameObject:
   - component: {fileID: 1925476735}
   - component: {fileID: 1925476734}
   - component: {fileID: 1925476736}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder (20)
   m_TagString: Rock
   m_Icon: {fileID: 0}
@@ -35514,12 +35598,12 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1196106270}
+    m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 613021170119149440, guid: 277cc8c41be1e3d4b85b0c7ebdb9f1b2,
         type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2125042870029826048, guid: 277cc8c41be1e3d4b85b0c7ebdb9f1b2,
         type: 3}
@@ -35544,7 +35628,7 @@ PrefabInstance:
     - target: {fileID: 2813606497268555880, guid: 277cc8c41be1e3d4b85b0c7ebdb9f1b2,
         type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3188584404085390034, guid: 277cc8c41be1e3d4b85b0c7ebdb9f1b2,
         type: 3}
@@ -35554,7 +35638,7 @@ PrefabInstance:
     - target: {fileID: 3188584404085390034, guid: 277cc8c41be1e3d4b85b0c7ebdb9f1b2,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 47.24
+      value: 47.47
       objectReference: {fileID: 0}
     - target: {fileID: 3188584404085390034, guid: 277cc8c41be1e3d4b85b0c7ebdb9f1b2,
         type: 3}
@@ -35609,11 +35693,15 @@ PrefabInstance:
     - target: {fileID: 8173902538664920008, guid: 277cc8c41be1e3d4b85b0c7ebdb9f1b2,
         type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 3188584404085390034, guid: 277cc8c41be1e3d4b85b0c7ebdb9f1b2,
+        type: 3}
+      insertIndex: 0
+      addedObject: {fileID: 599344837}
     - targetCorrespondingSourceObject: {fileID: 3188584404085390034, guid: 277cc8c41be1e3d4b85b0c7ebdb9f1b2,
         type: 3}
       insertIndex: -1
@@ -35663,11 +35751,12 @@ MonoBehaviour:
   - {fileID: 326296125}
   - {fileID: 455270380}
   - {fileID: 1880921631}
-  playerMayNotMove: {fileID: 1692527767}
+  playerMayNotMove: {fileID: 599344837}
   player: {fileID: 1673762684}
   indexForArray: 0
-  speed: 0.03
+  speed: 0.2
   readyToFly: 0
+  lastCheckpoint: 0
 --- !u!65 &1952575963
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -35687,8 +35776,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.6527224, y: 2.03265, z: 1.2391005}
-  m_Center: {x: 0.037665367, y: -11.6535015, z: -8.490345}
+  m_Size: {x: 1.6527224, y: 2.03265, z: 0.5880356}
+  m_Center: {x: 0.037665367, y: -11.6535015, z: -8.299034}
 --- !u!65 &1961823673 stripped
 BoxCollider:
   m_CorrespondingSourceObject: {fileID: 581382143364759616, guid: e47f9e5b347e6a342b010b696972dcfe,
@@ -36792,7 +36881,7 @@ GameObject:
   - component: {fileID: 2058543091}
   - component: {fileID: 2058543090}
   - component: {fileID: 2058543092}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder (12)
   m_TagString: Rock
   m_Icon: {fileID: 0}
@@ -38091,6 +38180,7 @@ SceneRoots:
   - {fileID: 35766862}
   - {fileID: 503705448}
   - {fileID: 1098787143}
+  - {fileID: 1952575960}
   - {fileID: 78117403}
   - {fileID: 1304536520}
   - {fileID: 1022999241}
