@@ -597,8 +597,61 @@ PrefabInstance:
       objectReference: {fileID: 473711584}
     - target: {fileID: 103883459478846497, guid: 8d2314720748d0744a9291129955fea4,
         type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 860098947}
+    - target: {fileID: 103883459478846497, guid: 8d2314720748d0744a9291129955fea4,
+        type: 3}
+      propertyPath: velocityProperty.m_Reference
+      value: 
+      objectReference: {fileID: -4141897982327291093, guid: c348712bda248c246b8c49b3db54643f,
+        type: 3}
+    - target: {fileID: 103883459478846497, guid: 8d2314720748d0744a9291129955fea4,
+        type: 3}
+      propertyPath: velocityPropertyL.m_Reference
+      value: 
+      objectReference: {fileID: -4141897982327291093, guid: c348712bda248c246b8c49b3db54643f,
+        type: 3}
+    - target: {fileID: 103883459478846497, guid: 8d2314720748d0744a9291129955fea4,
+        type: 3}
+      propertyPath: velocityPropertyR.m_Reference
+      value: 
+      objectReference: {fileID: -2139365227161825804, guid: c348712bda248c246b8c49b3db54643f,
+        type: 3}
+    - target: {fileID: 103883459478846497, guid: 8d2314720748d0744a9291129955fea4,
+        type: 3}
+      propertyPath: velocityProperty.m_UseReference
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 103883459478846497, guid: 8d2314720748d0744a9291129955fea4,
+        type: 3}
       propertyPath: rightPressUiValue.m_UseReference
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 103883459478846497, guid: 8d2314720748d0744a9291129955fea4,
+        type: 3}
+      propertyPath: velocityProperty.m_Action.m_Name
+      value: Velocity Property
+      objectReference: {fileID: 0}
+    - target: {fileID: 103883459478846497, guid: 8d2314720748d0744a9291129955fea4,
+        type: 3}
+      propertyPath: velocityPropertyL.m_UseReference
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 103883459478846497, guid: 8d2314720748d0744a9291129955fea4,
+        type: 3}
+      propertyPath: velocityPropertyR.m_UseReference
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 103883459478846497, guid: 8d2314720748d0744a9291129955fea4,
+        type: 3}
+      propertyPath: velocityPropertyL.m_Action.m_Name
+      value: Velocity Property L
+      objectReference: {fileID: 0}
+    - target: {fileID: 103883459478846497, guid: 8d2314720748d0744a9291129955fea4,
+        type: 3}
+      propertyPath: velocityPropertyR.m_Action.m_Name
+      value: Velocity Property R
       objectReference: {fileID: 0}
     - target: {fileID: 485282594491051940, guid: 8d2314720748d0744a9291129955fea4,
         type: 3}
@@ -665,6 +718,11 @@ PrefabInstance:
       propertyPath: m_System
       value: 
       objectReference: {fileID: 473711578}
+    - target: {fileID: 1410315651907740251, guid: 8d2314720748d0744a9291129955fea4,
+        type: 3}
+      propertyPath: m_ClimbSettings.m_ConstantValue.m_AllowFreeZMovement
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1626880439179407774, guid: 8d2314720748d0744a9291129955fea4,
         type: 3}
       propertyPath: m_UseGravity
@@ -700,6 +758,11 @@ PrefabInstance:
       propertyPath: climbProvider
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 4524567707938630359, guid: 8d2314720748d0744a9291129955fea4,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.166
+      objectReference: {fileID: 0}
     - target: {fileID: 4704512223976315449, guid: 8d2314720748d0744a9291129955fea4,
         type: 3}
       propertyPath: m_Height
@@ -724,6 +787,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_ExcludeLayers.m_Bits
       value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 4934958220647084153, guid: 8d2314720748d0744a9291129955fea4,
+        type: 3}
+      propertyPath: m_CurrentTrackingState
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 5543590693726327679, guid: 8d2314720748d0744a9291129955fea4,
         type: 3}
@@ -10352,6 +10420,37 @@ BoxCollider:
     type: 3}
   m_PrefabInstance: {fileID: 1304536520}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &764009574
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 764009575}
+  m_Layer: 0
+  m_Name: CamFollow
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &764009575
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 764009574}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.60286444, z: -0, w: 0.79784364}
+  m_LocalPosition: {x: -6.63, y: 1.896, z: 3.94}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &768618425
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12544,6 +12643,12 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!20 &860098947 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 6434545598634843577, guid: 8d2314720748d0744a9291129955fea4,
+    type: 3}
+  m_PrefabInstance: {fileID: 78117403}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &863190745
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -38190,3 +38295,4 @@ SceneRoots:
   - {fileID: 1744866549}
   - {fileID: 1812715954}
   - {fileID: 1141723520}
+  - {fileID: 764009575}

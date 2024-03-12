@@ -30,27 +30,47 @@ public class DynoJump : MonoBehaviour
     public float speed;
     public float timer;
     public float jumpCooldown;
-    public float averageHand;
+    public float playerRotation;
+    public Vector3 avarageDirection;
+    public Vector3 averageHand;
     public Vector3 rigidbodyVelocity;
     public Vector3 currentPosition;
     public Vector3 lastPosition;
-  
+    public Vector3 jump;
+    public Vector3 directionY;
+    public Vector3 directionX;
     public InputActionProperty leftSelectValue;
     public InputActionProperty rightSelectValue;
     public InputActionProperty rightTriggerValue;
     public InputActionProperty leftTriggerValue;
 
+    public InputActionProperty velocityPropertyR;
+    public InputActionProperty velocityPropertyL;
+    public Vector3 velocityR;
+    public Vector3 velocityL;
+    public Vector3 velocityAv;
     public InputActionProperty rightPressUiValue;
     // Start is called before the first frame update
     void Start()
     {
         timer = 1.2f;
-        jumpCooldown = 4f;
+        jumpCooldown = 3f;
     }
 
     // Update is called once per frame
     void Update()
     {
+        velocityL = velocityPropertyR.action.ReadValue<Vector3>();
+        velocityR = velocityPropertyL.action.ReadValue<Vector3>();
+        velocityAv.x = (velocityR.x + velocityL.x) / 2;
+        velocityAv.y = (velocityR.y + velocityL.y) / 2;
+        Debug.Log(velocityAv);
+        //transform.localPosition = Quaternion.Euler(playerBody.position.x, playerBody.position.y,playerBody.position.z);
+        jump = ((playerBody.transform.up * -rb.velocity.y + playerBody.transform.right * -rb.velocity.x + playerBody.transform.forward * -rb.velocity.z));
+        directionY = new Vector3(0, jump.y, 0);
+        directionX = new Vector3(jump.x, 0, jump.z);
+
+        avarageDirection = (directionX + directionY);
         
         if (startTimer)
         {
@@ -66,42 +86,69 @@ public class DynoJump : MonoBehaviour
             timer = 1.2f;
             jumpCooldown = 4f;
         }
-        TestJump();
-        
+    
+        //rigidbodyVelocity = new Vector3(rb.velocity.x * 50, -rb.velocity.y, 0f);
         UseGravity();
-        handPositionR.y = playerHandR.position.y;
-        handPositionL.y = playerHandL.position.y;
+        handPositionR = playerHandR.position;
+        handPositionL = playerHandL.position;
         bodyPosition = playerBody.position;
 
-        averageHand = (handPositionL.y + handPositionR.y) / 2;
+        averageHand = (handPositionL + handPositionR) / 2;
         //Debug.Log(averageHand);
     }
-   
 
+    public void FixedUpdate()
+    {
+        TestJump();
+    }
     public void TestJump()
     {
         if (onWall)
         {
-            if (averageHand <= bodyPosition.y)
+           // Vector3 floris = new Vector3(rb.velocity.x, rb.velocity.y, rb.velocity.z);
+            if (averageHand.y <= bodyPosition.y)
             {
-                rigidbodyVelocity = new Vector3(rb.velocity.x, - rb.velocity.y, 0f);
-                float averageVelocity =  rigidbodyVelocity.magnitude;
+               // Debug.Log(rb.velocity.x);
+              //  float averageVelocity =  rigidbodyVelocity.magnitude;
                 if (rightSelectValue.action.ReadValue<float>() <= 0.1f && leftSelectValue.action.ReadValue<float>() <= 0.1f && jumped == false)
                 {
-                    preJumpPosition = player.transform.position;
-                    rb.GetComponent<Rigidbody>().useGravity = false;
-                    rb.AddForce(rigidbodyVelocity * 0.75f ,ForceMode.Impulse);
                     player.GetComponent<CapsuleCollider>().enabled = false;
+                    rb.GetComponent<Rigidbody>().useGravity = false;
+                    rb.constraints = RigidbodyConstraints.FreezePositionZ;
+                    //rb.velocity = -rb.velocity * 2;
+                    rb.AddRelativeForce(new Vector3(-velocityAv.x *2, - velocityAv.y,0),ForceMode.Impulse);
+                    //rb.AddRelativeForce(-directionX * 0.75f, ForceMode.VelocityChange);
                     startTimer = true;
                     startJumpCooldown = true;
                     jumped = true;
                     Debug.Log("DynoJump:)");
-                    //player.GetComponent<CapsuleCollider>().enabled = false;
 
 
                 }
             }
-            
+            //if(averageHand.x >= bodyPosition.x)
+            //{
+            //    if (rightSelectValue.action.ReadValue<float>() <= 0.1f && leftSelectValue.action.ReadValue<float>() <= 0.1f && jumped == false)
+            //    {
+            //        rb.AddRelativeForce(new Vector3(-floris.x, 0, -floris.z) * 100f, ForceMode.VelocityChange);
+            //        Debug.LogError("sideJumpRoel!");
+            //        jumped = true;
+            //        startTimer = true;
+            //        startJumpCooldown = true;
+            //    }
+            //}
+            //if (averageHand.x <= bodyPosition.x)
+            //{
+            //    if (rightSelectValue.action.ReadValue<float>() <= 0.1f && leftSelectValue.action.ReadValue<float>() <= 0.1f && jumped == false)
+            //    {
+            //        rb.AddRelativeForce(new Vector3(floris.x, 0, floris.z) * 100f, ForceMode.VelocityChange);
+            //        Debug.LogError("sideJumpJelmer!");
+            //        jumped = true;
+            //        startTimer = true;
+            //        startJumpCooldown = true;
+            //    }
+            //}
+
         }
     }
    
@@ -110,9 +157,11 @@ public class DynoJump : MonoBehaviour
         if (timer <= 0)
         {
             rb.GetComponent<Rigidbody>().useGravity = true;
+            
             startTimer = false;
             player.GetComponent<CapsuleCollider>().enabled = true;
-            
+            rb.constraints = RigidbodyConstraints.None;
+            rb.constraints = RigidbodyConstraints.FreezeRotation;
 
         }
         if(jumpCooldown <= 0)
