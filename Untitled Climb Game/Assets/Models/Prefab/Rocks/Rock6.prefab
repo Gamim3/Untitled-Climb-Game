@@ -9,12 +9,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1209793757201799285}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Rock6
   m_TagString: Rock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1209793757201799285
 Transform:
@@ -43,12 +43,12 @@ GameObject:
   m_Component:
   - component: {fileID: 3596703981725847971}
   - component: {fileID: 4239704947657997646}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Grips (3)
   m_TagString: Rock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &3596703981725847971
 Transform:
@@ -96,12 +96,12 @@ GameObject:
   m_Component:
   - component: {fileID: 3820674636617501382}
   - component: {fileID: 2341798720017971061}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Grips (2)
   m_TagString: Rock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &3820674636617501382
 Transform:
@@ -149,12 +149,12 @@ GameObject:
   m_Component:
   - component: {fileID: 2885320576649677573}
   - component: {fileID: 6408936835833427677}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Grips (1)
   m_TagString: Rock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &2885320576649677573
 Transform:
@@ -202,12 +202,12 @@ GameObject:
   m_Component:
   - component: {fileID: 6029800039824198932}
   - component: {fileID: 8442983666914018035}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Grips (5)
   m_TagString: Rock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &6029800039824198932
 Transform:
@@ -255,12 +255,12 @@ GameObject:
   m_Component:
   - component: {fileID: 3766614298532903213}
   - component: {fileID: 4422893103894639652}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Grips
   m_TagString: Rock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &3766614298532903213
 Transform:
@@ -308,12 +308,12 @@ GameObject:
   m_Component:
   - component: {fileID: 3131992172559176013}
   - component: {fileID: 1396357490038525607}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Grips (4)
   m_TagString: Rock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &3131992172559176013
 Transform:
@@ -361,12 +361,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1364866495636444357}
   - component: {fileID: 2758676157695556519}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Grips (6)
   m_TagString: Rock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1364866495636444357
 Transform:
@@ -413,12 +413,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1049047655837857111}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Holdables
   m_TagString: Rock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1049047655837857111
 Transform:
@@ -512,8 +512,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: daa34ff78954a0841b08f131c69b6991,
         type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: daa34ff78954a0841b08f131c69b6991,
+        type: 3}
       propertyPath: m_TagString
       value: Rock
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: daa34ff78954a0841b08f131c69b6991,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
