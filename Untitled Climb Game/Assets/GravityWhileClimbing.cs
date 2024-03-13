@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Animations;
 using UnityEngine.InputSystem;
 public class GravityWhileClimbing : MonoBehaviour
 {
@@ -10,11 +11,12 @@ public class GravityWhileClimbing : MonoBehaviour
     public GameObject rightHand;
     public GameObject leftHand;
     public GameObject moveProvider;
+    public GameObject playerRotatePoint;
     //public XRDirectInteractor leftDirectGrab;
     //public XRDirectInteractor rightDirectGrab;
     public InputActionProperty leftSelectvalue;
     public InputActionProperty rightSelectvalue;
-
+    public LookAtConstraint lookat;
 
     public void Start()
     {
@@ -26,6 +28,13 @@ public class GravityWhileClimbing : MonoBehaviour
 
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Rock"))
+        {
+            lookat.useUpObject = other.transform;
+        }
+    }
     private void OnTriggerStay(Collider other)
     {
         if (other.CompareTag("Rock") && leftSelectvalue.action.ReadValue<float>() > 0.1f)

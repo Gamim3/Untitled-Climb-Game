@@ -2879,6 +2879,8 @@ MonoBehaviour:
   playerHandR: {fileID: 7787899862182575907}
   playerHandL: {fileID: 389974302018580934}
   playerBody: {fileID: 4524567707938630359}
+  playerRotationPoint: {fileID: 0}
+  cube: {fileID: 0}
   handPositionL: {x: 0, y: 0, z: 0}
   handPositionR: {x: 0, y: 0, z: 0}
   bodyPosition: {x: 0, y: 0, z: 0}
@@ -2952,6 +2954,64 @@ MonoBehaviour:
       m_SingletonActionBindings: []
       m_Flags: 0
     m_Reference: {fileID: 0}
+  velocityPropertyR:
+    m_UseReference: 0
+    m_Action:
+      m_Name: 
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 8d6cd7a6-77f8-450c-ac22-ae37aa745c90
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 0}
+  velocityPropertyL:
+    m_UseReference: 0
+    m_Action:
+      m_Name: 
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 5040f150-2d9a-4af6-a7a7-733d56129986
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 0}
+  rotationPropertyR:
+    m_UseReference: 0
+    m_Action:
+      m_Name: 
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 52249363-1fd3-4426-938d-b548dd272e30
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 0}
+  rotationPropertyL:
+    m_UseReference: 0
+    m_Action:
+      m_Name: 
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 3b6a606a-833f-49fe-8a94-73d03e95d19a
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 0}
+  velocityR: {x: 0, y: 0, z: 0}
+  velocityL: {x: 0, y: 0, z: 0}
+  rotationL: {x: 0, y: 0, z: 0}
+  rotationR: {x: 0, y: 0, z: 0}
+  rotationAv: {x: 0, y: 0, z: 0}
+  velocityAv: {x: 0, y: 0, z: 0}
+  startJumpPosition: {x: 0, y: 0, z: 0}
+  jumpDirection: {x: 0, y: 0, z: 0}
+  endJumpPoint: {x: 0, y: 0, z: 0}
+  playerbodyRotation: {x: 0, y: 0, z: 0}
   rightPressUiValue:
     m_UseReference: 1
     m_Action:
