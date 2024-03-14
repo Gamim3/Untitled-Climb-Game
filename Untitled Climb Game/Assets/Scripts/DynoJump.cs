@@ -14,6 +14,10 @@ public class DynoJump : MonoBehaviour
     public Transform playerHandL;
     public Transform playerBody;
     public Transform playerRotationPoint;
+    public Transform averageHandPosition;
+    public Transform averageTestRot;
+    public float averageHandRotationPoint;
+    public Vector3 averageHandRotation;
 
     public GameObject cube;
 
@@ -74,15 +78,26 @@ public class DynoJump : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        handPositionR = playerHandR.position;
+        handPositionL = playerHandL.position;
+        bodyPosition = playerBody.position;
+
+        averageHand = (handPositionL + handPositionR) / 2;
+        rotationAv.y = (playerHandR.localRotation.y + playerHandL.localRotation.y) / 2;
+       // averageHandRotation = new Vector3(0, rotationAv.y, 0);
+        averageHandPosition.position = averageHand;
         velocityL = velocityPropertyR.action.ReadValue<Vector3>();
         velocityR = velocityPropertyL.action.ReadValue<Vector3>();
+        
+        
         
         velocityAv.x = (velocityR.x + velocityL.x) / 2;
         velocityAv.y = (velocityR.y + velocityL.y) / 2;
         playerbodyRotation = new Vector3(playerRotationPoint.localRotation.x, playerRotationPoint.localRotation.y, playerRotationPoint.localRotation.z) ;
         jumpDirection = new Vector3(velocityAv.x * 1.5f , velocityAv.y, 0);
         cube.transform.position = endJumpPoint;
+
+        
         
         
         //transform.localPosition = Quaternion.Euler(playerBody.position.x, playerBody.position.y,playerBody.position.z);
@@ -107,11 +122,7 @@ public class DynoJump : MonoBehaviour
     
         //rigidbodyVelocity = new Vector3(rb.velocity.x * 50, -rb.velocity.y, 0f);
         UseGravity();
-        handPositionR = playerHandR.position;
-        handPositionL = playerHandL.position;
-        bodyPosition = playerBody.position;
-
-        averageHand = (handPositionL + handPositionR) / 2;
+        
         //Debug.Log(averageHand);
     }
 

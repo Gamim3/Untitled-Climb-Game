@@ -1367,7 +1367,7 @@
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "first",
+                    "name": "First",
                     "id": "3722d501-eb80-4f61-9361-08a5ea7a1394",
                     "path": "<XRController>{RightHand}/pointerRotation",
                     "interactions": "",
@@ -1378,7 +1378,7 @@
                     "isPartOfComposite": true
                 },
                 {
-                    "name": "second",
+                    "name": "Second",
                     "id": "2e6ad191-d5aa-4919-aac6-295c83387a72",
                     "path": "<XRController>{RightHand}/deviceRotation",
                     "interactions": "",
@@ -1389,12 +1389,12 @@
                     "isPartOfComposite": true
                 },
                 {
-                    "name": "third",
-                    "id": "b9ecb60d-341e-47cf-b50a-41d5815af8b0",
-                    "path": "<XRHandDevice>{RightHand}/deviceRotation",
+                    "name": "Third",
+                    "id": "8938b625-bb0c-4771-a9b5-6c9e1123caad",
+                    "path": "",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Generic XR Controller",
+                    "groups": "",
                     "action": "Rotation",
                     "isComposite": false,
                     "isPartOfComposite": true

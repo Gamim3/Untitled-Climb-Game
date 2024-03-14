@@ -16,7 +16,6 @@ public class GravityWhileClimbing : MonoBehaviour
     //public XRDirectInteractor rightDirectGrab;
     public InputActionProperty leftSelectvalue;
     public InputActionProperty rightSelectvalue;
-    public LookAtConstraint lookat;
 
     public void Start()
     {
@@ -32,7 +31,7 @@ public class GravityWhileClimbing : MonoBehaviour
     {
         if (other.CompareTag("Rock"))
         {
-            lookat.useUpObject = other.transform;
+           //lookat.useUpObject = other.transform;
         }
     }
     private void OnTriggerStay(Collider other)
