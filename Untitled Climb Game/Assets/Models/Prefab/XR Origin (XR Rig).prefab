@@ -57,7 +57,7 @@ Transform:
   m_GameObject: {fileID: 292039783297393513}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.2, z: 0}
+  m_LocalPosition: {x: 0, y: -0.166, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2557,7 +2557,7 @@ GameObject:
   - component: {fileID: 103883459478846497}
   m_Layer: 6
   m_Name: XR Origin (XR Rig)
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2594,7 +2594,7 @@ MonoBehaviour:
   m_Camera: {fileID: 6434545598634843577}
   m_OriginBaseGameObject: {fileID: 5708167583290570310}
   m_CameraFloorOffsetObject: {fileID: 6431822863407165179}
-  m_RequestedTrackingOriginMode: 0
+  m_RequestedTrackingOriginMode: 2
   m_CameraYOffset: 1.1176
 --- !u!114 &4540201312468843970
 MonoBehaviour:
@@ -2754,7 +2754,7 @@ Rigidbody:
   m_GameObject: {fileID: 5708167583290570310}
   serializedVersion: 4
   m_Mass: 0.5
-  m_Drag: 2
+  m_Drag: 1.5
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
@@ -2770,7 +2770,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 120
   m_CollisionDetection: 0
 --- !u!136 &4704512223976315449
 CapsuleCollider:
@@ -2785,16 +2785,16 @@ CapsuleCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 256
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.13512796
-  m_Height: 0.45061782
+  m_Radius: 0.1
+  m_Height: 1
   m_Direction: 1
-  m_Center: {x: 0, y: -0.06295611, z: -0.3244884}
+  m_Center: {x: 0, y: 0.42, z: 0}
 --- !u!114 &3955300537770313628
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2802,7 +2802,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5708167583290570310}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a9a452910980254b8024206da5bee8e, type: 3}
   m_Name: 
@@ -2838,6 +2838,7 @@ MonoBehaviour:
   rightHand: {fileID: 3465572546167303955}
   leftHand: {fileID: 7041465129115393635}
   moveProvider: {fileID: 5708167583290570310}
+  playerRotatePoint: {fileID: 3044476705458228395}
   leftSelectvalue:
     m_UseReference: 1
     m_Action:
@@ -2880,6 +2881,10 @@ MonoBehaviour:
   playerHandL: {fileID: 389974302018580934}
   playerBody: {fileID: 4524567707938630359}
   playerRotationPoint: {fileID: 0}
+  averageHandPosition: {fileID: 0}
+  averageTestRot: {fileID: 0}
+  averageHandRotationPoint: 0
+  averageHandRotation: {x: 0, y: 0, z: 0}
   cube: {fileID: 0}
   handPositionL: {x: 0, y: 0, z: 0}
   handPositionR: {x: 0, y: 0, z: 0}
@@ -2892,7 +2897,7 @@ MonoBehaviour:
   jumped: 0
   player: {fileID: 5708167583290570310}
   rb: {fileID: 910493554156983494}
-  speed: 50
+  speed: 300
   timer: 30
   jumpCooldown: 0
   playerRotation: 0
@@ -2955,9 +2960,9 @@ MonoBehaviour:
       m_Flags: 0
     m_Reference: {fileID: 0}
   velocityPropertyR:
-    m_UseReference: 0
+    m_UseReference: 1
     m_Action:
-      m_Name: 
+      m_Name: Velocity Property R
       m_Type: 0
       m_ExpectedControlType: 
       m_Id: 8d6cd7a6-77f8-450c-ac22-ae37aa745c90
@@ -2965,11 +2970,12 @@ MonoBehaviour:
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
-    m_Reference: {fileID: 0}
+    m_Reference: {fileID: -2139365227161825804, guid: c348712bda248c246b8c49b3db54643f,
+      type: 3}
   velocityPropertyL:
-    m_UseReference: 0
+    m_UseReference: 1
     m_Action:
-      m_Name: 
+      m_Name: Velocity Property L
       m_Type: 0
       m_ExpectedControlType: 
       m_Id: 5040f150-2d9a-4af6-a7a7-733d56129986
@@ -2977,11 +2983,12 @@ MonoBehaviour:
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
-    m_Reference: {fileID: 0}
+    m_Reference: {fileID: -4141897982327291093, guid: c348712bda248c246b8c49b3db54643f,
+      type: 3}
   rotationPropertyR:
-    m_UseReference: 0
+    m_UseReference: 1
     m_Action:
-      m_Name: 
+      m_Name: Rotation Property R
       m_Type: 0
       m_ExpectedControlType: 
       m_Id: 52249363-1fd3-4426-938d-b548dd272e30
@@ -2989,11 +2996,12 @@ MonoBehaviour:
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
-    m_Reference: {fileID: 0}
+    m_Reference: {fileID: 5101698808175986029, guid: c348712bda248c246b8c49b3db54643f,
+      type: 3}
   rotationPropertyL:
-    m_UseReference: 0
+    m_UseReference: 1
     m_Action:
-      m_Name: 
+      m_Name: Rotation Property L
       m_Type: 0
       m_ExpectedControlType: 
       m_Id: 3b6a606a-833f-49fe-8a94-73d03e95d19a
@@ -3001,7 +3009,8 @@ MonoBehaviour:
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
-    m_Reference: {fileID: 0}
+    m_Reference: {fileID: 8248158260566104461, guid: c348712bda248c246b8c49b3db54643f,
+      type: 3}
   velocityR: {x: 0, y: 0, z: 0}
   velocityL: {x: 0, y: 0, z: 0}
   rotationL: {x: 0, y: 0, z: 0}
@@ -3013,7 +3022,7 @@ MonoBehaviour:
   endJumpPoint: {x: 0, y: 0, z: 0}
   playerbodyRotation: {x: 0, y: 0, z: 0}
   rightPressUiValue:
-    m_UseReference: 1
+    m_UseReference: 0
     m_Action:
       m_Name: Right Press Ui Value
       m_Type: 0

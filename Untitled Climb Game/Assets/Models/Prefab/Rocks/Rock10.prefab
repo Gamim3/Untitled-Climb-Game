@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6495079716807290838}
   - component: {fileID: 6292651153289199922}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Holds (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -63,7 +63,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5170800730480879292}
   - component: {fileID: 7402183151885657142}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Holds (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,7 +116,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4672243520796559811}
   - component: {fileID: 4104914992668448914}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Holds
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -168,7 +168,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1788546702842583203}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Holdables
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -190,6 +190,7 @@ Transform:
   m_Children:
   - {fileID: 4672243520796559811}
   - {fileID: 5170800730480879292}
+  - {fileID: 6303329491432229309}
   - {fileID: 2463748302811715939}
   - {fileID: 6495079716807290838}
   m_Father: {fileID: 7310412270022700850}
@@ -204,7 +205,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2463748302811715939}
   - component: {fileID: 4281132483421871576}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Holds (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -247,6 +248,59 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.68178725, y: 0.061072282, z: 0.09464959}
   m_Center: {x: 0.0031130316, y: 0.007727936, z: -0.00932854}
+--- !u!1 &9051369534809429327
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6303329491432229309}
+  - component: {fileID: 4426150038489449293}
+  m_Layer: 8
+  m_Name: Holds (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6303329491432229309
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9051369534809429327}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.000000007450581, y: 0.00000014901161, z: -0.032728054, w: 0.99946433}
+  m_LocalPosition: {x: -0.393, y: 0.142, z: 0.1855}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1788546702842583203}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -3.751}
+--- !u!65 &4426150038489449293
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9051369534809429327}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.5383122, y: 0.07271098, z: 0.09464959}
+  m_Center: {x: 0.06514992, y: 0.0019085854, z: -0.009328537}
 --- !u!1 &9056366581501711139
 GameObject:
   m_ObjectHideFlags: 0
@@ -256,9 +310,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7310412270022700850}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Rock10
-  m_TagString: Untagged
+  m_TagString: Rock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -347,6 +401,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rock10
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 28a2fb0bd82a246489c5857770f3a211,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

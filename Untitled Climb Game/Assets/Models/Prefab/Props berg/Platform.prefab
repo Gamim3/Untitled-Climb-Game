@@ -11,32 +11,32 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 3b99e8282aae0694aa29dda8995a9c7d,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 27.41
+      value: -5.173
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3b99e8282aae0694aa29dda8995a9c7d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 53.063572
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3b99e8282aae0694aa29dda8995a9c7d,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 6.122
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3b99e8282aae0694aa29dda8995a9c7d,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.94901806
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3b99e8282aae0694aa29dda8995a9c7d,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3b99e8282aae0694aa29dda8995a9c7d,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: -0.31522194
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3b99e8282aae0694aa29dda8995a9c7d,
         type: 3}
@@ -51,7 +51,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 3b99e8282aae0694aa29dda8995a9c7d,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: -36.748
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3b99e8282aae0694aa29dda8995a9c7d,
         type: 3}
@@ -103,4 +103,4 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 1.2563355, y: 0.23338795, z: 1.4044672}
-  m_Center: {x: -0.40615842, y: 0.016693946, z: -0.31476277}
+  m_Center: {x: -0.027778715, y: 0.11669396, z: -0.702233}
