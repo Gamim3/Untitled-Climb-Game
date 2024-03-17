@@ -140,19 +140,20 @@ public class DynoJump : MonoBehaviour
             {
                 startJumpPosition = transform.position;
                 endJumpPoint = new Vector3((startJumpPosition.x + -velocityAv.x), (startJumpPosition.y + -velocityAv.y) * Time.deltaTime);
-                if (velocityAv.y <=-1f || velocityAv.x >= 0.2f || velocityAv.x <= -0.2f)
+                if (velocityAv.y <=-2f)
                 {
                     Debug.Log(velocityAv);
                     if (rightSelectValue.action.ReadValue<float>() <= 0.1f && leftSelectValue.action.ReadValue<float>() <= 0.1f && jumped == false)
                     {
 
                         player.GetComponent<CapsuleCollider>().enabled = false;
+                        rb.velocity = -rb.velocity * 2;
                         // rb.GetComponent<Rigidbody>().useGravity = false;
                         //Vector3.Slerp(startJumpPosition, endJumpPoint, Time.deltaTime);
                         //transform.Translate(Vector3.Slerp(startJumpPosition, endJumpPoint, Time.deltaTime), Space.Self);
                         //rb.constraints = RigidbodyConstraints.FreezePositionZ;
                         //rb.velocity = -velocityAv;
-                        transform.Translate(Vector3.Slerp(new Vector3(-velocityAv.x * 2,-velocityAv.y,0), endJumpPoint, Time.deltaTime )); 
+                        //transform.Translate(Vector3.Slerp(new Vector3(-velocityAv.x * 2,-velocityAv.y,0), endJumpPoint, Time.deltaTime )); 
                         //rb.AddRelativeForce(-jumpDirection ,ForceMode.Impulse);
                         //rb.AddRelativeForce(-directionX * 0.75f, ForceMode.VelocityChange);
                         startTimer = true;
