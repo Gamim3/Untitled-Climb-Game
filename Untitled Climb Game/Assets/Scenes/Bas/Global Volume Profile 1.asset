@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   active: 1
   postExposure:
-    m_OverrideState: 1
-    m_Value: 0
+    m_OverrideState: 0
+    m_Value: 0.79
   contrast:
     m_OverrideState: 1
     m_Value: 0
@@ -139,8 +139,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   components:
   - {fileID: -5248725206823936263}
-  - {fileID: 3118280692967035084}
   - {fileID: -5638830569281333380}
+  - {fileID: 3118280692967035084}
   - {fileID: -2465285213468486296}
   - {fileID: -283022286707488875}
 --- !u!114 &3118280692967035084
