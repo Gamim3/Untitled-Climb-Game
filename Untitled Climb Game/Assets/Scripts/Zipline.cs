@@ -13,13 +13,13 @@ public class Zipline : MonoBehaviour
     public float step;
     public bool hasHandle;
     public GameObject handle;
-    public GameObject endpoint;
+    public GameObject[] endpoint;
     public GameObject player;
    // public GameObject righthandPosition;
    // public GameObject lefthandPosition;
    // public GameObject fakeHandR;
    // public GameObject fakeHandL;
-//    public GameObject realHandL;
+   // public GameObject realHandL;
    // public GameObject realHandR;
     public GameObject playerCam;
     public Rigidbody body;
@@ -32,7 +32,7 @@ public class Zipline : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        goToPoint = endpoint.transform.position;
+        goToPoint = endpoint[0].transform.position;
     }
   
 
@@ -48,51 +48,30 @@ public class Zipline : MonoBehaviour
         if(gravityWhileClimbing.ziplineInHand)
         {
             step = speed * Time.deltaTime;
-            transform.position = Vector3.MoveTowards(zipHandle, goToPoint, step);
-            //player.transform.SetParent(handle.transform);
-            //FollowPosition();
+            
+            player.transform.SetParent(attachPoint);
+            
             hasHandle = true;
+            if (gravityWhileClimbing.ziplineinBothHands)
+            {
+                FollowPosition();
+                transform.position = Vector3.MoveTowards(zipHandle, goToPoint, step);
+            }
         }
         else
         {
             
-           // player.transform.SetParent(originalPlayer.transform);
             hasHandle = false;
+            player.transform.SetParent(null);
             
-        }
-    }
-  /*  private void OnTriggerEnter(Collider other)
-    {
-        print("rightHand");
-        
-        if (other.tag == "RightHand")
-        {
-            print("rightHand");
-            realHandL.GetComponent<SkinnedMeshRenderer>().enabled = false;
-            realHandR.GetComponent<SkinnedMeshRenderer>().enabled = false;
-            fakeHandR.GetComponent<SkinnedMeshRenderer>().enabled = true;
-            fakeHandL.GetComponent<SkinnedMeshRenderer>().enabled = true;
-           
-        }
-        else
-        {
-            realHandR.GetComponent<SkinnedMeshRenderer>().enabled = true;
-            realHandL.GetComponent<SkinnedMeshRenderer>().enabled = true;
-            fakeHandR.GetComponent<SkinnedMeshRenderer>().enabled = false;
-            fakeHandL.GetComponent<SkinnedMeshRenderer>().enabled = false;
         }
     }
     
     public void FollowPosition()
     {
         player.transform.position = attachPoint.transform.position;
-        player.transform.rotation = attachPoint.transform.rotation;
+        //player.transform.rotation = attachPoint.transform.rotation;
         //print(player.transform.position);
     }
-   
-    public void PlayerColliderFix()
-    {
-        player.GetComponent<CapsuleCollider>().center = playerCam.transform.position;
-    }
-    */
+    
 }

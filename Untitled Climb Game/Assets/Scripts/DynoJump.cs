@@ -19,8 +19,6 @@ public class DynoJump : MonoBehaviour
     public float averageHandRotationPoint;
     public Vector3 averageHandRotation;
 
-    public GameObject cube;
-
     public Vector3 handPositionL;
     public Vector3 handPositionR;
     public Vector3 bodyPosition;
@@ -95,7 +93,6 @@ public class DynoJump : MonoBehaviour
         velocityAv.y = (velocityR.y + velocityL.y) / 2;
         playerbodyRotation = new Vector3(playerRotationPoint.localRotation.x, playerRotationPoint.localRotation.y, playerRotationPoint.localRotation.z) ;
         jumpDirection = new Vector3(velocityAv.x * 1.5f , velocityAv.y, 0);
-        cube.transform.position = endJumpPoint;
 
         
         
@@ -147,7 +144,7 @@ public class DynoJump : MonoBehaviour
                     {
 
                         player.GetComponent<CapsuleCollider>().enabled = false;
-                        rb.velocity = -rb.velocity * 2;
+                        rb.velocity = new Vector3(0, -rb.velocity.y * 2, 0);
                         // rb.GetComponent<Rigidbody>().useGravity = false;
                         //Vector3.Slerp(startJumpPosition, endJumpPoint, Time.deltaTime);
                         //transform.Translate(Vector3.Slerp(startJumpPosition, endJumpPoint, Time.deltaTime), Space.Self);
