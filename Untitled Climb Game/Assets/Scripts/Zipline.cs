@@ -9,6 +9,7 @@ public class Zipline : MonoBehaviour
     public Vector3 goToPoint;
     public Vector3 zipHandle;
     public Transform attachPoint;
+    public Transform beginPoint;
     public float speed;
     public float step;
     public bool hasHandle;
@@ -63,7 +64,8 @@ public class Zipline : MonoBehaviour
             
             hasHandle = false;
             player.transform.SetParent(null);
-            
+            transform.position = Vector3.MoveTowards(zipHandle, beginPoint.position, step);
+
         }
     }
     
