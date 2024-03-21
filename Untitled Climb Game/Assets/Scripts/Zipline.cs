@@ -6,6 +6,7 @@ using UnityEngine.InputSystem;
 public class Zipline : MonoBehaviour
 {
     public GravityWhileClimbing gravityWhileClimbing;
+    public Stamina stamina;
     public Vector3 goToPoint;
     public Vector3 zipHandle;
     public Transform attachPoint;
@@ -56,6 +57,8 @@ public class Zipline : MonoBehaviour
             {
                 FollowPosition();
                 transform.position = Vector3.MoveTowards(zipHandle, goToPoint, step);
+                
+
             }
         }
         else

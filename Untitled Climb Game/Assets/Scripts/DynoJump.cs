@@ -9,7 +9,8 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class DynoJump : MonoBehaviour
 {
-   // public Transform playerBody;
+    // public Transform playerBody;
+    public Stamina stamina;
     public Transform playerHandR;
     public Transform playerHandL;
     public Transform playerBody;
@@ -155,6 +156,7 @@ public class DynoJump : MonoBehaviour
                         startTimer = true;
                         startJumpCooldown = true;
                         jumped = true;
+                        stamina.currentStamina -= 10f;
                         Debug.LogError("DynoJump:)");
 
 

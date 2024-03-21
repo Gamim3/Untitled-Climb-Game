@@ -13,13 +13,18 @@ public class Stamina : MonoBehaviour
     public UnityEngine.XR.Interaction.Toolkit.ClimbProvider climbprovider;
     public float maxStamina = 100;
     public float currentStamina;
-    public float staminaUsage = 5;
+    public float staminaUsage;
+    public float staminaUsageHeavy;
+    public float staminaUsageLight;
     public float staminaRegain = 15;
+    public float distance;
     public bool groundCheck;
     public RaycastHit hit;
     public Transform startRay;
-
+    public Transform avHand;
     public GameObject playerBody;
+    public GameObject handL;
+    public GameObject handR;
     public GameObject player;
     // Start is called before the first frame update
     void Start()
@@ -30,7 +35,10 @@ public class Stamina : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(currentStamina <= 0)
+        distance = Vector3.Distance(playerBody.transform.position, avHand.transform.position);
+        Debug.Log(distance);
+        avHand.position = (handR.transform.position + handL.transform.position) /2;
+        if (currentStamina <= 0)
         {
             this.GetComponent<UnityEngine.XR.Interaction.Toolkit.ClimbProvider>().enabled = false;
         }
@@ -50,9 +58,20 @@ public class Stamina : MonoBehaviour
     {
         if (handCheck.isAttachedR == true|| handCheck.isAttachedL == true)
         {
-            currentStamina -= staminaUsage * Time.deltaTime;
-            //Debug.Log(currentStamina);
+            if (playerBody.transform.position.y >= avHand.position.y)
+            {
+                currentStamina -= staminaUsageHeavy * Time.deltaTime;
+            }
+            if (playerBody.transform.position.y <= avHand.position.y && distance <= .4f)
+            {
+                currentStamina -= staminaUsageLight * Time.deltaTime;
+            }
+            if (playerBody.transform.position.y <= avHand.position.y && distance >= .4f)
+            {
+                currentStamina += staminaRegain * Time.deltaTime;
+            }
         }
+        
     }
     public void StaminaRegain()
     {
