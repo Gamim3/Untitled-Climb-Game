@@ -20,9 +20,10 @@ public class AnimationManager : MonoBehaviour
         
        if(other.tag == "Player")
        {
-        animatorRoof.SetBool("RoofSide1",true);
-        animatorRoof2.SetBool("RoofSide2",true);
-        stopTimer = false;
+            Debug.Log("Animatie");
+            animatorRoof.SetBool("RoofSide1",true);
+            animatorRoof2.SetBool("RoofSide2",true);
+            stopTimer = false;
        }
         
         //if(animatorRoof.)

@@ -21,8 +21,7 @@ public class Zipline : MonoBehaviour
    // public GameObject fakeHandR;
    // public GameObject fakeHandL;
    // public GameObject realHandL;
-   // public GameObject realHandR;
-    public GameObject playerCam;
+   // public GameObject realHandR; 
     public Rigidbody body;
     //public GameObject originalPlayer;
 

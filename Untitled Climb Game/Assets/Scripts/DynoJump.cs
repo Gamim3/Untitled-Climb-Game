@@ -139,11 +139,10 @@ public class DynoJump : MonoBehaviour
                 endJumpPoint = new Vector3((startJumpPosition.x + -velocityAv.x), (startJumpPosition.y + -velocityAv.y) * Time.deltaTime);
                 if (velocityAv.y <=-2f)
                 {
-                    Debug.Log(velocityAv);
                     if (rightSelectValue.action.ReadValue<float>() <= 0.1f && leftSelectValue.action.ReadValue<float>() <= 0.1f && jumped == false)
                     {
 
-                        player.GetComponent<CapsuleCollider>().enabled = false;
+                        //player.GetComponent<CapsuleCollider>().enabled = false;
                         rb.velocity = new Vector3(0, -rb.velocity.y * 2, 0);
                         // rb.GetComponent<Rigidbody>().useGravity = false;
                         //Vector3.Slerp(startJumpPosition, endJumpPoint, Time.deltaTime);
@@ -198,7 +197,7 @@ public class DynoJump : MonoBehaviour
            // rb.GetComponent<Rigidbody>().useGravity = true;
             
             startTimer = false;
-            player.GetComponent<CapsuleCollider>().enabled = true;
+            //player.GetComponent<CapsuleCollider>().enabled = true;
             rb.constraints = RigidbodyConstraints.None;
             rb.constraints = RigidbodyConstraints.FreezeRotation;
 

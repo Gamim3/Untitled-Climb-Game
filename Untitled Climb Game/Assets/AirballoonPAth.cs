@@ -5,15 +5,19 @@ using UnityEngine;
 using UnityEngine.UIElements;
 
 public class AirballoonPAth : MonoBehaviour
-{ 
+{
+    public Transform startPoint;
     public Transform[] pathPos;
     public Transform playerMayNotMove;
     public Transform player;
     public int indexForArray;
     public float speed;
+    public float timer = 5f, returnTimer = 40f;
     
     public bool readyToFly;
+    public bool playerInBalloon;
     public bool lastCheckpoint =false;
+    
 
  // Start is called before the first frame update
     void Start()
@@ -27,16 +31,28 @@ public class AirballoonPAth : MonoBehaviour
     void Update()
     {
        //if balloon is ready to fly by checking in the ontriggerEnter, Fly to the index of the array
-        if(readyToFly)
+        
+        if(timer <= 0)
         {
-           transform.position= Vector3.MoveTowards(transform.position,pathPos[indexForArray].position,speed);
-           GoToNextInArray();
+            if (readyToFly)
+            {
+                transform.position = Vector3.MoveTowards(transform.position, pathPos[indexForArray].position, speed);
+                GoToNextInArray();
 
+            }
+            if (pathPos[indexForArray] == pathPos[3])
+            {
+                
+                lastCheckpoint = true;
+                returnTimer -= Time.deltaTime;
+                if(returnTimer <= 0)
+                {
+                    transform.position = Vector3.MoveTowards(transform.position, startPoint.position, speed);
+                }
+                
+            }
         }
-        if (pathPos[indexForArray] == pathPos[3]) 
-        {
-            lastCheckpoint = true;
-        }
+        
      
     }
     // is player in on trigger 
@@ -45,14 +61,22 @@ public class AirballoonPAth : MonoBehaviour
         if(other.tag == "Player")
         {
 
-            player.SetParent(playerMayNotMove);
+            player.transform.position = playerMayNotMove.transform.position;
             readyToFly = true;
+            timer -= Time.deltaTime;
+            playerInBalloon = true;
         }
+       
      
     }
-    
+    public void OnTriggerExit(Collider other)
+    {
+        readyToFly = false;
+        playerInBalloon = false;
+    }
+
     // goes to next point in array.
-     public void GoToNextInArray()
+    public void GoToNextInArray()
     {
            if(transform.position == pathPos[indexForArray].position && !lastCheckpoint)
             {

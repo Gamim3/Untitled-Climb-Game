@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.UI;
+using UnityEngine.InputSystem;
 
 public class Stamina : MonoBehaviour
 {
     public GameObject panel;
    
     public GravityWhileClimbing handCheck;
+    public UnityEngine.XR.Interaction.Toolkit.ClimbProvider climbprovider;
     public float maxStamina = 100;
     public float currentStamina;
     public float staminaUsage = 5;
@@ -18,7 +20,7 @@ public class Stamina : MonoBehaviour
     public Transform startRay;
 
     public GameObject playerBody;
-    public GameObject hands;
+    public GameObject player;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,14 +30,15 @@ public class Stamina : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(currentStamina > 0)
+        if(currentStamina <= 0)
         {
-            gameObject.GetComponent<ClimbProvider>().enabled = true;
-            StaminaConsumption();
+            this.GetComponent<UnityEngine.XR.Interaction.Toolkit.ClimbProvider>().enabled = false;
         }
-        else if(currentStamina <= 0)
+        else if(currentStamina > 0)
         {
-            gameObject.GetComponent<ClimbProvider>().enabled = false;
+            this.GetComponent<UnityEngine.XR.Interaction.Toolkit.ClimbProvider>().enabled = true;
+            StaminaConsumption();
+           
         }
         StaminaRegain();
         GroundCheck();
@@ -69,13 +72,11 @@ public class Stamina : MonoBehaviour
             if (hit.collider.tag == "Ground")
             {
                 groundCheck = true;
-                Debug.Log("GroundCheck enabled");
                 
             }
             else
             {
                 groundCheck = false;
-                Debug.Log("GroundCheck disabled");
             }
         }
     }
