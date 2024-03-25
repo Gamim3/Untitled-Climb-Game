@@ -9,6 +9,7 @@ public class Stamina : MonoBehaviour
 {
     public GameObject panel;
    
+    public AudioSource soundSource;
     public GravityWhileClimbing handCheck;
     public UnityEngine.XR.Interaction.Toolkit.ClimbProvider climbprovider;
     public float maxStamina = 100;
@@ -18,6 +19,8 @@ public class Stamina : MonoBehaviour
     public float staminaUsageLight;
     public float staminaRegain = 15;
     public float distance;
+    public float minVolume;
+    public float maxVolume;
     public bool groundCheck;
     public RaycastHit hit;
     public Transform startRay;
@@ -51,6 +54,7 @@ public class Stamina : MonoBehaviour
         StaminaRegain();
         GroundCheck();
         StaminaPanel();
+        SoundsManager();
 
 
     }
@@ -102,5 +106,33 @@ public class Stamina : MonoBehaviour
     public void StaminaPanel()
     {
         panel.GetComponent<Slider>().value = currentStamina / 100;
+    }
+
+    public void SoundsManager()
+    {
+       if(currentStamina <= 50)
+       {
+        
+            soundSource.enabled = true;
+            currentStamina = Mathf.Clamp(currentStamina,0,maxStamina);
+            float t = currentStamina / maxStamina;
+            float volume = Mathf.Lerp(maxVolume,minVolume,t);
+            soundSource.volume = volume;
+            
+            /*
+            float maxSpeed = 3f;
+            float minSpeed =1;
+            float newSpeed =Mathf.Lerp(maxSpeed,minSpeed,t);
+            soundSource.pitch = newSpeed;
+            soundSource.outputAudioMixerGroup.audioMixer.SetFloat("Pitch", 1f / newSpeed);
+            */
+       
+       }
+       else
+       {
+            soundSource.volume = 0;
+            soundSource.enabled = false;
+       }
+
     }
 }

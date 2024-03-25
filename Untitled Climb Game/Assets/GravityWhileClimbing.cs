@@ -4,6 +4,8 @@ using UnityEngine.InputSystem;
 public class GravityWhileClimbing : MonoBehaviour
 {
     public bool isAttachedL, isAttachedR;
+    public AudioSource audioSourceL,audioSourceR;
+    public AudioClip handsClip;
     public DynoJump dynojump;
     public bool rHand;
     public bool lHand;
@@ -41,11 +43,13 @@ public class GravityWhileClimbing : MonoBehaviour
         if (other.CompareTag("Rock") && leftSelectvalue.action.ReadValue<float>() > 0.1f)
 
         {
+            audioSourceL.PlayOneShot(handsClip);
             isAttachedL = true;
 
         }
         else if (other.CompareTag("Rock") && rightSelectvalue.action.ReadValue<float>() > 0.1f)
         {
+            audioSourceL.PlayOneShot(handsClip);
             isAttachedR = true;
         }
       

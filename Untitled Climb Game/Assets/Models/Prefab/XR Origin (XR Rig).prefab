@@ -2808,15 +2808,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panel: {fileID: 6847465534460087937}
+  soundSource: {fileID: 0}
   handCheck: {fileID: 159676142752926838}
+  climbprovider: {fileID: 0}
   maxStamina: 100
   currentStamina: 0
   staminaUsage: 1
+  staminaUsageHeavy: 0
+  staminaUsageLight: 0
   staminaRegain: 15
+  distance: 0
+  minVolume: 0
+  maxVolume: 0
   groundCheck: 0
   startRay: {fileID: 4786217870471107939}
+  avHand: {fileID: 0}
   playerBody: {fileID: 5708167583290570310}
-  hands: {fileID: 7041465129115393635}
+  handL: {fileID: 0}
+  handR: {fileID: 0}
+  player: {fileID: 0}
 --- !u!114 &159676142752926838
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2835,6 +2845,8 @@ MonoBehaviour:
   rHand: 0
   lHand: 0
   ziplineInHand: 0
+  ropeInHand: 0
+  ziplineinBothHands: 0
   rightHand: {fileID: 3465572546167303955}
   leftHand: {fileID: 7041465129115393635}
   moveProvider: {fileID: 5708167583290570310}
@@ -2877,6 +2889,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11993878a332d364696730d6c5f2a3d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stamina: {fileID: 0}
   playerHandR: {fileID: 7787899862182575907}
   playerHandL: {fileID: 389974302018580934}
   playerBody: {fileID: 4524567707938630359}
@@ -2885,7 +2898,6 @@ MonoBehaviour:
   averageTestRot: {fileID: 0}
   averageHandRotationPoint: 0
   averageHandRotation: {x: 0, y: 0, z: 0}
-  cube: {fileID: 0}
   handPositionL: {x: 0, y: 0, z: 0}
   handPositionR: {x: 0, y: 0, z: 0}
   bodyPosition: {x: 0, y: 0, z: 0}
