@@ -37,6 +37,7 @@ public class AirballoonPAth : MonoBehaviour
             if (readyToFly)
             {
                 transform.position = Vector3.MoveTowards(transform.position, pathPos[indexForArray].position, speed);
+                transform.rotation = Quaternion.Slerp(transform.rotation, pathPos[3].rotation, speed);
                 GoToNextInArray();
 
             }

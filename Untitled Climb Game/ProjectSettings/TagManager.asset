@@ -13,6 +13,7 @@ TagManager:
   - Climb
   - RightHand Controller
   - LeftHand Controller
+  - RopeSwing
   layers:
   - Default
   - TransparentFX

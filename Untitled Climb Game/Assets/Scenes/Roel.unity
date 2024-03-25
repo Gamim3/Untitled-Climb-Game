@@ -1489,16 +1489,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panel: {fileID: 341758632}
-  climbProvider: {fileID: 238401082}
   handCheck: {fileID: 238401087}
+  climbprovider: {fileID: 0}
   maxStamina: 100
   currentStamina: 0
   staminaUsage: 1
+  staminaUsageHeavy: 0
+  staminaUsageLight: 0
   staminaRegain: 15
+  distance: 0
   groundCheck: 0
   startRay: {fileID: 1886604191}
+  avHand: {fileID: 0}
   playerBody: {fileID: 238401070}
-  hands: {fileID: 1340406694}
+  handL: {fileID: 0}
+  handR: {fileID: 0}
+  player: {fileID: 0}
 --- !u!114 &238401087
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1517,9 +1523,11 @@ MonoBehaviour:
   rHand: 0
   lHand: 0
   ziplineInHand: 0
+  ziplineinBothHands: 0
   rightHand: {fileID: 1516222169}
   leftHand: {fileID: 1340406694}
   moveProvider: {fileID: 238401070}
+  playerRotatePoint: {fileID: 0}
   leftSelectvalue:
     m_UseReference: 1
     m_Action:
@@ -1558,9 +1566,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11993878a332d364696730d6c5f2a3d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stamina: {fileID: 0}
   playerHandR: {fileID: 1516222170}
   playerHandL: {fileID: 1340406695}
   playerBody: {fileID: 1938581599}
+  playerRotationPoint: {fileID: 0}
+  averageHandPosition: {fileID: 0}
+  averageTestRot: {fileID: 0}
+  averageHandRotationPoint: 0
+  averageHandRotation: {x: 0, y: 0, z: 0}
   handPositionL: {x: 0, y: 0, z: 0}
   handPositionR: {x: 0, y: 0, z: 0}
   bodyPosition: {x: 0, y: 0, z: 0}
@@ -1575,10 +1589,15 @@ MonoBehaviour:
   speed: 50
   timer: 1
   jumpCooldown: 0
-  averageHand: 0
+  playerRotation: 0
+  avarageDirection: {x: 0, y: 0, z: 0}
+  averageHand: {x: 0, y: 0, z: 0}
   rigidbodyVelocity: {x: 0, y: 0, z: 0}
   currentPosition: {x: 0, y: 0, z: 0}
   lastPosition: {x: 0, y: 0, z: 0}
+  jump: {x: 0, y: 0, z: 0}
+  directionY: {x: 0, y: 0, z: 0}
+  directionX: {x: 0, y: 0, z: 0}
   leftSelectValue:
     m_UseReference: 1
     m_Action:
@@ -1629,6 +1648,64 @@ MonoBehaviour:
       m_SingletonActionBindings: []
       m_Flags: 0
     m_Reference: {fileID: 0}
+  velocityPropertyR:
+    m_UseReference: 0
+    m_Action:
+      m_Name: Velocity Property R
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: b810871a-fd46-4aaf-b5c2-86fb57e2e6d1
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 0}
+  velocityPropertyL:
+    m_UseReference: 0
+    m_Action:
+      m_Name: Velocity Property L
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: f393d34f-bef1-4e02-b969-82563e59dccc
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 0}
+  rotationPropertyR:
+    m_UseReference: 0
+    m_Action:
+      m_Name: Rotation Property R
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: e62c6246-d115-4177-bc9f-8ade7bcf1666
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 0}
+  rotationPropertyL:
+    m_UseReference: 0
+    m_Action:
+      m_Name: Rotation Property L
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 9516049e-ed2c-41ca-8d2e-e9b0fadc7c8a
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 0}
+  velocityR: {x: 0, y: 0, z: 0}
+  velocityL: {x: 0, y: 0, z: 0}
+  rotationL: {x: 0, y: 0, z: 0}
+  rotationR: {x: 0, y: 0, z: 0}
+  rotationAv: {x: 0, y: 0, z: 0}
+  velocityAv: {x: 0, y: 0, z: 0}
+  startJumpPosition: {x: 0, y: 0, z: 0}
+  jumpDirection: {x: 0, y: 0, z: 0}
+  endJumpPoint: {x: 0, y: 0, z: 0}
+  playerbodyRotation: {x: 0, y: 0, z: 0}
   rightPressUiValue:
     m_UseReference: 1
     m_Action:
@@ -25006,7 +25083,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2026890797
 Transform:
   m_ObjectHideFlags: 0

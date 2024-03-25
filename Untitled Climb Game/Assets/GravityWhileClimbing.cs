@@ -8,6 +8,7 @@ public class GravityWhileClimbing : MonoBehaviour
     public bool rHand;
     public bool lHand;
     public bool ziplineInHand;
+    public bool ropeInHand;
     public bool ziplineinBothHands;
     public GameObject rightHand;
     public GameObject leftHand;
@@ -68,6 +69,14 @@ public class GravityWhileClimbing : MonoBehaviour
         else
         {
             ziplineinBothHands = false;
+        }
+        if (other.CompareTag("RopeSwing") && leftSelectvalue.action.ReadValue<float>() > 0.1f || (other.CompareTag("RopeSwing") && rightSelectvalue.action.ReadValue<float>() > 0.1f))
+        {
+            ropeInHand = true;
+        }
+        else
+        {
+            ropeInHand = false;
         }
     }
 
