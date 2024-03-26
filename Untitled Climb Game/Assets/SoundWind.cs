@@ -8,12 +8,16 @@ public class SoundWind : MonoBehaviour
     // Start is called before the first frame update
    public AudioSource audioSource;
    
-   public void OnTriggerStay(Collider other)
+   public void OnTriggerEnter(Collider other)
    {
-    if(other.tag == "Player")
-    {   
-        audioSource.enabled = true;
-    }
+        if(other.tag == "Player")
+        {   
+            audioSource.enabled = true;
+        }
    }
+    public void OnTriggerExit(Collider other)
+    {
+        audioSource.enabled = false;
+    }
 
 }

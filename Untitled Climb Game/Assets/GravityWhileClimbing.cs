@@ -7,11 +7,16 @@ public class GravityWhileClimbing : MonoBehaviour
     public AudioSource audioSourceL,audioSourceR;
     public AudioClip handsClip;
     public DynoJump dynojump;
+    public ropeSwing ropeSwing;
+    public Transform rightAttach;
+    public Transform lefttAttach;
     public bool rHand;
     public bool lHand;
     public bool ziplineInHand;
     public bool ropeInHand;
     public bool ziplineinBothHands;
+    public bool hasPlayedL;
+    public bool hasPlayedR;
     public GameObject rightHand;
     public GameObject leftHand;
     public GameObject moveProvider;
@@ -28,7 +33,7 @@ public class GravityWhileClimbing : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        //GrabSound();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -43,15 +48,16 @@ public class GravityWhileClimbing : MonoBehaviour
         if (other.CompareTag("Rock") && leftSelectvalue.action.ReadValue<float>() > 0.1f)
 
         {
-            audioSourceL.PlayOneShot(handsClip);
+            
             isAttachedL = true;
 
         }
         else if (other.CompareTag("Rock") && rightSelectvalue.action.ReadValue<float>() > 0.1f)
         {
-            audioSourceL.PlayOneShot(handsClip);
+            
             isAttachedR = true;
         }
+        
       
         if (other.CompareTag("Rock") && leftSelectvalue.action.ReadValue<float>() > 0.1f || other.CompareTag("Rock") && rightSelectvalue.action.ReadValue<float>() > 0.1f)
         {
@@ -77,8 +83,9 @@ public class GravityWhileClimbing : MonoBehaviour
         if (other.CompareTag("RopeSwing") && leftSelectvalue.action.ReadValue<float>() > 0.1f || (other.CompareTag("RopeSwing") && rightSelectvalue.action.ReadValue<float>() > 0.1f))
         {
             ropeInHand = true;
+            ropeSwing.GetComponent<Rigidbody>().isKinematic = false;
         }
-        else
+        else if (leftSelectvalue.action.ReadValue<float>() < 0.1f && rightSelectvalue.action.ReadValue<float>() < 0.1f)
         {
             ropeInHand = false;
         }
@@ -89,7 +96,35 @@ public class GravityWhileClimbing : MonoBehaviour
         isAttachedL = false;
         isAttachedR = false;
         dynojump.onWall = false;
+        hasPlayedL = false;
+        hasPlayedR = false;
+        //ropeInHand = false;
     }
+
+    /*
+    public void GrabSound()
+    {
+        if (isAttachedL && hasPlayedL == false)
+        {
+            audioSourceL.enabled = true;
+            hasPlayedL = true;
+
+        }
+        else if (isAttachedR && hasPlayedR == false)
+        {
+            audioSourceR.enabled = true;
+            hasPlayedR = true;
+        }
+        if (hasPlayedL == false)
+        {
+            audioSourceL.enabled = false;
+        }
+        else if(hasPlayedR == false)
+        {
+            audioSourceR.enabled = false;
+        }
+    }
+    */
 
 
 

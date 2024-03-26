@@ -17,7 +17,8 @@ public class Stamina : MonoBehaviour
     public float staminaUsage;
     public float staminaUsageHeavy;
     public float staminaUsageLight;
-    public float staminaRegain = 15;
+    public float staminaRegain;
+    public float staminaRegainOnWall;
     public float distance;
     public float minVolume;
     public float maxVolume;
@@ -72,7 +73,7 @@ public class Stamina : MonoBehaviour
             }
             if (playerBody.transform.position.y <= avHand.position.y && distance >= .4f)
             {
-                currentStamina += staminaRegain * Time.deltaTime;
+                currentStamina += staminaRegainOnWall * Time.deltaTime;
             }
         }
         
