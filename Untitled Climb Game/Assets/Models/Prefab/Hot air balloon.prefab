@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 1187491402210063085}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -21, z: 0}
+  m_LocalPosition: {x: 0, y: -21.063, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -56,7 +56,7 @@ Transform:
   m_GameObject: {fileID: 6641988183813625827}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.19, y: -11.712, z: 0.14}
+  m_LocalPosition: {x: 0.19, y: -11.77, z: 0.14}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -70,6 +70,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3188584404085390034}
     m_Modifications:
+    - target: {fileID: 143119736258123386, guid: d143e09ed1dab4a469abb59c9cf663ec,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 810386160596337247, guid: d143e09ed1dab4a469abb59c9cf663ec,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 810386160596337247, guid: d143e09ed1dab4a469abb59c9cf663ec,
+        type: 3}
+      propertyPath: m_TagString
+      value: Rock
+      objectReference: {fileID: 0}
+    - target: {fileID: 871881311599842850, guid: d143e09ed1dab4a469abb59c9cf663ec,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 886170911388347527, guid: d143e09ed1dab4a469abb59c9cf663ec,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -120,6 +140,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 270
       objectReference: {fileID: 0}
+    - target: {fileID: 1335758261077160499, guid: d143e09ed1dab4a469abb59c9cf663ec,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1392302365706340579, guid: d143e09ed1dab4a469abb59c9cf663ec,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1454248048704552957, guid: d143e09ed1dab4a469abb59c9cf663ec,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1454248048704552957, guid: d143e09ed1dab4a469abb59c9cf663ec,
+        type: 3}
+      propertyPath: m_TagString
+      value: Rock
+      objectReference: {fileID: 0}
     - target: {fileID: 1736598572602528345, guid: d143e09ed1dab4a469abb59c9cf663ec,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -134,6 +174,111 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 2.8545377
+      objectReference: {fileID: 0}
+    - target: {fileID: 2502872875605684584, guid: d143e09ed1dab4a469abb59c9cf663ec,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2502872875605684584, guid: d143e09ed1dab4a469abb59c9cf663ec,
+        type: 3}
+      propertyPath: m_TagString
+      value: Rock
+      objectReference: {fileID: 0}
+    - target: {fileID: 4084506789520150852, guid: d143e09ed1dab4a469abb59c9cf663ec,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4262724236280955895, guid: d143e09ed1dab4a469abb59c9cf663ec,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4732630626097333600, guid: d143e09ed1dab4a469abb59c9cf663ec,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5098430970896931250, guid: d143e09ed1dab4a469abb59c9cf663ec,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5215301953424032514, guid: d143e09ed1dab4a469abb59c9cf663ec,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5613656628105335108, guid: d143e09ed1dab4a469abb59c9cf663ec,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5613656628105335108, guid: d143e09ed1dab4a469abb59c9cf663ec,
+        type: 3}
+      propertyPath: m_TagString
+      value: Rock
+      objectReference: {fileID: 0}
+    - target: {fileID: 5800177057027978532, guid: d143e09ed1dab4a469abb59c9cf663ec,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5800177057027978532, guid: d143e09ed1dab4a469abb59c9cf663ec,
+        type: 3}
+      propertyPath: m_TagString
+      value: Rock
+      objectReference: {fileID: 0}
+    - target: {fileID: 5857185531862755332, guid: d143e09ed1dab4a469abb59c9cf663ec,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6072443939478670366, guid: d143e09ed1dab4a469abb59c9cf663ec,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6439206825031333661, guid: d143e09ed1dab4a469abb59c9cf663ec,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7098277089157921454, guid: d143e09ed1dab4a469abb59c9cf663ec,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7098277089157921454, guid: d143e09ed1dab4a469abb59c9cf663ec,
+        type: 3}
+      propertyPath: m_TagString
+      value: Rock
+      objectReference: {fileID: 0}
+    - target: {fileID: 7229202027662352555, guid: d143e09ed1dab4a469abb59c9cf663ec,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7323658012335654276, guid: d143e09ed1dab4a469abb59c9cf663ec,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7323658012335654276, guid: d143e09ed1dab4a469abb59c9cf663ec,
+        type: 3}
+      propertyPath: m_TagString
+      value: Rock
+      objectReference: {fileID: 0}
+    - target: {fileID: 7328107263335593001, guid: d143e09ed1dab4a469abb59c9cf663ec,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7450768896947021648, guid: d143e09ed1dab4a469abb59c9cf663ec,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7794032729083629570, guid: d143e09ed1dab4a469abb59c9cf663ec,
         type: 3}
@@ -154,6 +299,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 2.8545377
+      objectReference: {fileID: 0}
+    - target: {fileID: 8108174524132838102, guid: d143e09ed1dab4a469abb59c9cf663ec,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8525789532599774827, guid: d143e09ed1dab4a469abb59c9cf663ec,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8525789532599774827, guid: d143e09ed1dab4a469abb59c9cf663ec,
+        type: 3}
+      propertyPath: m_TagString
+      value: Rock
+      objectReference: {fileID: 0}
+    - target: {fileID: 8780593521232810764, guid: d143e09ed1dab4a469abb59c9cf663ec,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 9103056846536569431, guid: d143e09ed1dab4a469abb59c9cf663ec,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -257,6 +427,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Plankje Ropeladder (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e9bce5c2cce38a54bbe5a6a4d86fe35a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e9bce5c2cce38a54bbe5a6a4d86fe35a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Rock
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -368,6 +548,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rope (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c61fc0371ccd27c4eb1c3280cd5fa255,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -477,6 +662,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cabin
       objectReference: {fileID: 0}
+    - target: {fileID: 6531645454976294641, guid: 5392105b0475c0140a9239e0fdee28be,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 7762076038686891367, guid: 5392105b0475c0140a9239e0fdee28be,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -549,6 +739,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a25c3dd062c394b409ba0864ba82ac01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startPoint: {fileID: 0}
   pathPos:
   - {fileID: 0}
   - {fileID: 0}
@@ -558,7 +749,10 @@ MonoBehaviour:
   player: {fileID: 0}
   indexForArray: 0
   speed: 0.05
+  timer: 5
+  returnTimer: 40
   readyToFly: 0
+  playerInBalloon: 0
   lastCheckpoint: 0
 --- !u!65 &1229359097195377263
 BoxCollider:
@@ -579,8 +773,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.6527224, y: 2.03265, z: 0.5880356}
-  m_Center: {x: 0.037665367, y: -11.6535015, z: 0.47}
+  m_Size: {x: 1.6527276, y: 2.03265, z: 0.85776037}
+  m_Center: {x: 0.03766529, y: -11.6535015, z: 0.33513734}
 --- !u!4 &3188584404085390034 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5392105b0475c0140a9239e0fdee28be,
@@ -681,6 +875,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Plankje Ropeladder (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e9bce5c2cce38a54bbe5a6a4d86fe35a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e9bce5c2cce38a54bbe5a6a4d86fe35a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Rock
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -792,6 +996,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rope (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c61fc0371ccd27c4eb1c3280cd5fa255,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -870,6 +1079,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rope (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c61fc0371ccd27c4eb1c3280cd5fa255,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1451,6 +1665,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rope (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c61fc0371ccd27c4eb1c3280cd5fa255,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
