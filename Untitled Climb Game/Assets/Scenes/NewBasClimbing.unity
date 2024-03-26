@@ -861,7 +861,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &308929740
 Transform:
   m_ObjectHideFlags: 0
@@ -1578,7 +1578,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0.5, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 101.50269, y: 75.453064, z: 70.328606}
+  m_ConnectedAnchor: {x: 101.7427, y: 76.21306, z: 69.91861}
   serializedVersion: 3
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 1
@@ -3492,7 +3492,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0.49993896, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.00002873318, y: -1.0695473, z: -0.000008018562}
+  m_ConnectedAnchor: {x: -0.00000022273784, y: -1.0695931, z: 0.000009800465}
   serializedVersion: 3
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 1
@@ -3604,7 +3604,7 @@ GameObject:
   m_Component:
   - component: {fileID: 850148456}
   m_Layer: 8
-  m_Name: Endpoint
+  m_Name: Endpoint 0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4016,7 +4016,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1077787174}
   m_Layer: 8
-  m_Name: Beginining
+  m_Name: Beginining 0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5196,7 +5196,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0.5, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.000012473319, y: -1.2339321, z: -0.000025392113}
+  m_ConnectedAnchor: {x: 0.000016037124, y: -1.2339774, z: -0.000008018562}
   serializedVersion: 3
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 1
@@ -5626,11 +5626,13 @@ MonoBehaviour:
   goToPoint: {x: 0, y: 0, z: 0}
   zipHandle: {x: 7.022, y: -0.097, z: 0}
   attachPoint: {fileID: 427596052}
-  beginPoint: {fileID: 1077787174}
+  beginPoint:
+  - {fileID: 1077787174}
   speed: 2.5
   step: 2.5
   hasHandle: 0
-  handle: {fileID: 1515112658}
+  handle:
+  - {fileID: 427596051}
   endpoint:
   - {fileID: 850148455}
   player: {fileID: 1961861530}
@@ -6562,7 +6564,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 57aaa043dbb640d4c885660d1f03b418,
         type: 3}
       propertyPath: m_Name
-      value: ZiplineHold
+      value: ZipLine0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 57aaa043dbb640d4c885660d1f03b418,
         type: 3}
@@ -9737,4 +9739,3 @@ SceneRoots:
   - {fileID: 1865072661}
   - {fileID: 1450560890}
   - {fileID: 1647021639}
-  - {fileID: 518948646}
