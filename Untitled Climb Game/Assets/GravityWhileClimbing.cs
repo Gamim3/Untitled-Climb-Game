@@ -1,9 +1,12 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Animations;
 using UnityEngine.InputSystem;
 public class GravityWhileClimbing : MonoBehaviour
 {
     public bool isAttachedL, isAttachedR;
+    public new string name;
+
     public AudioSource audioSourceL,audioSourceR;
     public AudioClip handsClip;
     public DynoJump dynojump;
@@ -66,10 +69,12 @@ public class GravityWhileClimbing : MonoBehaviour
         }
         if (other.CompareTag("Zipline") && leftSelectvalue.action.ReadValue<float>() > 0.1f || (other.CompareTag("Zipline") && rightSelectvalue.action.ReadValue<float>() > 0.1f))
         {
+            name = other.name;
             ziplineInHand = true;
         }
         else
         {
+            name = null;
             ziplineInHand = false;
         }
         if (other.CompareTag("Zipline") && leftSelectvalue.action.ReadValue<float>() > 0.1f && (other.CompareTag("Zipline") && rightSelectvalue.action.ReadValue<float>() > 0.1f))
@@ -101,30 +106,7 @@ public class GravityWhileClimbing : MonoBehaviour
         //ropeInHand = false;
     }
 
-    /*
-    public void GrabSound()
-    {
-        if (isAttachedL && hasPlayedL == false)
-        {
-            audioSourceL.enabled = true;
-            hasPlayedL = true;
-
-        }
-        else if (isAttachedR && hasPlayedR == false)
-        {
-            audioSourceR.enabled = true;
-            hasPlayedR = true;
-        }
-        if (hasPlayedL == false)
-        {
-            audioSourceL.enabled = false;
-        }
-        else if(hasPlayedR == false)
-        {
-            audioSourceR.enabled = false;
-        }
-    }
-    */
+   
 
 
 
