@@ -7,14 +7,16 @@ public class Zipline : MonoBehaviour
 {
     public GravityWhileClimbing gravityWhileClimbing;
     public Stamina stamina;
+    public index uitdex;
     public Vector3 goToPoint;
     public Vector3 zipHandle;
     public Transform attachPoint;
     public Transform[] beginPoint;
     public float speed;
     public float step;
+    public int uitdexDoorgeven;
     public bool hasHandle;
-    public GameObject[] handle;
+    public GameObject handle;
     public GameObject[] endpoint;
     public GameObject player;
    // public GameObject righthandPosition;
@@ -46,20 +48,50 @@ public class Zipline : MonoBehaviour
     }
     public void Zipping()
     {
-        if(gravityWhileClimbing.name == "ZipLine0")
-        {
-            goToPoint = endpoint[0].transform.position;
-            zipHandle = handle[0].transform.position;
+        
+        
+        goToPoint = endpoint[gravityWhileClimbing.number].transform.position;
+        zipHandle = gravityWhileClimbing.handle.transform.position;
+        attachPoint = gravityWhileClimbing.attachPoint;
 
+        step = speed * Time.deltaTime;
+            
+        //player.transform.SetParent(handle.transform.GetChild(0));
+            
+        hasHandle = true;
+
+        if (gravityWhileClimbing.ziplineinBothHands)
+        {
+            Debug.Log("ga naar mijn land");
+            FollowPosition();
+            gravityWhileClimbing.handle.transform.position = Vector3.MoveTowards(zipHandle, goToPoint, step);
+                
+
+        }
+        
+        else
+        {
+            
+            hasHandle = false;
+            //player.transform.SetParent(null);
+            gravityWhileClimbing.handle.transform.position = Vector3.MoveTowards(zipHandle, beginPoint[gravityWhileClimbing.number].position, step);
+            Debug.Log("ga naar je eigen land");
+
+        }
+        /*
+        if(gravityWhileClimbing.name == "ZipLine1")
+         {
+            goToPoint = endpoint.transform.position;
+            zipHandle = gravityWhileClimbing.handle.transform.position;
             step = speed * Time.deltaTime;
             
-            //player.transform.SetParent(handle[0].transform.GetChild(0));
+           // player.transform.SetParent(handle[1].transform.GetChild(0));
             
             hasHandle = true;
             if (gravityWhileClimbing.ziplineinBothHands)
             {
                 FollowPosition();
-                transform.position = Vector3.MoveTowards(zipHandle, goToPoint, step);
+                gravityWhileClimbing.handle.transform.position = Vector3.MoveTowards(zipHandle, goToPoint, step);
                 
 
             }
@@ -69,55 +101,27 @@ public class Zipline : MonoBehaviour
             
             hasHandle = false;
             //player.transform.SetParent(null);
-            transform.position = Vector3.MoveTowards(zipHandle, beginPoint[0].position, step);
-
-        }
-    /*
-        if(gravityWhileClimbing.name == "ZipLine1")
-         {
-            goToPoint = endpoint[1].transform.position;
-            zipHandle = handle[1].transform.position;
-            step = speed * Time.deltaTime;
-            
-           // player.transform.SetParent(handle[1].transform.GetChild(0));
-            
-            hasHandle = true;
-            if (gravityWhileClimbing.ziplineinBothHands)
-            {
-                FollowPosition();
-                transform.position = Vector3.MoveTowards(zipHandle, goToPoint, step);
-                
-
-            }
-        }
-        else
-        {
-            
-            hasHandle = false;
-            //player.transform.SetParent(null);
-            transform.position = Vector3.MoveTowards(zipHandle, beginPoint[1].position, step);
+            gravityWhileClimbing.handle.transform.position = Vector3.MoveTowards(zipHandle, beginPoint[1].position, step);
 
         }
         */
+        
     }
     
     public void FollowPosition()
     {
-        if(gravityWhileClimbing.name == "ZipLine0")
-        {
-            player.transform.position = handle[0].transform.GetChild(0).position;
+        
+        player.transform.position = gravityWhileClimbing.attachPoint.position;
 
-        }
-       /* else if(gravityWhileClimbing.name == "ZipLine1")
+        
+        /*
+       else if(gravityWhileClimbing.name == "ZipLine1")
         {
-            player.transform.position = handle[1].transform.GetChild(0).position;
+            player.transform.position = gravityWhileClimbing.attachPoint.position;
             
         }
         */
-       
-
-        //player.transform.rotation = attachPoint.transform.rotation;
-        //print(player.transform.position);
     }
+        
     
 }

@@ -13,6 +13,10 @@ public class GravityWhileClimbing : MonoBehaviour
     public ropeSwing ropeSwing;
     public Transform rightAttach;
     public Transform lefttAttach;
+    public Transform attachPoint;
+    public Transform handle;
+    public Transform beginPoint;
+    public int number;
     public bool rHand;
     public bool lHand;
     public bool ziplineInHand;
@@ -41,9 +45,10 @@ public class GravityWhileClimbing : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Rock"))
+        if (other.CompareTag("Zipline"))
         {
-           //lookat.useUpObject = other.transform;
+            
+            
         }
     }
     private void OnTriggerStay(Collider other)
@@ -69,24 +74,23 @@ public class GravityWhileClimbing : MonoBehaviour
         }
         if (other.CompareTag("Zipline") && leftSelectvalue.action.ReadValue<float>() > 0.1f || (other.CompareTag("Zipline") && rightSelectvalue.action.ReadValue<float>() > 0.1f))
         {
-            name = other.name;
+            number = other.GetComponent<index>().uitdex;
+            handle = other.transform;
+            attachPoint = other.transform.GetChild(0);
             ziplineInHand = true;
+            beginPoint.position = handle.position;
         }
-        else
-        {
-            name = null;
-            ziplineInHand = false;
-        }
+        
+        
         if (other.CompareTag("Zipline") && leftSelectvalue.action.ReadValue<float>() > 0.1f && (other.CompareTag("Zipline") && rightSelectvalue.action.ReadValue<float>() > 0.1f))
         {
             ziplineinBothHands = true;
         }
-        else
-        {
-            ziplineinBothHands = false;
-        }
+        
+        
         if (other.CompareTag("RopeSwing") && leftSelectvalue.action.ReadValue<float>() > 0.1f || (other.CompareTag("RopeSwing") && rightSelectvalue.action.ReadValue<float>() > 0.1f))
         {
+            
             ropeInHand = true;
             ropeSwing.GetComponent<Rigidbody>().isKinematic = false;
         }
@@ -103,6 +107,7 @@ public class GravityWhileClimbing : MonoBehaviour
         dynojump.onWall = false;
         hasPlayedL = false;
         hasPlayedR = false;
+        ziplineinBothHands = false;
         //ropeInHand = false;
     }
 

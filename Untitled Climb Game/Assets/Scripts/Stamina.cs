@@ -40,7 +40,7 @@ public class Stamina : MonoBehaviour
     void Update()
     {
         distance = Vector3.Distance(playerBody.transform.position, avHand.transform.position);
-        Debug.Log(distance);
+        //Debug.Log(distance);
         avHand.position = (handR.transform.position + handL.transform.position) /2;
         if (currentStamina <= 0)
         {
