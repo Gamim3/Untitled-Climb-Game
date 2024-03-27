@@ -62,11 +62,8 @@ public class Zipline : MonoBehaviour
 
         if (gravityWhileClimbing.ziplineinBothHands)
         {
-            Debug.Log("ga naar mijn land");
             FollowPosition();
             gravityWhileClimbing.handle.transform.position = Vector3.MoveTowards(zipHandle, goToPoint, step);
-                
-
         }
         
         else
@@ -75,7 +72,6 @@ public class Zipline : MonoBehaviour
             hasHandle = false;
             //player.transform.SetParent(null);
             gravityWhileClimbing.handle.transform.position = Vector3.MoveTowards(zipHandle, beginPoint[gravityWhileClimbing.number].position, step);
-            Debug.Log("ga naar je eigen land");
 
         }
         /*

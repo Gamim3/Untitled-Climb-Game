@@ -33,7 +33,7 @@ public class ropeSwing : MonoBehaviour
     {
         if (gravityWhileClimbing.ropeInHand)
         {
-            player.transform.position = rope.transform.position;
+            player.transform.position = gravityWhileClimbing.swing.transform.position;
         }
         
     }

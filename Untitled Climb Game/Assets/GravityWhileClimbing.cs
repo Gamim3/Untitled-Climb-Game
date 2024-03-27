@@ -51,6 +51,8 @@ public class GravityWhileClimbing : MonoBehaviour
             
         }
     }
+    public Transform swing;
+
     private void OnTriggerStay(Collider other)
     {
         if (other.CompareTag("Rock") && leftSelectvalue.action.ReadValue<float>() > 0.1f)
@@ -92,7 +94,9 @@ public class GravityWhileClimbing : MonoBehaviour
         {
             
             ropeInHand = true;
-            ropeSwing.GetComponent<Rigidbody>().isKinematic = false;
+            other.GetComponent<Rigidbody>().isKinematic = false;
+
+            swing = other.transform.GetChild (0);
         }
         else if (leftSelectvalue.action.ReadValue<float>() < 0.1f && rightSelectvalue.action.ReadValue<float>() < 0.1f)
         {

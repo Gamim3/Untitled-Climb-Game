@@ -115,7 +115,7 @@ public class DynoJump : MonoBehaviour
         else
         {
             timer = 1.2f;
-            jumpCooldown = 4f;
+            jumpCooldown = 0f;
         }
     
         //rigidbodyVelocity = new Vector3(rb.velocity.x * 50, -rb.velocity.y, 0f);
@@ -157,7 +157,7 @@ public class DynoJump : MonoBehaviour
                         startJumpCooldown = true;
                         jumped = true;
                         stamina.currentStamina -= 10f;
-                        Debug.LogError("DynoJump:)");
+                        Debug.LogWarning("DynoJump:)");
 
 
                     }
