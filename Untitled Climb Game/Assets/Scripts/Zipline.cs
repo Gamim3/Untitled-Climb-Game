@@ -19,8 +19,10 @@ public class Zipline : MonoBehaviour
     public GameObject handle;
     public GameObject[] endpoint;
     public GameObject player;
-   // public GameObject righthandPosition;
-   // public GameObject lefthandPosition;
+    public Transform righthandPosition;
+    public Transform lefthandPosition;
+    public Transform righthandAttach;
+    public Transform lefthandAttach;
    // public GameObject fakeHandR;
    // public GameObject fakeHandL;
    // public GameObject realHandL;
@@ -108,7 +110,8 @@ public class Zipline : MonoBehaviour
     {
         
         player.transform.position = gravityWhileClimbing.attachPoint.position;
-
+        lefthandPosition.position = lefthandAttach.position;
+        righthandPosition.position = righthandAttach.position;
         
         /*
        else if(gravityWhileClimbing.name == "ZipLine1")

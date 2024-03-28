@@ -77,6 +77,7 @@ public class DynoJump : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        playerBody.transform.LookAt(averageHandPosition);
         handPositionR = playerHandR.position;
         handPositionL = playerHandL.position;
         bodyPosition = playerBody.position;

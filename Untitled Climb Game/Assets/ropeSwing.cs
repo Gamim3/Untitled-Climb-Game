@@ -29,7 +29,7 @@ public class ropeSwing : MonoBehaviour
 
     }
    
-    public void HandEnter()
+    public void HandEnter()     
     {
         if (gravityWhileClimbing.ropeInHand)
         {
