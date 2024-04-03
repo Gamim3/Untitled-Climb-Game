@@ -25,7 +25,7 @@ public class DynoJump : MonoBehaviour
     public Vector3 bodyPosition;
     public Vector3 playerPosition;
     public Vector3 preJumpPosition;
-    
+
 
     public bool startTimer;
     public bool startJumpCooldown;
@@ -77,29 +77,31 @@ public class DynoJump : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        playerBody.transform.LookAt(averageHandPosition);
+        //playerBody.transform.LookAt();
         handPositionR = playerHandR.position;
         handPositionL = playerHandL.position;
         bodyPosition = playerBody.position;
 
         averageHand = (handPositionL + handPositionR) / 2;
         rotationAv.y = (playerHandR.localRotation.y + playerHandL.localRotation.y) / 2;
-      
+
         averageHandPosition.position = averageHand;
         velocityL = velocityPropertyR.action.ReadValue<Vector3>();
         velocityR = velocityPropertyL.action.ReadValue<Vector3>();
 
         velocityAv.x = (velocityR.x + velocityL.x) / 2;
         velocityAv.y = (velocityR.y + velocityL.y) / 2;
-        playerbodyRotation = new Vector3(playerRotationPoint.localRotation.x, playerRotationPoint.localRotation.y, playerRotationPoint.localRotation.z) ;
-        jumpDirection = new Vector3(velocityAv.x * 1.5f , velocityAv.y, 0);
+        playerbodyRotation = new Vector3(playerRotationPoint.localRotation.x, playerRotationPoint.localRotation.y, playerRotationPoint.localRotation.z);
+        jumpDirection = new Vector3(velocityAv.x * 1.5f, velocityAv.y, 0);
 
         avarageDirection = (directionX + directionY);
         
+        
+
         if (startTimer)
         {
             timer -= Time.deltaTime;
-            
+
         }
         if (startJumpCooldown)
         {
@@ -111,8 +113,7 @@ public class DynoJump : MonoBehaviour
             jumpCooldown = 0f;
         }
         UseGravity();
-        
-       
+
     }
 
     public void FixedUpdate()
@@ -123,31 +124,33 @@ public class DynoJump : MonoBehaviour
     {
         if (onWall)
         {
-            
-           // Vector3 floris = new Vector3(rb.velocity.x, rb.velocity.y, rb.velocity.z);
-            
-                if (velocityAv.y <=-2f)
+
+            // Vector3 floris = new Vector3(rb.velocity.x, rb.velocity.y, rb.velocity.z);
+
+            if (velocityAv.y <= -2f)
+            {
+
+                if (rightSelectValue.action.ReadValue<float>() <= 0.1f && leftSelectValue.action.ReadValue<float>() <= 0.1f && jumped == false)
                 {
+                    //rb.velocity = new Vector3(0, -rb.velocity.y * 2, 0);\
+                    Vector3 direction = new Vector3(0, - playerBody.transform.position.y, 0);
+                    float velocity = velocityAv.y;
+                    Vector3 force = direction.normalized * velocity;
+                    rb.AddRelativeForce(force * 2, ForceMode.Impulse);
+                    startTimer = true;
+                    startJumpCooldown = true;
+                    jumped = true;
+                    stamina.currentStamina -= 10f;
+                    Debug.LogWarning("DynoJump:)");
 
-                    if (rightSelectValue.action.ReadValue<float>() <= 0.1f && leftSelectValue.action.ReadValue<float>() <= 0.1f && jumped == false)
-                    {
-                        //rb.velocity = new Vector3(0, -rb.velocity.y * 2, 0);\
-                        Vector3 direction = new Vector3(playerBody.transform.position.x, rb.transform.position.y, 0);
-                        float velocity = (velocityAv.y + velocityAv.x) / 2;
-                        Vector3 force = direction.normalized * velocity;
-                        rb.AddRelativeForce(force,ForceMode.Impulse) ;
-                        startTimer = true;
-                        startJumpCooldown = true;
-                        jumped = true;
-                        stamina.currentStamina -= 10f;
-                        Debug.LogWarning("DynoJump:)");
-
-                    }
                 }
+            }
         }
+        
+
+        
     }
-   
-    public void UseGravity()
+    private void UseGravity()
     {
         if (timer <= 0)
         {
@@ -156,7 +159,7 @@ public class DynoJump : MonoBehaviour
             rb.constraints = RigidbodyConstraints.FreezeRotation;
 
         }
-        if(jumpCooldown <= 0)
+        if (jumpCooldown <= 0)
         {
             jumped = false;
             startJumpCooldown = false;
