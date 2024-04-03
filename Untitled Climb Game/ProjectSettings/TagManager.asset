@@ -16,6 +16,7 @@ TagManager:
   - RopeSwing
   - Zipline1
   - Chain
+  - Point
   layers:
   - Default
   - TransparentFX
