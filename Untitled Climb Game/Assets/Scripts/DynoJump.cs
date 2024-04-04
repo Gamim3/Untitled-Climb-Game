@@ -129,14 +129,17 @@ public class DynoJump : MonoBehaviour
 
             if (velocityAv.y <= -2f)
             {
-
+                if(velocityAv.y <= -5f)
+                {
+                    velocityAv.y = -5f;
+                }
                 if (rightSelectValue.action.ReadValue<float>() <= 0.1f && leftSelectValue.action.ReadValue<float>() <= 0.1f && jumped == false)
                 {
                     //rb.velocity = new Vector3(0, -rb.velocity.y * 2, 0);\
                     Vector3 direction = new Vector3(0, - playerBody.transform.position.y, 0);
                     float velocity = velocityAv.y;
                     Vector3 force = direction.normalized * velocity;
-                    rb.AddRelativeForce(force * 2, ForceMode.Impulse);
+                    rb.AddRelativeForce(force * speed, ForceMode.Impulse);
                     startTimer = true;
                     startJumpCooldown = true;
                     jumped = true;

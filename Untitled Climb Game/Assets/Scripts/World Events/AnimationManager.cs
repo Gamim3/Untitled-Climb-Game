@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class AnimationManager : MonoBehaviour
 {
-    public Animator animatorWall,animatorRoof,animatorRoof2;
+    public Animator animatorWall,animatorRoof;
     public bool wall,stopTimer;
     public float timer = 8;
 
@@ -22,7 +22,6 @@ public class AnimationManager : MonoBehaviour
        {
             Debug.Log("Animatie");
             animatorRoof.SetBool("RoofSide1",true);
-            animatorRoof2.SetBool("RoofSide2",true);
             stopTimer = false;
        }
         
