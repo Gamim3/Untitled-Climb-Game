@@ -2309,7 +2309,7 @@ Transform:
   m_GameObject: {fileID: 6275652137728603994}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.11349368, y: 0, z: -0.40006083}
+  m_LocalPosition: {x: 0, y: 0, z: -0.5}
   m_LocalScale: {x: 1.0001864, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2922,7 +2922,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animatorWall: {fileID: 7573478615063957892}
   animatorRoof: {fileID: 6447985924536213622}
-  animatorRoof2: {fileID: 2290520920876996848}
   wall: 0
   stopTimer: 0
   timer: 8
