@@ -17,6 +17,8 @@ TagManager:
   - Zipline1
   - Chain
   - Point
+  - HandR
+  - HandL
   layers:
   - Default
   - TransparentFX
