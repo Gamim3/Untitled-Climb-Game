@@ -19,6 +19,7 @@ TagManager:
   - Point
   - HandR
   - HandL
+  - Sign
   layers:
   - Default
   - TransparentFX

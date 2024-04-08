@@ -55,6 +55,11 @@ public class GravityWhileClimbing : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
+        if(other.CompareTag("Sign") && leftSelectvalue.action.ReadValue<float>() > 0.1f || other.CompareTag("Sign") && rightSelectvalue.action.ReadValue<float>() > 0.1f )
+        {
+            other.GetComponent<Rigidbody>().isKinematic = false;
+        }
+
         if (other.CompareTag("Rock") && leftSelectvalue.action.ReadValue<float>() > 0.1f)
 
         {
