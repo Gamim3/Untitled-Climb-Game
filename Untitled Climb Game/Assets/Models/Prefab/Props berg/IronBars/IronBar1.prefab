@@ -76,7 +76,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 60f20234166cb8548a5d3868896006ee,
         type: 3}
       propertyPath: m_TagString
-      value: Ground
+      value: Rock
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
