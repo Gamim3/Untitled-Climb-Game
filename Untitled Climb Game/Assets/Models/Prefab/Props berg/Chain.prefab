@@ -68,6 +68,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chain End (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6763c20e42d3fe34a9729490b69476d7,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6763c20e42d3fe34a9729490b69476d7,
+        type: 3}
+      propertyPath: m_TagString
+      value: Rock
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -178,6 +188,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chain End (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6763c20e42d3fe34a9729490b69476d7,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6763c20e42d3fe34a9729490b69476d7,
+        type: 3}
+      propertyPath: m_TagString
+      value: Rock
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -287,6 +307,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Chain
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fa39478af5d2a364ab23868961d1f32d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fa39478af5d2a364ab23868961d1f32d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Rock
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -20,14 +20,12 @@ public class Trap : MonoBehaviour
     {
         distance = Vector3.Distance(transform.position, player.position);
 
-        if (distance < 2f )
+        if (distance < 0.5f )
         {
+            
+            animator.Play("trap",0);
             trapSound.PlayOneShot(outSound);
-            animator.Play("Trap");
-        }
-        else
-        {
-            animator.Play(null);
+            
         }
     }
 }

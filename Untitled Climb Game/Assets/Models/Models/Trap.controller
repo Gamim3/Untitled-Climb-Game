@@ -35,11 +35,11 @@ AnimatorStateMachine:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Base Layer
+  m_Name: Trap
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: -8995422773894972643}
-    m_Position: {x: 360, y: 50, z: 0}
+    m_Position: {x: 380, y: 50, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -4998954692309324601}
     m_Position: {x: 380, y: 130, z: 0}
@@ -60,7 +60,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: trappwithasspiussy
+  m_Name: trap
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -115,10 +115,10 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
-    m_Name: Base Layer
+    m_Name: TRap
     m_StateMachine: {fileID: -8877040939023111229}
     m_Mask: {fileID: 0}
     m_Motions: []
