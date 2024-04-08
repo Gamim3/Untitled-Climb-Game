@@ -20,8 +20,16 @@ public class AnimateHandOnInput : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(_Player.GetComponent<GravityWhileClimbing>().isAttachedL != true || _Player.GetComponent<GravityWhileClimbing>().isAttachedR != true)
+        if(gameObject.tag == "HandL" && _Player.GetComponent<GravityWhileClimbing>().isAttachedL == true && gripAnimationAction.action.ReadValue<float>() > 0.1f)
         {
+            Debug.Log("handLlock");
+            handAnimator.SetFloat("Trigger", 1f);
+            handAnimator.SetFloat("Grip", 1f);
+            handAnimator.SetFloat("TouchPadTouch", 1f);
+        }
+        if(gameObject.tag == "HandR" && _Player.GetComponent<GravityWhileClimbing>().isAttachedR == true && gripAnimationAction.action.ReadValue<float>() > 0.1f)
+        {
+            Debug.Log("handlock");
             handAnimator.SetFloat("Trigger", 1f);
             handAnimator.SetFloat("Grip", 1f);
             handAnimator.SetFloat("TouchPadTouch", 1f);
