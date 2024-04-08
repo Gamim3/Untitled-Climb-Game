@@ -6,6 +6,8 @@ using UnityEngine.UIElements;
 
 public class AirballoonPAth : MonoBehaviour
 {
+    public AudioSource playSound;
+    
     public Transform startPoint;
     public Transform[] pathPos;
     public Transform playerMayNotMove;
@@ -39,11 +41,12 @@ public class AirballoonPAth : MonoBehaviour
                 transform.position = Vector3.MoveTowards(transform.position, pathPos[indexForArray].position, speed);
                 transform.rotation = Quaternion.Slerp(transform.rotation, pathPos[3].rotation, speed);
                 GoToNextInArray();
-
+                 playSound.enabled = true;
             }
             if (pathPos[indexForArray] == pathPos[3])
             {
                 
+                playSound.enabled = false;
                 lastCheckpoint = true;
                 returnTimer -= Time.deltaTime;
                 if(returnTimer <= 0)

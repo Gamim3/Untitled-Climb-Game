@@ -5,6 +5,8 @@ using UnityEngine.InputSystem;
 
 public class Zipline : MonoBehaviour
 {
+    public AudioSource zipLineSoundManager;
+    public AudioClip zipping;
     public GravityWhileClimbing gravityWhileClimbing;
     public Stamina stamina;
     public index uitdex;
@@ -21,8 +23,6 @@ public class Zipline : MonoBehaviour
     public GameObject player;
     public Transform righthandPosition;
     public Transform lefthandPosition;
-    public Transform righthandAttach;
-    public Transform lefthandAttach;
    // public GameObject fakeHandR;
    // public GameObject fakeHandL;
    // public GameObject realHandL;
@@ -64,13 +64,14 @@ public class Zipline : MonoBehaviour
 
         if (gravityWhileClimbing.ziplineinBothHands)
         {
+            zipLineSoundManager.enabled = true;
             FollowPosition();
             gravityWhileClimbing.handle.transform.position = Vector3.MoveTowards(zipHandle, goToPoint, step);
         }
         
         else
         {
-            
+            zipLineSoundManager.enabled = false;
             hasHandle = false;
             //player.transform.SetParent(null);
             gravityWhileClimbing.handle.transform.position = Vector3.MoveTowards(zipHandle, beginPoint[gravityWhileClimbing.number].position, step);
@@ -108,11 +109,8 @@ public class Zipline : MonoBehaviour
     
     public void FollowPosition()
     {
-        
+        Debug.Log("pijn is fijn");
         player.transform.position = gravityWhileClimbing.attachPoint.position;
-        lefthandPosition.position = lefthandAttach.position;
-        righthandPosition.position = righthandAttach.position;
-        
         /*
        else if(gravityWhileClimbing.name == "ZipLine1")
         {
