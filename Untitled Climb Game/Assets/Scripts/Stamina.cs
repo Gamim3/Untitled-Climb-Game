@@ -4,10 +4,13 @@ using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.UI;
 using UnityEngine.InputSystem;
+using UnityEngine.Rendering;
+using UnityEngine.Rendering.Universal;
 
 public class Stamina : MonoBehaviour
 {
     public GameObject panel;
+    public GameObject postProsessEffects;
    
     public AudioSource soundSource;
     public GravityWhileClimbing handCheck;
@@ -107,6 +110,19 @@ public class Stamina : MonoBehaviour
     public void StaminaPanel()
     {
         panel.GetComponent<Slider>().value = currentStamina / 100;
+
+        Vignette vignette;
+        postProsessEffects.GetComponent<Volume>().profile.TryGet<Vignette>(out vignette);
+        if (currentStamina <= 50)
+        {
+
+            vignette.intensity.value = 1 - currentStamina / 50;
+        }
+        else
+        {
+            vignette.intensity.value = 0f;
+        }
+        Debug.Log(vignette.intensity.value);
     }
 
     public void SoundsManager()
