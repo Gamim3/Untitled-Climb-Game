@@ -79,6 +79,10 @@ public class GravityWhileClimbing : MonoBehaviour
 
             dynojump.onWall = true;
         }
+        else if(leftSelectvalue.action.ReadValue<float>() < 0.1f && rightSelectvalue.action.ReadValue<float>() < 0.1f)
+        {
+            dynojump.onWall = false;
+        }
         if (other.CompareTag("Zipline") && leftSelectvalue.action.ReadValue<float>() > 0.1f || (other.CompareTag("Zipline") && rightSelectvalue.action.ReadValue<float>() > 0.1f))
         {
             number = other.GetComponent<index>().uitdex;
@@ -113,7 +117,7 @@ public class GravityWhileClimbing : MonoBehaviour
     {
         isAttachedL = false;
         isAttachedR = false;
-        dynojump.onWall = false;
+        
         hasPlayedL = false;
         hasPlayedR = false;
         ziplineinBothHands = false;

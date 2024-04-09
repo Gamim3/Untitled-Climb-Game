@@ -15,7 +15,7 @@ public class Stamina : MonoBehaviour
     public AudioSource soundSource;
     public GravityWhileClimbing handCheck;
     public UnityEngine.XR.Interaction.Toolkit.ClimbProvider climbprovider;
-    public float maxStamina = 100;
+    public float maxStamina = 150;
     public float currentStamina;
     public float staminaUsage;
     public float staminaUsageHeavy;
