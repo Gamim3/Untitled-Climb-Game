@@ -19,9 +19,10 @@ public class AirballoonPAth : MonoBehaviour
     public bool readyToFly;
     public bool playerInBalloon;
     public bool lastCheckpoint =false;
-    
+    Vector3 posdif;
 
- // Start is called before the first frame update
+
+    // Start is called before the first frame update
     void Start()
     {
         // set bool to false so balloon wont go rogue!
@@ -64,8 +65,11 @@ public class AirballoonPAth : MonoBehaviour
     {
         if(other.tag == "Player")
         {
-
-            player.transform.position = playerMayNotMove.transform.position;
+            if(posdif == new Vector3(0,0,0))
+            {
+                posdif = new Vector3(player.gameObject.GetComponent<ColliderFollowHead>()._head.position.x, player.gameObject.GetComponent<ColliderFollowHead>()._Feet.position.y, player.gameObject.GetComponent<ColliderFollowHead>()._head.position.z) - player.position;
+            }
+            player.transform.position = playerMayNotMove.transform.position - posdif;
             readyToFly = true;
             timer -= Time.deltaTime;
             playerInBalloon = true;
@@ -75,6 +79,7 @@ public class AirballoonPAth : MonoBehaviour
     }
     public void OnTriggerExit(Collider other)
     {
+        posdif = new Vector3(0, 0, 0);
         readyToFly = false;
         playerInBalloon = false;
     }

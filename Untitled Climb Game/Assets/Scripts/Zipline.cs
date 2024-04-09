@@ -23,6 +23,7 @@ public class Zipline : MonoBehaviour
     public GameObject player;
     public Transform righthandPosition;
     public Transform lefthandPosition;
+    public Transform avgHandPos;
    // public GameObject fakeHandR;
    // public GameObject fakeHandL;
    // public GameObject realHandL;
@@ -33,11 +34,14 @@ public class Zipline : MonoBehaviour
     public InputActionProperty leftSelectvalue;
     public InputActionProperty rightSelectvalue;
 
+    Vector3 posdif;
+    bool newtmp;
+
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        avgHandPos = player.GetComponent<DynoJump>().averageHandPosition;
     }
   
 
@@ -71,8 +75,14 @@ public class Zipline : MonoBehaviour
         
         else
         {
+            if (newtmp == true)
+            {
+                Debug.Log("disconnecting");
+                newtmp = false;
+            }
             zipLineSoundManager.enabled = false;
             hasHandle = false;
+            posdif = new Vector3(0, 0, 0);
             //player.transform.SetParent(null);
             gravityWhileClimbing.handle.transform.position = Vector3.MoveTowards(zipHandle, beginPoint[gravityWhileClimbing.number].position, step);
 
@@ -109,8 +119,16 @@ public class Zipline : MonoBehaviour
     
     public void FollowPosition()
     {
+        newtmp = true;
         Debug.Log("pijn is fijn");
-        player.transform.position = gravityWhileClimbing.attachPoint.position;
+        //posdif = avgHandPos.position - player.transform.position;
+        if (posdif == new Vector3(0, 0, 0))
+        {
+            Debug.Log("changing posdif");
+            posdif = avgHandPos.position - player.transform.position;
+        }
+        player.transform.position = gravityWhileClimbing.attachPoint.position - posdif;
+            //gravityWhileClimbing.attachPoint.position - new Vector3(avgHandPos.localPosition.x, avgHandPos.localPosition.y - player.GetComponent<ColliderFollowHead>()._hight, avgHandPos.localPosition.z);
         /*
        else if(gravityWhileClimbing.name == "ZipLine1")
         {

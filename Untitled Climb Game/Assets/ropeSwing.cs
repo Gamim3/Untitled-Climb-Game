@@ -6,7 +6,9 @@ public class ropeSwing : MonoBehaviour
 {
     public GravityWhileClimbing gravityWhileClimbing;
     public GameObject player;
-    
+
+    bool newbool;
+    Vector3 avghandpos;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,7 +27,17 @@ public class ropeSwing : MonoBehaviour
     {
         if (gravityWhileClimbing.ropeInHand)
         {
-            player.transform.position = gravityWhileClimbing.swing.transform.position;
+            if(newbool == true)
+            {
+                avghandpos = player.GetComponent<Zipline>().avgHandPos.position - gameObject.transform.position;
+                newbool = false;
+            }
+            Vector3 posdif = player.GetComponent<Zipline>().avgHandPos.position - player.transform.position;
+            player.transform.position = gameObject.transform.position - posdif + avghandpos;
+        }
+        else
+        {
+            newbool = true;
         }
         
     }

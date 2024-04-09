@@ -7,7 +7,7 @@ public class ColliderFollowHead : MonoBehaviour
     public Transform _head;
     public Transform _Feet;
     public GameObject _followCam;
-    float _hight;
+    public float _hight;
 
     // Start is called before the first frame update
     void Start()
