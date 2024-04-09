@@ -29,10 +29,7 @@ public class Zipline : MonoBehaviour
    // public GameObject realHandL;
    // public GameObject realHandR; 
     public Rigidbody body;
-    //public GameObject originalPlayer;
-
-    public InputActionProperty leftSelectvalue;
-    public InputActionProperty rightSelectvalue;
+    //public GameObject originalPlayer
 
     Vector3 posdif;
     bool newtmp;
@@ -41,7 +38,7 @@ public class Zipline : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        avgHandPos = player.GetComponent<Stamina>().avHand;
     }
   
 
