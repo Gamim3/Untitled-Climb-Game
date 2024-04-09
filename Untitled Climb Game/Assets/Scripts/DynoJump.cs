@@ -71,32 +71,19 @@ public class DynoJump : MonoBehaviour
     void Start()
     {
         timer = 1.2f;
-        jumpCooldown = 3f;
+        jumpCooldown = 1.5f;
     }
 
     // Update is called once per frame
     void Update()
     {
         //playerBody.transform.LookAt();
-        handPositionR = playerHandR.position;
-        handPositionL = playerHandL.position;
-        bodyPosition = playerBody.position;
-
-        averageHand = (handPositionL + handPositionR) / 2;
-        rotationAv.y = (playerHandR.localRotation.y + playerHandL.localRotation.y) / 2;
-
-        averageHandPosition.position = averageHand;
         velocityL = velocityPropertyR.action.ReadValue<Vector3>();
         velocityR = velocityPropertyL.action.ReadValue<Vector3>();
 
         velocityAv.x = (velocityR.x + velocityL.x) / 2;
         velocityAv.y = (velocityR.y + velocityL.y) / 2;
-        playerbodyRotation = new Vector3(playerRotationPoint.localRotation.x, playerRotationPoint.localRotation.y, playerRotationPoint.localRotation.z);
-        jumpDirection = new Vector3(velocityAv.x * 1.5f, velocityAv.y, 0);
 
-        avarageDirection = (directionX + directionY);
-        
-        
 
         if (startTimer)
         {
@@ -127,22 +114,20 @@ public class DynoJump : MonoBehaviour
 
             // Vector3 floris = new Vector3(rb.velocity.x, rb.velocity.y, rb.velocity.z);
 
-            if (velocityAv.y <= -2f)
+            if (velocityAv.y <= -1f)
             {
-                if(velocityAv.y <= -5f)
-                {
-                    velocityAv.y = -5f;
-                }
                 if (rightSelectValue.action.ReadValue<float>() <= 0.1f && leftSelectValue.action.ReadValue<float>() <= 0.1f && jumped == false)
                 {
                     //rb.velocity = new Vector3(0, -rb.velocity.y * 2, 0);\
+                    jumped = true;
                     Vector3 direction = new Vector3(0, - playerBody.transform.position.y, 0);
                     float velocity = velocityAv.y;
-                    Vector3 force = direction.normalized * velocity;
-                    rb.AddRelativeForce(force * speed, ForceMode.Impulse);
+                    Vector3 force = direction.normalized * velocity; 
+                    jump = new Vector3(0,8,0);
+                    rb.AddRelativeForce(jump, ForceMode.Impulse);
                     startTimer = true;
                     startJumpCooldown = true;
-                    jumped = true;
+                    
                     stamina.currentStamina -= 10f;
                     Debug.LogWarning("DynoJump:)");
 

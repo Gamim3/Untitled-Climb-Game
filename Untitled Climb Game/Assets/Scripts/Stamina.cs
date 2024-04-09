@@ -122,7 +122,7 @@ public class Stamina : MonoBehaviour
         {
             vignette.intensity.value = 0f;
         }
-        Debug.Log(vignette.intensity.value);
+        
     }
 
     public void SoundsManager()

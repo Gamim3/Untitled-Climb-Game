@@ -2921,6 +2921,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panel: {fileID: 6847465534460087937}
+  postProsessEffects: {fileID: 0}
   soundSource: {fileID: 2114201271830551627}
   handCheck: {fileID: 159676142752926838}
   climbprovider: {fileID: 1410315651907740251}
