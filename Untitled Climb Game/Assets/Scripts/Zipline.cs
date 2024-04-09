@@ -41,7 +41,7 @@ public class Zipline : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        avgHandPos = player.GetComponent<DynoJump>().averageHandPosition;
+
     }
   
 
