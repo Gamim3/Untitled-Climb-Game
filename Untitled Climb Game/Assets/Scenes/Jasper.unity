@@ -1466,6 +1466,74 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 55c232b51cd84e744ac82054b90674e7, type: 3}
+--- !u!1001 &3908887975278920022
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6108520800249632442, guid: 3bc58861d8da0b84cb6a004d862c595d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -22.68
+      objectReference: {fileID: 0}
+    - target: {fileID: 6108520800249632442, guid: 3bc58861d8da0b84cb6a004d862c595d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6108520800249632442, guid: 3bc58861d8da0b84cb6a004d862c595d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 60.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6108520800249632442, guid: 3bc58861d8da0b84cb6a004d862c595d,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6108520800249632442, guid: 3bc58861d8da0b84cb6a004d862c595d,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6108520800249632442, guid: 3bc58861d8da0b84cb6a004d862c595d,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6108520800249632442, guid: 3bc58861d8da0b84cb6a004d862c595d,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6108520800249632442, guid: 3bc58861d8da0b84cb6a004d862c595d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6108520800249632442, guid: 3bc58861d8da0b84cb6a004d862c595d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6108520800249632442, guid: 3bc58861d8da0b84cb6a004d862c595d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6885445145924635648, guid: 3bc58861d8da0b84cb6a004d862c595d,
+        type: 3}
+      propertyPath: m_Name
+      value: Cablecar
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3bc58861d8da0b84cb6a004d862c595d, type: 3}
 --- !u!1001 &4617483317921346272
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2385,3 +2453,4 @@ SceneRoots:
   - {fileID: 1983047176}
   - {fileID: 634514686}
   - {fileID: 438200471}
+  - {fileID: 3908887975278920022}
