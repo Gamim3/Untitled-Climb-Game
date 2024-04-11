@@ -6,6 +6,7 @@ public class ropeSwing : MonoBehaviour
 {
     public GravityWhileClimbing gravityWhileClimbing;
     public GameObject player;
+    public GameObject attachPoint;
 
     bool newbool;
     Vector3 avghandpos;
@@ -21,19 +22,22 @@ public class ropeSwing : MonoBehaviour
         HandEnter();
 
 
+
     }
+
    
     public void HandEnter()     
     {
         if (gravityWhileClimbing.ropeInHand)
         {
-            if(newbool == true)
+            /*if(newbool == true)
             {
                 avghandpos = player.GetComponent<Zipline>().avgHandPos.position - gameObject.transform.position;
                 newbool = false;
             }
+            */
             Vector3 posdif = player.GetComponent<Zipline>().avgHandPos.position - player.transform.position;
-            player.transform.position = gameObject.transform.position - posdif + avghandpos;
+            player.transform.position = gravityWhileClimbing.swing.transform.position - posdif + avghandpos;
         }
         else
         {

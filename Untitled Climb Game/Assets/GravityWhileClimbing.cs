@@ -43,14 +43,7 @@ public class GravityWhileClimbing : MonoBehaviour
         //GrabSound();
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Zipline"))
-        {
-            
-            
-        }
-    }
+   
     public Transform swing;
 
     private void OnTriggerStay(Collider other)
