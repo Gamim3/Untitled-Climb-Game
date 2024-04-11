@@ -1249,9 +1249,9 @@
             "actions": [
                 {
                     "name": "Position",
-                    "type": "Button",
+                    "type": "Value",
                     "id": "c4990d70-7b8a-4ce1-b03c-da86716b8352",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "Vector3",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true

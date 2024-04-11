@@ -24,7 +24,7 @@ public class TeleportPoints : MonoBehaviour
         {
             index = 3;
         }
-        if(index > 3)
+        if(index >= 4)
         {
             index = 0;
         }
@@ -44,14 +44,24 @@ public class TeleportPoints : MonoBehaviour
     {
         if (TeleportL.action.ReadValue<float>() >= 0.1f)
         {
-            index -= 1;
+            index--;
+            if (index < 0)
+            {
+                index = 3;
+            }
+
             transform.position = teleportPoints[index].position;
             pressed = false;
             timer = 2;
         }
         if (TeleportR.action.ReadValue<float>() >= 0.1f)
         {
-            index += 1;
+            index++;
+            if (index > 3)
+            {
+                index = 0;
+            }
+
             transform.position = teleportPoints[index].position;
             pressed = false;
             timer = 2;
