@@ -452,15 +452,6 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
-                },
-                {
-                    "name": "Teleport",
-                    "type": "Button",
-                    "id": "bc4d2879-7599-44aa-b04e-3e0520cfb7bc",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": true
                 }
             ],
             "bindings": [
@@ -703,17 +694,6 @@
                     "processors": "",
                     "groups": "",
                     "action": "Velocity",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "3ab5731b-0322-4958-9072-fa07e88ee4bd",
-                    "path": "<XRController>{LeftHand}/{SecondaryButton}",
-                    "interactions": "Press",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Teleport",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
@@ -1249,9 +1229,9 @@
             "actions": [
                 {
                     "name": "Position",
-                    "type": "Button",
+                    "type": "Value",
                     "id": "c4990d70-7b8a-4ce1-b03c-da86716b8352",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "Vector3",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
@@ -1372,15 +1352,6 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
-                },
-                {
-                    "name": "Teleport",
-                    "type": "Button",
-                    "id": "f25fcfc1-40ca-4589-9e0e-d3f097a1cd12",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -1623,17 +1594,6 @@
                     "processors": "",
                     "groups": "",
                     "action": "Velocity",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "9c4d8ddf-438d-4691-8c05-438011e98272",
-                    "path": "<XRController>{RightHand}/{SecondaryButton}",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Teleport",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
