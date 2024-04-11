@@ -5161,10 +5161,20 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1698943380154035799, guid: 277cc8c41be1e3d4b85b0c7ebdb9f1b2,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -12.543
+      objectReference: {fileID: 0}
     - target: {fileID: 2813606497268555880, guid: 277cc8c41be1e3d4b85b0c7ebdb9f1b2,
         type: 3}
       propertyPath: m_Name
       value: Hot air balloon (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3136868269277612841, guid: 277cc8c41be1e3d4b85b0c7ebdb9f1b2,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -21.562
       objectReference: {fileID: 0}
     - target: {fileID: 3188584404085390034, guid: 277cc8c41be1e3d4b85b0c7ebdb9f1b2,
         type: 3}
@@ -7214,6 +7224,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -7.62
+      objectReference: {fileID: 0}
+    - target: {fileID: 5575365128645911696, guid: 350b9e34672383a49b4aef04f30d9d3f,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5575365128645911696, guid: 350b9e34672383a49b4aef04f30d9d3f,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.48
+      objectReference: {fileID: 0}
+    - target: {fileID: 5575365128645911696, guid: 350b9e34672383a49b4aef04f30d9d3f,
+        type: 3}
+      propertyPath: m_Size.z
+      value: 0.51
       objectReference: {fileID: 0}
     - target: {fileID: 5575365128645911696, guid: 350b9e34672383a49b4aef04f30d9d3f,
         type: 3}

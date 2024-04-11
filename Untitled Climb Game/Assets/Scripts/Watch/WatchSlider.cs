@@ -22,24 +22,24 @@ public class WatchSlider : MonoBehaviour
     }
     void FixedUpdate()
     {
-        if (_watchSlider.GetComponent<Slider>().value >= 0.5)
-        {
-            float tempfloatWatch = 1f;
-            if(_watchAniFloat <= tempfloatWatch)
-            {
-                _watchAniFloat += 0.1f;
-            }
+        //if (_watchSlider.GetComponent<Slider>().value >= 0.5)
+        //{
+        //    float tempfloatWatch = 1f;
+        //    if(_watchAniFloat <= tempfloatWatch)
+        //    {
+        //        _watchAniFloat += 0.1f;
+        //    }
 
-        }
-        if (_watchSlider.GetComponent<Slider>().value <= 0.5)
-        {
-            float tempfloatWatch = 0f;
-            if (_watchAniFloat >= tempfloatWatch)
-            {
-                _watchAniFloat -= 0.1f;
-            }
+        //}
+        //if (_watchSlider.GetComponent<Slider>().value <= 0.5)
+        //{
+        //    float tempfloatWatch = 0f;
+        //    if (_watchAniFloat >= tempfloatWatch)
+        //    {
+        //        _watchAniFloat -= 0.1f;
+        //    }
 
-        }
+        //}
     }
     private void Update()
     {
