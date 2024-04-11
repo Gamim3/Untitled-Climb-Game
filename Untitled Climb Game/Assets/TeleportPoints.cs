@@ -47,7 +47,7 @@ public class TeleportPoints : MonoBehaviour
             index--;
             if (index < 0)
             {
-                index = 3;
+                index = 4;
             }
 
             transform.position = teleportPoints[index].position;
@@ -57,7 +57,7 @@ public class TeleportPoints : MonoBehaviour
         if (TeleportR.action.ReadValue<float>() >= 0.1f)
         {
             index++;
-            if (index > 3)
+            if (index > 4)
             {
                 index = 0;
             }
